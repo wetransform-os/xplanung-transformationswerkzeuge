@@ -14,30 +14,15 @@
         <setting name="charset">UTF-8</setting>
         <setting name="onlyElementsMappable">true</setting>
         <setting name="resourceId">d8cc8389-0fd8-45fa-a408-a381777bc890</setting>
-        <setting name="source">file:/C:/Users/tr/Box%20Sync/staff/Projects/2022-04%20DataPort%20XLeitstelle%20XPlanung%20transformation%20tools/Transformations/Migration%20Alignments/schemas/XPlanGML_5_4/XPlanung-Operationen.xsd</setting>
+        <setting name="source">https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/5.4/XPlanung-Operationen.xsd</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
     </resource>
     <resource action-id="eu.esdihumboldt.hale.io.schema.read.target" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
         <setting name="charset">UTF-8</setting>
         <setting name="onlyElementsMappable">true</setting>
         <setting name="resourceId">78510934-a247-4da0-99e7-baa401ebfaec</setting>
-        <setting name="source">file:/C:/Users/tr/Box%20Sync/staff/Projects/2022-04%20DataPort%20XLeitstelle%20XPlanung%20transformation%20tools/Transformations/Migration%20Alignments/schemas/XPlanGML_6_0/XPlanung-Operationen.xsd</setting>
+        <setting name="source">https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/6.0/XPlanung-Operationen.xsd</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
-    </resource>
-    <resource action-id="eu.esdihumboldt.hale.io.instance.read.source" provider-id="eu.esdihumboldt.hale.io.gml.reader">
-        <setting name="charset">UTF-8</setting>
-        <setting name="resourceId">9283e623-2ec9-4bc5-be37-23f1f0e38e8f</setting>
-        <setting name="source">file:/C:/Users/tr/Box%20Sync/staff/Projects/2022-04%20DataPort%20XLeitstelle%20XPlanung%20transformation%20tools/Data/xplan_54_example.gml</setting>
-        <setting name="interpolation.maxError">0.1</setting>
-        <setting name="interpolation.algorithm">segment</setting>
-        <setting name="ignoreNamespaces">false</setting>
-        <setting name="paginateRequest">true</setting>
-        <setting name="featuresPerWfsRequest">1000</setting>
-        <setting name="ignoreRoot">true</setting>
-        <setting name="ignoreNumberMatched">false</setting>
-        <setting name="interpolation.grid.moveAllToGrid">false</setting>
-        <setting name="strict">false</setting>
-        <setting name="contentType">eu.esdihumboldt.hale.io.gml</setting>
     </resource>
     <file name="alignment.xml" location="xplangml-migration-54-60b.halex.alignment.xml"/>
     <file name="styles.sld" location="xplangml-migration-54-60b.halex.styles.sld"/>
