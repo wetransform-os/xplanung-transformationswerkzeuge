@@ -3,7 +3,7 @@
     <name>XPlanung 5.2 nach 5.4</name>
     <author>Claudia Schulte</author>
     <created>2022-09-19T12:26:53.679+02:00</created>
-    <modified>2022-10-06T09:57:09.631+02:00</modified>
+    <modified>2022-10-06T16:09:15.398+02:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
@@ -26,7 +26,7 @@
     </resource>
     <resource action-id="eu.esdihumboldt.hale.io.instance.read.source" provider-id="eu.esdihumboldt.hale.io.gml.reader">
         <setting name="charset">UTF-8</setting>
-        <setting name="resourceId">165fc446-f4ec-49c9-ac13-01b064255d6b</setting>
+        <setting name="resourceId">44b6d318-d32f-4bbc-9e35-71507c02e250</setting>
         <setting name="source">file:/C:/cs/SERVICE/SVC-1230/Testdaten/geowerkstatt-hamburg-xplan-testdaten-957bc254e51b/valide/5_2/bp/BPlan003_5-2.gml</setting>
         <setting name="interpolation.maxError">0.1</setting>
         <setting name="interpolation.algorithm">segment</setting>

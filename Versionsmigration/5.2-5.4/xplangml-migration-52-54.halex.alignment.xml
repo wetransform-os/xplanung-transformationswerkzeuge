@@ -41,16 +41,7 @@
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-102&#xD;
-Das Attribut wert in BP_AbstandsMass wird optional&#xD;
-Es wird ein zusätzliches, optionales Enumerations-Attribut typ zur attributiven Unterscheidung von Abstands- und Winkelmaßen eingeführt&#xD;
-Die Dokumentation der Attribute startWinkel und endWinkel wird präzisiert: Die Werte beziehen sich auf den Rechtswert (also die Ostrichtung) in einem rechtwinkligen Koordinatensystem.&#xD;
-In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
-- Für Abstandsmaße wird die Verwendung einer einfachen Linie (gml:LineString mit 2 Punkten) empfohlen&#xD;
-- Für Winkelmaße wird die Verwendung eines einfachen Kreisbogens (gml:Curve mit genau einem gml:Arc) empfohlen&#xD;
-- Aus Gründen der Aufwärts-Kompatibilität können die Geometrie-Restriktionen erst ab Version 6.0 als verpflichtend erklärt werden.&#xD;
-&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C23c79ef4-c70a-4f82-abc4-9b383b7e4bdb" priority="normal">
         <source>
@@ -177,17 +168,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-99&#xD;
-Attribut sondernutzung in BP_BaugebietsTeilFlaeche und FP_BebauungsFlaeche mehrfach belegt werden kann.&#xD;
-&#xD;
-https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-88&#xD;
-Neuer Code 4100 (Tonnendach) in Enumerationsliste zu dachform&#xD;
-&#xD;
-https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
-Änderung Enumeration BP_BebauungsArt und der Kardinalität des Attributs bauweise (BP_BaugebietsTeilFlaeche):&#xD;
-- Neuer Eintrag EinzelhaeuserDoppelhaeuserHausgruppen (8000) in BP_BebauungsArt&#xD;
-- Eine Kombination mit Reihenhaeuser wird abgelehnt, da "Reihenhaeuser" nur eine Spezialisierung von "Hausgruppe" darstellt.&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C76652f32-a11c-4376-a636-50b92eaf45c4" priority="normal">
         <source>
@@ -230,11 +211,7 @@ https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-46&#xD;
-    Neue Attribute bauweise, abweichendeBauweise und bebauungsArt in BP_GemeinbedarfsFlaeche und BP_BesondererNutzungszweckFlaeche&#xD;
-    Vererbung des Datentyps BP_GestaltungBaugebiet auf BP_GemeinbedarfsFlaeche&#xD;
-    Neue Konformitätsbedingungen für bauweise und abweichendeBauweise&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfd92184a-e525-4737-bb17-c08387456d30" priority="normal">
         <source>
@@ -459,12 +436,7 @@ https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-46&#xD;
-    Neue Attribute bauweise, abweichendeBauweise und bebauungsArt in BP_GemeinbedarfsFlaeche und BP_BesondererNutzungszweckFlaeche&#xD;
-    Vererbung des Datentyps BP_GestaltungBaugebiet auf BP_GemeinbedarfsFlaeche&#xD;
-    Neue Konformitätsbedingungen für bauweise und abweichendeBauweise&#xD;
-&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C01e711a0-8567-4675-ba18-a1f37bd47454" priority="normal">
         <source>
@@ -575,10 +547,7 @@ https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-78&#xD;
-    Neue Definition: Festsetzung neuer Wasserflächen nach §9 Abs. 1 Nr. 16a BauGB&#xD;
-    Die Klasse wird als "eventuell zukünftig wegfallend" erklärt (XPLAN-79)&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C55ab8a2e-2c41-4524-9736-94d3cbfb40a9" priority="normal">
         <source>
@@ -621,13 +590,7 @@ https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-49&#xD;
-Erweiterung von BP_Immissionsschutz um die Attribute typ (BP_ImmissionsschutzTypen, 0..1), technVorkehrung (BP_TechnVorkehrungenImmissionsschutz, 0..1) und detaillierteTechnVorkehrung (BP_DetailTechnVorkehrungenImmissionsschutz, 0..1)&#xD;
-    Neue Enumeration BP_TypImmissionsschutz (Schutzflaeche, BesondereAnlagenUndVorkehrungen)&#xD;
-    Neue Enumeration BP_TechnVorkehrungImmissionsschtz (Laermschutzvorkehrung, FassadenMitSchallschutzmassnahmen, Laermschutzwand, Laermschutzwall, SonstigeVorkehrung)&#xD;
-    Neue Codeliste BP_DetailTechnVorkehrungImmissionsschutz&#xD;
-    Neue Konformitätsbedingungen technVorkehrung und detaillierteTechnVorkehrung&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Caf1d130a-8240-4d60-8bfb-611796aec621" priority="normal">
         <source>
@@ -642,13 +605,7 @@ Erweiterung von BP_Immissionsschutz um die Attribute typ (BP_ImmissionsschutzTyp
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
-BP_KennzeichnungFlaeche- bzw. FP_Kennzeichnung als Verdachtsflächen&#xD;
-- Neue Attrbute istVerdachtsflaeche (Boolean, 0..1) in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
-- Neue Attribute nummer (CharacterString, 0..1) zur Spezifikation einer "Nummer im Altlastkataster" in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
-Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
-&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc43833d3-94b1-4d10-a94d-a311676ae1aa" priority="normal">
         <source>
@@ -810,8 +767,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-91&#xD;
-Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanArt</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccaf45c85-95d9-459c-ac91-f4ed90bb7456" priority="normal">
         <source>
@@ -1134,16 +1090,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
-- Gleiche Attributierung der Klassen BP_WaldFlaeche, FP_WaldFlaeche und SO_Forstrecht&#xD;
-- Neue Attribute eigentumsart (XP_EigentumsartWald, 0..1) und betreten (XP_Waldbetretung, 0..*) in BP_WaldFlaeche und FP_WaldFlaeche&#xD;
-- Neue Attribute funktion (XP_ZweckbestimmungWald, 0..)  und betreten (XP_Waldbetretung, 0..) in SO_Forstrecht&#xD;
-- Umbenennung SO_KlassifizNachForstrecht --&gt; XP_Eigentumsart mit zusätzlichen Einträgen&#xD;
-- Erweiterung der Enumeration XP_ZweckbestimmungWald&#xD;
-- Neue Enumeration XP_WaldbetretungTyp&#xD;
-- Der "Waldabstand" kann über die neuen Klasse SO_Bauverbotszone abgebildet werden.&#xD;
-&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca6d16a10-9a58-4dcf-b4d7-74e2e92bcf22" priority="normal">
         <source>
@@ -1158,8 +1105,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-80&#xD;
-Neue Definition: "Flächen für die Wasserwirtschaft (§9 Abs. 1 Nr. 16a BauGB), sowie Flächen für Hochwasserschutz-anlagen und für die Regelung des Wasserabflusses (§9 Abs. 1 Nr. 16b BauGB)"</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd7859e31-fd13-40ac-8cd9-c82de43fe7ef" priority="normal">
         <source>
@@ -1440,11 +1386,7 @@ Neue Definition: "Flächen für die Wasserwirtschaft (§9 Abs. 1 Nr. 16a BauGB),
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
-BP_KennzeichnungFlaeche- bzw. FP_Kennzeichnung als Verdachtsflächen&#xD;
-- Neue Attrbute istVerdachtsflaeche (Boolean, 0..1) in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
-- Neue Attribute nummer (CharacterString, 0..1) zur Spezifikation einer "Nummer im Altlastkataster" in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
-Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C2283bf83-d240-40bb-ae6f-7f1de34d7a95" priority="normal">
         <source>
@@ -1599,10 +1541,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-71&#xD;
-Hinzufügen der Enumerationswerte:&#xD;
-1400 Ortsdurchfahrt&#xD;
-Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccf84f3ee-21f8-4d47-9bbd-4514ec60cc70" priority="normal">
         <source>
@@ -1701,14 +1640,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
-- Gleiche Attributierung der Klassen BP_WaldFlaeche, FP_WaldFlaeche und SO_Forstrecht&#xD;
-- Neue Attribute eigentumsart (XP_EigentumsartWald, 0..1) und betreten (XP_Waldbetretung, 0..*) in BP_WaldFlaeche und FP_WaldFlaeche&#xD;
-- Neue Attribute funktion (XP_ZweckbestimmungWald, 0..)  und betreten (XP_Waldbetretung, 0..) in SO_Forstrecht&#xD;
-- Umbenennung SO_KlassifizNachForstrecht --&gt; XP_Eigentumsart mit zusätzlichen Einträgen&#xD;
-- Erweiterung der Enumeration XP_ZweckbestimmungWald&#xD;
-- Neue Enumeration XP_WaldbetretungTyp&#xD;
-- Der "Waldabstand" kann über die neuen Klasse SO_Bauverbotszone abgebildet werden.</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C99e1cf3e-af4c-47a0-8e0c-1c04300db4c4" priority="normal">
         <source>
@@ -1723,9 +1655,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-81&#xD;
-Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgesehenen Flächen sowie Flächen, die im Interesse des Hochwasserschutzes und der Regelung des Wasserabflusses freizuhalten sind (§5 Abs. 2 Nr. 7 BauGB)"&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C9a050504-ee93-4af4-9d9b-eea0f5c70c84" priority="normal">
         <source>
@@ -2492,9 +2422,8 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-93&#xD;
-In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das Attribut nordwinkel, dies ist im RPBereich nicht der Fall. Das führt bei der Diensterstellung zur Schwierigkeit, wenn gerichtete/linienbegleitende Objekte wie z. B. Bahnhof visualisiert werden sollen. (s. Beispiel unten)&#xD;
-</documentation>
+        <documentation></documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf5f43496-5d7d-498c-b6a4-06eff63d290d" priority="normal">
         <source>
@@ -2766,18 +2695,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-77&#xD;
-Erweiterung der Enumeration RP_NaturLandschaftTypen um&#xD;
-1705 = Waldlebensraum&#xD;
-Beschreibung: Teil eines Biotop(verbund)s von Waldlebensräumen&#xD;
-1706 = Feuchtlebensraum&#xD;
-Beschreibung: Teil eines Biotop(verbund)s von Feuchtlebensräumen (insbesondere Auen) mit dem angrenzenden Bereich des Grünlandes&#xD;
-1707 = Trockenlebensraum&#xD;
-Beschreibung: Teil eines Biotop(verbunds) von Trockenlebensräumen&#xD;
-1708 = LebensraumLaenderuebergreifendeVernetzung&#xD;
-Beschreibung: Länderübergreifender Teil eines Biotop(verbund)s&#xD;
-&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C0fd8895c-32c7-4f1c-8abb-9fb016c9a15e" priority="normal">
         <source>
@@ -2821,15 +2739,7 @@ Beschreibung: Länderübergreifender Teil eines Biotop(verbund)s&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-51&#xD;
-Hinzufügen von „Neubekanntmachung „ in der Enumerationsliste RP_Verfahren.&#xD;
-6000 (Neubekanntmachung)&#xD;
-Die Definition des Werts lautet:&#xD;
-„Mit der Neubekanntmachung wird eine authentische amtliche Gesamtfassung des geltenden Plans veröffentlicht, in der alle vorherigen, förmlich beschlossenen und verkündeten Änderungen inhaltlich unverändert einbezogen sind. Nur offensichtliche Unrichtigkeiten wie Schreibfehler dürfen berichtigt werden. Es handelt sich nicht um eine neue Planung oder neue Normsetzung. „&#xD;
-&#xD;
-https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-50&#xD;
-Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geändert&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C3733a7e9-d504-4a4c-8a11-76d1511dca93" priority="normal">
         <source>
@@ -3290,9 +3200,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-103&#xD;
-Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_WasserwirtschaftTypen&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C549cb707-7a91-4a32-a826-8c6cf685c7dc" priority="normal">
         <source>
@@ -3379,11 +3287,7 @@ Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_Wa
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
-BP_KennzeichnungFlaeche- bzw. FP_Kennzeichnung als Verdachtsflächen&#xD;
-- Neue Attrbute istVerdachtsflaeche (Boolean, 0..1) in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
-- Neue Attribute nummer (CharacterString, 0..1) zur Spezifikation einer "Nummer im Altlastkataster" in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
-Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbac2439c-5efa-4cc4-8c7d-fc9073a06464" priority="normal">
         <source>
@@ -3398,12 +3302,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-63&#xD;
-Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
-1500 (ArcheologischesDenkmal) &#xD;
-1600 (Bodendenkmal)&#xD;
-&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C1427e941-f109-49a4-9188-94bb39d414a5" priority="normal">
         <target>
@@ -3480,14 +3379,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
-- Gleiche Attributierung der Klassen BP_WaldFlaeche, FP_WaldFlaeche und SO_Forstrecht&#xD;
-- Neue Attribute eigentumsart (XP_EigentumsartWald, 0..1) und betreten (XP_Waldbetretung, 0..*) in BP_WaldFlaeche und FP_WaldFlaeche&#xD;
-- Neue Attribute funktion (XP_ZweckbestimmungWald, 0..)  und betreten (XP_Waldbetretung, 0..) in SO_Forstrecht&#xD;
-- Umbenennung SO_KlassifizNachForstrecht --&gt; XP_Eigentumsart mit zusätzlichen Einträgen&#xD;
-- Erweiterung der Enumeration XP_ZweckbestimmungWald&#xD;
-- Neue Enumeration XP_WaldbetretungTyp&#xD;
-- Der "Waldabstand" kann über die neuen Klasse SO_Bauverbotszone abgebildet werden.</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C60fc9b5f-7621-41ba-9cbd-79f431ab3b93" priority="normal">
         <source>
@@ -3600,13 +3492,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-57&#xD;
-Einführung der Attribute &#xD;
-versionBauGBDatum, &#xD;
-versionBauGBText, &#xD;
-versionSonstRechtsgrundlageDatum und &#xD;
-versionSonstRechtsgrundlageText&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="Cdc499f04-d416-4e73-8912-691355941151" priority="normal">
         <source name="var">
@@ -3750,19 +3636,7 @@ versionSonstRechtsgrundlageText&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-79&#xD;
-    Neue Definition: "Festlegung nach Wasserhaushaltsgesetz (WHG)"&#xD;
-    Änderungen in der Enumeration SO_KLassifizNachWasserrecht:&#xD;
-        Die Einträge 1000, 10000, 10001, 10002 " werden als "zukünftig wegfallend" deklariert&#xD;
-        Geänderte Definition Code 2000: "Allgemeines Überschwemmungsgebiet nach WHG"&#xD;
-        Geänderte Definition Code 20000: "Überschwemmungsgebiet nach §76 Abs.2 WHG"&#xD;
-        Geänderte Definition Code 20001: "Noch nicht festgesetztes Überschwemmungsgebiet, das vorläufig gesichert ist nach. § 76 Abs. 3 WHG'"&#xD;
-        Neuer Code 3000: "Risikogebiet nach § 76 Abs. 3 WHG"&#xD;
-        Neuer Code 4000: "Risikogebiet außerhalb von Überschwemmungsgebieten nach. § 78b Abs. 1 WHG "&#xD;
-        Neuer Code 5000: "Hochwasserentstehungsgebiet nach § 78d Abs. 1 WHG"&#xD;
-    Neue Klasse SO_Gewaesser (Flächenschlussobjekt, Abbildung eines bestehenden Gewässers)&#xD;
-    Die Klassen BP_GewaesserFlaeche und FP_Gewaesser werden als "eventuell zukünftig wegfallend" deklariert.&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca2c3c37f-dd15-4060-bd70-14db8afc9a4f" priority="normal">
         <source>
@@ -3847,10 +3721,7 @@ versionSonstRechtsgrundlageText&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-105&#xD;
-Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#xD;
-&#xD;
-</documentation>
+        <documentation></documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccb78f6e7-cfce-4686-bf54-fda299eeccf0" priority="high">
         <source>
