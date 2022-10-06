@@ -1,0 +1,4055 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alignment xmlns="http://www.esdi-humboldt.eu/hale/alignment">
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C06e519fe-0ccc-44d2-a76d-49f42d1323a4" priority="normal">
+        <source>
+            <class>
+                <type name="BP_AbgrabungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_AbgrabungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce4724fb0-bb31-45af-aa33-1b35a1a3d006" priority="normal">
+        <source>
+            <class>
+                <type name="BP_AbstandsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_AbstandsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C7ab3809f-d9ea-4e51-9ce3-a899d575dbed" priority="normal">
+        <source>
+            <class>
+                <type name="BP_AbstandsMassType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_AbstandsMassType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-102&#xD;
+Das Attribut wert in BP_AbstandsMass wird optional&#xD;
+Es wird ein zusätzliches, optionales Enumerations-Attribut typ zur attributiven Unterscheidung von Abstands- und Winkelmaßen eingeführt&#xD;
+Die Dokumentation der Attribute startWinkel und endWinkel wird präzisiert: Die Werte beziehen sich auf den Rechtswert (also die Ostrichtung) in einem rechtwinkligen Koordinatensystem.&#xD;
+In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
+- Für Abstandsmaße wird die Verwendung einer einfachen Linie (gml:LineString mit 2 Punkten) empfohlen&#xD;
+- Für Winkelmaße wird die Verwendung eines einfachen Kreisbogens (gml:Curve mit genau einem gml:Arc) empfohlen&#xD;
+- Aus Gründen der Aufwärts-Kompatibilität können die Geometrie-Restriktionen erst ab Version 6.0 als verpflichtend erklärt werden.&#xD;
+&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2808d614-9a9a-4082-a78a-4a5fd143a589" priority="normal">
+        <source>
+            <class>
+                <type name="BP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfcaad83b-fc71-43df-85fa-fea12b6f0887" priority="normal">
+        <source>
+            <class>
+                <type name="BP_AufschuettungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_AufschuettungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccb8ed9b5-3c5d-47a4-9a9a-ad74b5569e09" priority="normal">
+        <source>
+            <class>
+                <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C569f772c-fac1-4393-8cd1-af8b0eec1b85" priority="normal">
+        <source>
+            <class>
+                <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca73231a9-ee65-40d6-a107-c85e32e3d6a6" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BauGrenzeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BauGrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ced468551-95e8-41bc-9854-c408bb60f686" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BauLinieType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BauLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C0f262e2d-1438-40f3-ae4c-adacc74db1a9" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-99&#xD;
+Attribut sondernutzung in BP_BaugebietsTeilFlaeche und FP_BebauungsFlaeche mehrfach belegt werden kann.&#xD;
+&#xD;
+https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-88&#xD;
+Neuer Code 4100 (Tonnendach) in Enumerationsliste zu dachform&#xD;
+&#xD;
+https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
+Änderung Enumeration BP_BebauungsArt und der Kardinalität des Attributs bauweise (BP_BaugebietsTeilFlaeche):&#xD;
+- Neuer Eintrag EinzelhaeuserDoppelhaeuserHausgruppen (8000) in BP_BebauungsArt&#xD;
+- Eine Kombination mit Reihenhaeuser wird abgelehnt, da "Reihenhaeuser" nur eine Spezialisierung von "Hausgruppe" darstellt.&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C76652f32-a11c-4376-a636-50b92eaf45c4" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BereichOhneEinAusfahrtLinieType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BereichOhneEinAusfahrtLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C13a84758-6593-475c-b9b2-65a1c48bb6de" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6d42207b-c960-4a98-88e7-4363ba8afec0" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-46&#xD;
+    Neue Attribute bauweise, abweichendeBauweise und bebauungsArt in BP_GemeinbedarfsFlaeche und BP_BesondererNutzungszweckFlaeche&#xD;
+    Vererbung des Datentyps BP_GestaltungBaugebiet auf BP_GemeinbedarfsFlaeche&#xD;
+    Neue Konformitätsbedingungen für bauweise und abweichendeBauweise&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfd92184a-e525-4737-bb17-c08387456d30" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BodenschaetzeFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BodenschaetzeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd2617d59-5be2-4cb5-a4c5-6d2ef903c02f" priority="normal">
+        <source>
+            <class>
+                <type name="BP_DachgestaltungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_DachgestaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2f701d88-97d3-4fd2-8a69-7a100d3174cd" priority="normal">
+        <source>
+            <class>
+                <type name="BP_EinfahrtPunktType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_EinfahrtPunktType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C56f4256f-1097-4201-86aa-2da1ff03eecd" priority="normal">
+        <source>
+            <class>
+                <type name="BP_EinfahrtsbereichLinieType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_EinfahrtsbereichLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C229463d9-41c6-4255-94f8-0ae25cbd3c53" priority="normal">
+        <source>
+            <class>
+                <type name="BP_EingriffsBereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_EingriffsBereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca8f4c1a3-b6d1-4e16-bae9-b5e6d8d7ce39" priority="normal">
+        <source>
+            <class>
+                <type name="BP_ErhaltungsBereichFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_ErhaltungsBereichFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf778d0ee-6b48-4b76-b51f-b64572aa028e" priority="normal">
+        <source>
+            <class>
+                <type name="BP_FestsetzungNachLandesrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_FestsetzungNachLandesrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5898b9aa-97fb-478f-bb2a-4bef93bbb297" priority="normal">
+        <source>
+            <class>
+                <type name="BP_FirstRichtungsLinieType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_FirstRichtungsLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc145176b-ef5d-48d1-9ab6-3580bc07b60b" priority="normal">
+        <source>
+            <class>
+                <type name="BP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4a531bbd-9ba6-4da6-ab00-79c56794caa6" priority="normal">
+        <source>
+            <class>
+                <type name="BP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C540054e5-b8f8-4013-ab5e-f9298cf09070" priority="normal">
+        <source>
+            <class>
+                <type name="BP_FoerderungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_FoerderungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cb566b698-8b8e-420f-9d37-57e36326e337" priority="normal">
+        <source>
+            <class>
+                <type name="BP_FreiFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_FreiFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd9862986-17c4-42b7-98ff-0b28fd5f26a9" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C3486218a-7163-4582-a7f2-ff15305a35a3" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-46&#xD;
+    Neue Attribute bauweise, abweichendeBauweise und bebauungsArt in BP_GemeinbedarfsFlaeche und BP_BesondererNutzungszweckFlaeche&#xD;
+    Vererbung des Datentyps BP_GestaltungBaugebiet auf BP_GemeinbedarfsFlaeche&#xD;
+    Neue Konformitätsbedingungen für bauweise und abweichendeBauweise&#xD;
+&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C01e711a0-8567-4675-ba18-a1f37bd47454" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C426dcf3f-3d18-40c3-a1a5-403bf634e742" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GemeinschaftsanlagenZuordnungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GemeinschaftsanlagenZuordnungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C06e79419-4d93-42be-96f5-855bb2e14842" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C217937dd-be61-492e-ba7a-db27d5a6d377" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5195f37d-32d7-4153-a213-11b0735f6da7" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-78&#xD;
+    Neue Definition: Festsetzung neuer Wasserflächen nach §9 Abs. 1 Nr. 16a BauGB&#xD;
+    Die Klasse wird als "eventuell zukünftig wegfallend" erklärt (XPLAN-79)&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C55ab8a2e-2c41-4524-9736-94d3cbfb40a9" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GruenFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_GruenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C87ea6a0a-e042-4c24-bb8b-a3293e82e097" priority="normal">
+        <source>
+            <class>
+                <type name="BP_HoehenMassType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_HoehenMassType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce1c42423-bdda-4ff2-86c9-ba782e3d1a6a" priority="normal">
+        <source>
+            <class>
+                <type name="BP_ImmissionsschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_ImmissionsschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-49&#xD;
+Erweiterung von BP_Immissionsschutz um die Attribute typ (BP_ImmissionsschutzTypen, 0..1), technVorkehrung (BP_TechnVorkehrungenImmissionsschutz, 0..1) und detaillierteTechnVorkehrung (BP_DetailTechnVorkehrungenImmissionsschutz, 0..1)&#xD;
+    Neue Enumeration BP_TypImmissionsschutz (Schutzflaeche, BesondereAnlagenUndVorkehrungen)&#xD;
+    Neue Enumeration BP_TechnVorkehrungImmissionsschtz (Laermschutzvorkehrung, FassadenMitSchallschutzmassnahmen, Laermschutzwand, Laermschutzwall, SonstigeVorkehrung)&#xD;
+    Neue Codeliste BP_DetailTechnVorkehrungImmissionsschutz&#xD;
+    Neue Konformitätsbedingungen technVorkehrung und detaillierteTechnVorkehrung&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Caf1d130a-8240-4d60-8bfb-611796aec621" priority="normal">
+        <source>
+            <class>
+                <type name="BP_KennzeichnungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_KennzeichnungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
+BP_KennzeichnungFlaeche- bzw. FP_Kennzeichnung als Verdachtsflächen&#xD;
+- Neue Attrbute istVerdachtsflaeche (Boolean, 0..1) in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
+- Neue Attribute nummer (CharacterString, 0..1) zur Spezifikation einer "Nummer im Altlastkataster" in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
+Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
+&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc43833d3-94b1-4d10-a94d-a311676ae1aa" priority="normal">
+        <source>
+            <class>
+                <type name="BP_KleintierhaltungFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_KleintierhaltungFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1f24e003-e0d9-47ca-ba1d-5e15f5a60f3e" priority="normal">
+        <source>
+            <class>
+                <type name="BP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="copyGeometries"/>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C03bc03b3-ff7e-4433-99cd-fcf775c8fca0" priority="normal">
+        <source>
+            <class>
+                <type name="BP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1294fd87-5100-4c6d-beb7-79aabf588939" priority="normal">
+        <source>
+            <class>
+                <type name="BP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C09eff9af-565a-4131-ac8d-d3059d9e0f6f" priority="normal">
+        <source>
+            <class>
+                <type name="BP_NebenanlagenAusschlussFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_NebenanlagenAusschlussFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C00ae391a-6c57-44d8-90ea-b56e0aedaede" priority="normal">
+        <source>
+            <class>
+                <type name="BP_NebenanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_NebenanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C17679b60-5e56-4737-8e0d-75cfc104b5c0" priority="normal">
+        <source>
+            <class>
+                <type name="BP_NichtUeberbaubareGrundstuecksflaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_NichtUeberbaubareGrundstuecksflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5fe82df5-24f9-4925-ad5f-1a8a6fa90000" priority="normal">
+        <source>
+            <class>
+                <type name="BP_NutzungsartenGrenzeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_NutzungsartenGrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8aad5477-aebf-4559-bbf9-723fa8aeb205" priority="normal">
+        <source>
+            <class>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4cf5329f-10ea-4bb7-9e52-ee586a792b48" priority="normal">
+        <source>
+            <class>
+                <type name="BP_PersGruppenBestimmteFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_PersGruppenBestimmteFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C474c0a28-3afb-4b8d-b144-652cfd038105" priority="normal">
+        <source>
+            <class>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-91&#xD;
+Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanArt</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccaf45c85-95d9-459c-ac91-f4ed90bb7456" priority="normal">
+        <source>
+            <class>
+                <type name="BP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1d17465f-c420-4f02-b0a1-61c7795ba209" priority="normal">
+        <source>
+            <class>
+                <type name="BP_RegelungVergnuegungsstaettenType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_RegelungVergnuegungsstaettenType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1a8da8da-c7b9-42ca-9335-6b4f1f406cb2" priority="normal">
+        <source>
+            <class>
+                <type name="BP_RekultivierungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_RekultivierungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8fad4807-a1c4-4e8e-97b0-a169f65ea033" priority="normal">
+        <source>
+            <class>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C399ef672-0a2c-483e-a1c0-a3458f7b3938" priority="normal">
+        <source>
+            <class>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6d484281-1972-47e9-ad56-3ae901e22071" priority="normal">
+        <source>
+            <class>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5ae9b985-b617-4ff8-945f-fb51d57652ef" priority="normal">
+        <source>
+            <class>
+                <type name="BP_SpielSportanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_SpielSportanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfb47c2b8-60ec-4de5-a22d-b522176d3e5a" priority="normal">
+        <source>
+            <class>
+                <type name="BP_StrassenVerkehrsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_StrassenVerkehrsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2bc6520d-53ec-4b69-9086-13fdb0af5c85" priority="normal">
+        <source>
+            <class>
+                <type name="BP_StrassenbegrenzungsLinieType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_StrassenbegrenzungsLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca49ee20e-5cf0-403b-bff7-81e298a4d030" priority="normal">
+        <source>
+            <class>
+                <type name="BP_StrassenkoerperType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_StrassenkoerperType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8443b652-f75c-4224-9ba8-39ec24b5de1c" priority="normal">
+        <source>
+            <class>
+                <type name="BP_TechnischeMassnahmenFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_TechnischeMassnahmenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce8dce059-16f7-475d-ab94-69837aac7369" priority="normal">
+        <source>
+            <class>
+                <type name="BP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C05731ae3-8834-4862-af81-b8e7831f07d0" priority="normal">
+        <source>
+            <class>
+                <type name="BP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C08d5a9f4-c575-4882-a923-2feddabfc577" priority="normal">
+        <source>
+            <class>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccb2a0869-e5c5-43f7-b3ae-a5fa2fc029d9" priority="normal">
+        <source>
+            <class>
+                <type name="BP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C9a88fe09-2ea0-45d0-ab13-b870fabbf135" priority="normal">
+        <source>
+            <class>
+                <type name="BP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C04a452ac-01c7-44c9-a4f2-1d7a7e7526a1" priority="normal">
+        <source>
+            <class>
+                <type name="BP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8fcf7ffe-51f5-41bd-886c-acfd31f39cc2" priority="normal">
+        <source>
+            <class>
+                <type name="BP_VeraenderungssperreType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_VeraenderungssperreType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccedd4540-fa43-47ee-889c-08ce4b60221c" priority="normal">
+        <source>
+            <class>
+                <type name="BP_VerkehrsflaecheBesondererZweckbestimmungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_VerkehrsflaecheBesondererZweckbestimmungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C9cafcfe3-cf81-4d63-8b51-185cbdf632b8" priority="normal">
+        <source>
+            <class>
+                <type name="BP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
+- Gleiche Attributierung der Klassen BP_WaldFlaeche, FP_WaldFlaeche und SO_Forstrecht&#xD;
+- Neue Attribute eigentumsart (XP_EigentumsartWald, 0..1) und betreten (XP_Waldbetretung, 0..*) in BP_WaldFlaeche und FP_WaldFlaeche&#xD;
+- Neue Attribute funktion (XP_ZweckbestimmungWald, 0..)  und betreten (XP_Waldbetretung, 0..) in SO_Forstrecht&#xD;
+- Umbenennung SO_KlassifizNachForstrecht --&gt; XP_Eigentumsart mit zusätzlichen Einträgen&#xD;
+- Erweiterung der Enumeration XP_ZweckbestimmungWald&#xD;
+- Neue Enumeration XP_WaldbetretungTyp&#xD;
+- Der "Waldabstand" kann über die neuen Klasse SO_Bauverbotszone abgebildet werden.&#xD;
+&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca6d16a10-9a58-4dcf-b4d7-74e2e92bcf22" priority="normal">
+        <source>
+            <class>
+                <type name="BP_WasserwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_WasserwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-80&#xD;
+Neue Definition: "Flächen für die Wasserwirtschaft (§9 Abs. 1 Nr. 16a BauGB), sowie Flächen für Hochwasserschutz-anlagen und für die Regelung des Wasserabflusses (§9 Abs. 1 Nr. 16b BauGB)"</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd7859e31-fd13-40ac-8cd9-c82de43fe7ef" priority="normal">
+        <source>
+            <class>
+                <type name="BP_WegerechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_WegerechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbdce8af2-4ecc-4dbd-a438-d35a761859ab" priority="normal">
+        <source>
+            <class>
+                <type name="FP_AbgrabungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_AbgrabungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C35282d93-bacf-4939-b490-e080248b82ab" priority="normal">
+        <source>
+            <class>
+                <type name="FP_AnpassungKlimawandelType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_AnpassungKlimawandelType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C42c860bd-a753-493e-b4a6-ca621657e838" priority="normal">
+        <source>
+            <class>
+                <type name="FP_AufschuettungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_AufschuettungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4dba2791-f839-4ce5-ae26-9b363cf9d198" priority="normal">
+        <source>
+            <class>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C7cf559bf-791a-40b1-bf3d-da5066f1bbb9" priority="normal">
+        <source>
+            <class>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C775538b0-ccaf-4998-8e67-475e52b8481e" priority="normal">
+        <source>
+            <class>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C0c01e8af-8591-4130-a5c7-47919ebc7a13" priority="normal">
+        <source>
+            <class>
+                <type name="FP_BodenschaetzeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_BodenschaetzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca01412b8-b36e-4ab5-8963-e9559a2e2217" priority="normal">
+        <source>
+            <class>
+                <type name="FP_BodenschaetzeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_BodenschaetzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce4f6fc4f-5aa4-4291-a5b5-9dac5aa130c0" priority="normal">
+        <source>
+            <class>
+                <type name="FP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc941307a-f20b-402c-aebf-52bd565a014e" priority="normal">
+        <source>
+            <class>
+                <type name="FP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cceed0055-2dcd-4ba8-809b-8ac68321e24f" priority="normal">
+        <source>
+            <class>
+                <type name="FP_GemeinbedarfType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_GemeinbedarfType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C7f949686-a085-4f1e-9e47-d870e9d94f0c" priority="normal">
+        <source>
+            <class>
+                <type name="FP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1d39ece8-1e66-48bb-aa10-637dc954b2ff" priority="normal">
+        <source>
+            <class>
+                <type name="FP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbdef13a2-4a0d-4ad1-9b6a-3146c621914b" priority="normal">
+        <source>
+            <class>
+                <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1448ff13-ce87-4d88-9ae3-18a0f1fec26c" priority="normal">
+        <source>
+            <class>
+                <type name="FP_GruenType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_GruenType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfa3edb43-18a1-478d-8385-26384064cefe" priority="normal">
+        <source>
+            <class>
+                <type name="FP_KeineZentrAbwasserBeseitigungFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_KeineZentrAbwasserBeseitigungFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1e4ad6b9-3dbe-47de-a4a5-7f650485ebfb" priority="normal">
+        <source>
+            <class>
+                <type name="FP_KennzeichnungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_KennzeichnungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
+BP_KennzeichnungFlaeche- bzw. FP_Kennzeichnung als Verdachtsflächen&#xD;
+- Neue Attrbute istVerdachtsflaeche (Boolean, 0..1) in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
+- Neue Attribute nummer (CharacterString, 0..1) zur Spezifikation einer "Nummer im Altlastkataster" in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
+Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2283bf83-d240-40bb-ae6f-7f1de34d7a95" priority="normal">
+        <source>
+            <class>
+                <type name="FP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C3c74381e-b3e8-4ac2-9cd7-e7bff35c2025" priority="normal">
+        <source>
+            <class>
+                <type name="FP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C394069d3-7241-47e1-91ff-7454d0455190" priority="normal">
+        <source>
+            <class>
+                <type name="FP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C95e3b5af-17dc-468a-9011-337ec98e1534" priority="normal">
+        <source>
+            <class>
+                <type name="FP_NutzungsbeschraenkungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_NutzungsbeschraenkungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cba5b7ecc-09b9-4909-ac0d-9d5ad1b3ff1c" priority="normal">
+        <source>
+            <class>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C85b614c0-e843-4876-89c4-e87bb252c8cc" priority="normal">
+        <source>
+            <class>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C683d01b3-ba32-4c27-9848-011cee34ff94" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="{href}_FP" name="pattern"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C173ecaa7-6c15-4aab-aa0e-e30b007cca67" priority="normal">
+        <source>
+            <class>
+                <type name="FP_PrivilegiertesVorhabenType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_PrivilegiertesVorhabenType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfa67669a-6933-48bd-8cce-b8e262d47fe6" priority="normal">
+        <source>
+            <class>
+                <type name="FP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6e317aa0-ffc1-4fdb-821e-3c6d88c3ad3f" priority="normal">
+        <source>
+            <class>
+                <type name="FP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdc6d48ef-2f31-4986-80ad-e3d9e8424c8d" priority="normal">
+        <source>
+            <class>
+                <type name="FP_SpielSportanlageType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_SpielSportanlageType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C093c2486-2456-40b8-8b79-9465c7f0669d" priority="normal">
+        <source>
+            <class>
+                <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-71&#xD;
+Hinzufügen der Enumerationswerte:&#xD;
+1400 Ortsdurchfahrt&#xD;
+Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccf84f3ee-21f8-4d47-9bbd-4514ec60cc70" priority="normal">
+        <source>
+            <class>
+                <type name="FP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="C4c41368f-9055-44a5-b8d6-508c44e230ac" priority="normal">
+        <target>
+            <property>
+                <type name="FP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="9998" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C66edecb0-cb81-4ae5-a486-66bcbc793550" priority="normal">
+        <source>
+            <class>
+                <type name="FP_TextlicheDarstellungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_TextlicheDarstellungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C86078f4e-5489-4f4b-b83f-d59867e4582e" priority="normal">
+        <source>
+            <class>
+                <type name="FP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cde027023-363b-4885-8820-c7260ad767ea" priority="normal">
+        <source>
+            <class>
+                <type name="FP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf280715c-2877-485e-abbf-f7bbdf8b43f9" priority="normal">
+        <source>
+            <class>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Ca8bc0612-88ab-4a7a-b49d-e9ab0bb07bdc" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
+}&#xD;
+&#xD;
+else return besondereZweckbestimmung
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+        <annotation type="message">
+            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
+                <core:content>
+                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
+                </core:content>
+            </core:message>
+        </annotation>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cbf18f787-f127-480c-aac3-a680e4197084" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
+}&#xD;
+&#xD;
+else return besondereZweckbestimmung
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+        <annotation type="message">
+            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
+                <core:content>
+                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
+                </core:content>
+            </core:message>
+        </annotation>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cc5eb135b-9dcc-4136-bcd7-e06cf324088f" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
+}&#xD;
+&#xD;
+else return besondereZweckbestimmung
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+        <annotation type="message">
+            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
+                <core:content>
+                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
+                </core:content>
+            </core:message>
+        </annotation>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cca73fbe6-d26c-4f3a-86ea-5103adca0903" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
+}&#xD;
+&#xD;
+else return besondereZweckbestimmung
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+        <annotation type="message">
+            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
+                <core:content>
+                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
+                </core:content>
+            </core:message>
+        </annotation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cca0acd1c-04cc-488e-9276-b7ecf70c09dd" priority="normal">
+        <source>
+            <class>
+                <type name="FP_VorbehalteFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_VorbehalteFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8a609e84-a7a6-4ce3-bcf8-70e243b18dee" priority="normal">
+        <source>
+            <class>
+                <type name="FP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
+- Gleiche Attributierung der Klassen BP_WaldFlaeche, FP_WaldFlaeche und SO_Forstrecht&#xD;
+- Neue Attribute eigentumsart (XP_EigentumsartWald, 0..1) und betreten (XP_Waldbetretung, 0..*) in BP_WaldFlaeche und FP_WaldFlaeche&#xD;
+- Neue Attribute funktion (XP_ZweckbestimmungWald, 0..)  und betreten (XP_Waldbetretung, 0..) in SO_Forstrecht&#xD;
+- Umbenennung SO_KlassifizNachForstrecht --&gt; XP_Eigentumsart mit zusätzlichen Einträgen&#xD;
+- Erweiterung der Enumeration XP_ZweckbestimmungWald&#xD;
+- Neue Enumeration XP_WaldbetretungTyp&#xD;
+- Der "Waldabstand" kann über die neuen Klasse SO_Bauverbotszone abgebildet werden.</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C99e1cf3e-af4c-47a0-8e0c-1c04300db4c4" priority="normal">
+        <source>
+            <class>
+                <type name="FP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-81&#xD;
+Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgesehenen Flächen sowie Flächen, die im Interesse des Hochwasserschutzes und der Regelung des Wasserabflusses freizuhalten sind (§5 Abs. 2 Nr. 7 BauGB)"&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C9a050504-ee93-4af4-9d9b-eea0f5c70c84" priority="normal">
+        <source>
+            <class>
+                <type name="FP_ZentralerVersorgungsbereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_ZentralerVersorgungsbereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6374a65f-9353-43ac-aa53-389a56f7e783" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AbgrenzungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_AbgrenzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C29c2b4a5-e426-4cf4-8843-c6b15a8ba40b" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AllgGruenflaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_AllgGruenflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce3dbc706-8a62-448b-9697-36664f780d1a" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2fb9e320-b753-47c5-99a4-bef24104cd42" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AusgleichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_AusgleichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cea8ac5e0-80bb-41cf-9dfe-562cfbdb3da6" priority="normal">
+        <source>
+            <class>
+                <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6a13536b-18fe-4ec3-a406-c1bfce327a19" priority="normal">
+        <source>
+            <class>
+                <type name="LP_BiotopverbundflaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_BiotopverbundflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C499a2ec0-d152-4d75-952b-6e93ebbdd749" priority="normal">
+        <source>
+            <class>
+                <type name="LP_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C33940f22-de4b-4440-b1ff-b842b09c6ed3" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ErholungFreizeitType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_ErholungFreizeitType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cb21f3940-8a12-479d-8846-0d42fa1d2c01" priority="normal">
+        <source>
+            <class>
+                <type name="LP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cb514c621-6ac3-4afc-a82c-374a7ea1902e" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4f24897a-4cb6-4891-ae97-9da176c673ce" priority="normal">
+        <source>
+            <class>
+                <type name="LP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbc9e2dbe-329a-4f5e-b22d-5b8e8b789b4c" priority="normal">
+        <source>
+            <class>
+                <type name="LP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccf51955a-36b1-45d2-9742-195d901f1269" priority="normal">
+        <source>
+            <class>
+                <type name="LP_LandschaftsbildType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_LandschaftsbildType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C26d5afcb-d57f-4c46-b802-106d20bd1868" priority="normal">
+        <source>
+            <class>
+                <type name="LP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce4835ea6-def5-4bcf-ae36-f06dc743d258" priority="normal">
+        <source>
+            <class>
+                <type name="LP_NutzungsAusschlussType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_NutzungsAusschlussType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cadd494cd-62d2-43fa-82c6-9ce01701a2f8" priority="normal">
+        <source>
+            <class>
+                <type name="LP_NutzungserfordernisRegelungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_NutzungserfordernisRegelungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C00424300-59f5-4540-a832-94c0018b5ad6" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfa4d76ac-1738-4660-9d92-5927f01139c0" priority="normal">
+        <source>
+            <class>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">texte</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="Cba8317d4-f0cf-4ad4-a26f-9601aac26704" priority="normal">
+        <source name="var">
+            <property>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="{href}_LP" name="pattern"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cae2b95d2-63d7-4fef-ad57-4c7ff5ba28e2" priority="normal">
+        <source>
+            <class>
+                <type name="LP_PlanerischeVertiefungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_PlanerischeVertiefungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1632e161-6865-4437-807a-6acf3d1c246f" priority="normal">
+        <source>
+            <class>
+                <type name="LP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5d3d0207-bcf1-456f-a9ad-164b6aa6653c" priority="normal">
+        <source>
+            <class>
+                <type name="LP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca984ccf0-b065-4928-8d71-bf9a756ccb3a" priority="normal">
+        <source>
+            <class>
+                <type name="LP_SchutzobjektInternatRechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_SchutzobjektInternatRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc50c8ac7-fc46-41f9-819f-1a41820e0e92" priority="normal">
+        <source>
+            <class>
+                <type name="LP_SchutzobjektLandesrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_SchutzobjektLandesrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfc91d566-c072-47ed-902c-48775f60cbb3" priority="normal">
+        <source>
+            <class>
+                <type name="LP_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4939d2c3-15f7-461d-8203-dad19f1f14e7" priority="normal">
+        <source>
+            <class>
+                <type name="LP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="Cf4e9467d-bc0d-4bc3-8f1a-c532868b852d" priority="normal">
+        <target>
+            <property>
+                <type name="LP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="9998" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1dd06347-6e2f-451b-ba5c-01b4ce4de083" priority="normal">
+        <source>
+            <class>
+                <type name="LP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C22fe599d-51ad-43b2-80cd-5a70775bf77b" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtGemeingebrEinschraenkungNaturschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_WasserrechtGemeingebrEinschraenkungNaturschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C9f6270bf-c95b-468b-9d7d-6f9f82a3e28c" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_WasserrechtSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1eab1994-97aa-419a-907e-112127ef18ec" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtSonstigeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_WasserrechtSonstigeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd307225b-efd6-4e03-bdea-8571edeb145b" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtWirtschaftAbflussHochwSchutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_WasserrechtWirtschaftAbflussHochwSchutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4dbac76d-1308-4096-9029-7652aff18b92" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ZuBegruenendeGrundstueckflaecheType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_ZuBegruenendeGrundstueckflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cae104419-3dac-4fc5-b2e7-1c5caee5c3f1" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ZwischennutzungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_ZwischennutzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce2d0969c-1b61-4363-90e1-13ce24bfbe73" priority="normal">
+        <source>
+            <class>
+                <type name="RP_AchseType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_AchseType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc7b670ae-6bb2-406f-bd98-5adf25444b27" priority="normal">
+        <source>
+            <class>
+                <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C251742e9-69f7-4324-82d4-3e75d84117f9" priority="normal">
+        <source>
+            <class>
+                <type name="RP_BodenschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_BodenschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca9cd548d-9542-4d48-9b81-d978c15ea184" priority="normal">
+        <source>
+            <class>
+                <type name="RP_EinzelhandelType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_EinzelhandelType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6cf999df-7182-4b0b-91e3-b8471c47c4b0" priority="normal">
+        <source>
+            <class>
+                <type name="RP_EnergieversorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_EnergieversorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Caa77248e-a41b-4db3-ad8a-68ed94388ad1" priority="normal">
+        <source>
+            <class>
+                <type name="RP_EntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_EntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5103b71e-f411-443f-bd00-9b1304b68872" priority="normal">
+        <source>
+            <class>
+                <type name="RP_ErholungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_ErholungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce6036625-6d8d-4e5c-b7ad-e5facab64cca" priority="normal">
+        <source>
+            <class>
+                <type name="RP_ErneuerbareEnergieType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_ErneuerbareEnergieType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf4f7e5a1-6e0b-49d6-989c-a367202f875f" priority="normal">
+        <source>
+            <class>
+                <type name="RP_ForstwirtschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_ForstwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5c86a9d6-1889-4dc0-8ae8-742299fc328a" priority="normal">
+        <source>
+            <class>
+                <type name="RP_FreiraumType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_FreiraumType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6cc9471f-52cf-470b-aa2c-ad4cb5c2d834" priority="normal">
+        <source>
+            <class>
+                <type name="RP_FunktionszuweisungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_FunktionszuweisungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C0881a3be-cbc4-4ba5-a3b9-8f934c4e4139" priority="normal">
+        <target>
+            <property>
+                <type name="RP_FunktionszuweisungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="typ" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="3000"/>
+                    <value value="5000"/>
+                </entry>
+                <entry>
+                    <key value="5000"/>
+                    <value value="6000"/>
+                </entry>
+                <entry>
+                    <key value="6000"/>
+                    <value value="7000"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="source" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2d6bf069-3bed-4f9a-8472-ff56a30d33b3" priority="normal">
+        <source>
+            <class>
+                <type name="RP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C802ec04d-71ba-4b72-9d5f-2e2b03f51ca4" priority="normal">
+        <source>
+            <class>
+                <type name="RP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-93&#xD;
+In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das Attribut nordwinkel, dies ist im RPBereich nicht der Fall. Das führt bei der Diensterstellung zur Schwierigkeit, wenn gerichtete/linienbegleitende Objekte wie z. B. Bahnhof visualisiert werden sollen. (s. Beispiel unten)&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf5f43496-5d7d-498c-b6a4-06eff63d290d" priority="normal">
+        <source>
+            <class>
+                <type name="RP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C242b60b7-4961-4eee-b591-b1451299fdc9" priority="normal">
+        <source>
+            <class>
+                <type name="RP_GrenzeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_GrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C70052da0-c288-4ad2-bead-ce911a2d9fac" priority="normal">
+        <source>
+            <class>
+                <type name="RP_GruenzugGruenzaesurType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_GruenzugGruenzaesurType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C016ee138-19ca-4f60-b0e4-59d9b3318155" priority="normal">
+        <source>
+            <class>
+                <type name="RP_HochwasserschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_HochwasserschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca6017365-e8c9-4b6d-a91b-00afff9dce76" priority="normal">
+        <source>
+            <class>
+                <type name="RP_IndustrieGewerbeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_IndustrieGewerbeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C9c9bd15a-4fc5-45a0-b0d1-1fccd9a6738b" priority="normal">
+        <source>
+            <class>
+                <type name="RP_KlimaschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_KlimaschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdd177653-c71f-4424-8d02-651895b55ae0" priority="normal">
+        <source>
+            <class>
+                <type name="RP_KommunikationType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_KommunikationType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C21bd0845-25c9-4b8a-adf6-54fee63ccebc" priority="normal">
+        <source>
+            <class>
+                <type name="RP_KulturlandschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_KulturlandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="Cd8088140-6379-4d63-ab5b-ab861eab8b35" priority="normal">
+        <target>
+            <property>
+                <type name="RP_KulturlandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="typ" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="1000" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8fbb40d5-6412-4317-8342-149e5f52471f" priority="normal">
+        <source>
+            <class>
+                <type name="RP_LaermschutzBauschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_LaermschutzBauschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc06d834d-eac8-4bf5-bdb9-29a6fcbd7000" priority="normal">
+        <source>
+            <class>
+                <type name="RP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C509c7275-c29b-4153-ab41-6940c5ac138b" priority="normal">
+        <source>
+            <class>
+                <type name="RP_LegendenobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_LegendenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd233a8a5-9caa-4f56-acb7-7604d8ecbcfb" priority="normal">
+        <source>
+            <class>
+                <type name="RP_LuftverkehrType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_LuftverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce08d3fbc-f70c-404b-abab-9ea2f9b3ebd0" priority="normal">
+        <source>
+            <class>
+                <type name="RP_NaturLandschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_NaturLandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-77&#xD;
+Erweiterung der Enumeration RP_NaturLandschaftTypen um&#xD;
+1705 = Waldlebensraum&#xD;
+Beschreibung: Teil eines Biotop(verbund)s von Waldlebensräumen&#xD;
+1706 = Feuchtlebensraum&#xD;
+Beschreibung: Teil eines Biotop(verbund)s von Feuchtlebensräumen (insbesondere Auen) mit dem angrenzenden Bereich des Grünlandes&#xD;
+1707 = Trockenlebensraum&#xD;
+Beschreibung: Teil eines Biotop(verbunds) von Trockenlebensräumen&#xD;
+1708 = LebensraumLaenderuebergreifendeVernetzung&#xD;
+Beschreibung: Länderübergreifender Teil eines Biotop(verbund)s&#xD;
+&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C0fd8895c-32c7-4f1c-8abb-9fb016c9a15e" priority="normal">
+        <source>
+            <class>
+                <type name="RP_NaturschutzrechtlichesSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_NaturschutzrechtlichesSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc48d75ac-a9c9-4f67-b64d-791bead05acb" priority="normal">
+        <source>
+            <class>
+                <type name="RP_ObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="false" name="copyGeometries"/>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5ce851e6-a683-451c-a91f-11626788ea49" priority="normal">
+        <source>
+            <class>
+                <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-51&#xD;
+Hinzufügen von „Neubekanntmachung „ in der Enumerationsliste RP_Verfahren.&#xD;
+6000 (Neubekanntmachung)&#xD;
+Die Definition des Werts lautet:&#xD;
+„Mit der Neubekanntmachung wird eine authentische amtliche Gesamtfassung des geltenden Plans veröffentlicht, in der alle vorherigen, förmlich beschlossenen und verkündeten Änderungen inhaltlich unverändert einbezogen sind. Nur offensichtliche Unrichtigkeiten wie Schreibfehler dürfen berichtigt werden. Es handelt sich nicht um eine neue Planung oder neue Normsetzung. „&#xD;
+&#xD;
+https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-50&#xD;
+Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geändert&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C3733a7e9-d504-4a4c-8a11-76d1511dca93" priority="normal">
+        <source>
+            <class>
+                <type name="RP_PlanungsraumType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_PlanungsraumType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd9e369f4-78dd-47ae-bce5-2bbbcec20730" priority="normal">
+        <source>
+            <class>
+                <type name="RP_RadwegWanderwegType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_RadwegWanderwegType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C443462c2-0e07-4e30-b51c-b2317918e522" priority="normal">
+        <source>
+            <class>
+                <type name="RP_RaumkategorieType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_RaumkategorieType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce10919cb-c9a9-412b-b60c-33500010a702" priority="normal">
+        <source>
+            <class>
+                <type name="RP_RohstoffType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_RohstoffType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C00d53769-57b7-4f25-a652-f01cf23008f8" priority="normal">
+        <target>
+            <property>
+                <type name="RP_RohstoffType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rohstoffTyp" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1700"/>
+                    <value value="1800"/>
+                </entry>
+                <entry>
+                    <key value="1800"/>
+                    <value value="1900"/>
+                </entry>
+                <entry>
+                    <key value="1900"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="2000"/>
+                    <value value="2100"/>
+                </entry>
+                <entry>
+                    <key value="2100"/>
+                    <value value="2200"/>
+                </entry>
+                <entry>
+                    <key value="2200"/>
+                    <value value="2300"/>
+                </entry>
+                <entry>
+                    <key value="2300"/>
+                    <value value="2500"/>
+                </entry>
+                <entry>
+                    <key value="2400"/>
+                    <value value="2600"/>
+                </entry>
+                <entry>
+                    <key value="2500"/>
+                    <value value="2700"/>
+                </entry>
+                <entry>
+                    <key value="2600"/>
+                    <value value="2900"/>
+                </entry>
+                <entry>
+                    <key value="2800"/>
+                    <value value="3000"/>
+                </entry>
+                <entry>
+                    <key value="2900"/>
+                    <value value="3200"/>
+                </entry>
+                <entry>
+                    <key value="3000"/>
+                    <value value="3300"/>
+                </entry>
+                <entry>
+                    <key value="3100"/>
+                    <value value="3400"/>
+                </entry>
+                <entry>
+                    <key value="3200"/>
+                    <value value="3600"/>
+                </entry>
+                <entry>
+                    <key value="3300"/>
+                    <value value="4000"/>
+                </entry>
+                <entry>
+                    <key value="3400"/>
+                    <value value="3800"/>
+                </entry>
+                <entry>
+                    <key value="3500"/>
+                    <value value="4200"/>
+                </entry>
+                <entry>
+                    <key value="3600"/>
+                    <value value="4300"/>
+                </entry>
+                <entry>
+                    <key value="3700"/>
+                    <value value="4400"/>
+                </entry>
+                <entry>
+                    <key value="3800"/>
+                    <value value="4600"/>
+                </entry>
+                <entry>
+                    <key value="3900"/>
+                    <value value="4700"/>
+                </entry>
+                <entry>
+                    <key value="4100"/>
+                    <value value="5000"/>
+                </entry>
+                <entry>
+                    <key value="4200"/>
+                    <value value="5200"/>
+                </entry>
+                <entry>
+                    <key value="4300"/>
+                    <value value="5400"/>
+                </entry>
+                <entry>
+                    <key value="4400"/>
+                    <value value="5500"/>
+                </entry>
+                <entry>
+                    <key value="4500"/>
+                    <value value="5600"/>
+                </entry>
+                <entry>
+                    <key value="4600"/>
+                    <value value="5900"/>
+                </entry>
+                <entry>
+                    <key value="4700"/>
+                    <value value="6000"/>
+                </entry>
+                <entry>
+                    <key value="4800"/>
+                    <value value="6100"/>
+                </entry>
+                <entry>
+                    <key value="4900"/>
+                    <value value="6200"/>
+                </entry>
+                <entry>
+                    <key value="5000"/>
+                    <value value="6400"/>
+                </entry>
+                <entry>
+                    <key value="5100"/>
+                    <value value="6500"/>
+                </entry>
+                <entry>
+                    <key value="5200"/>
+                    <value value="6600"/>
+                </entry>
+                <entry>
+                    <key value="5300"/>
+                    <value value="6700"/>
+                </entry>
+                <entry>
+                    <key value="5400"/>
+                    <value value="6800"/>
+                </entry>
+                <entry>
+                    <key value="5500"/>
+                    <value value="6900"/>
+                </entry>
+                <entry>
+                    <key value="5600"/>
+                    <value value="7000"/>
+                </entry>
+                <entry>
+                    <key value="5700"/>
+                    <value value="3900"/>
+                </entry>
+                <entry>
+                    <key value="5800"/>
+                    <value value="5100"/>
+                </entry>
+                <entry>
+                    <key value="5900"/>
+                    <value value="5300"/>
+                </entry>
+                <entry>
+                    <key value="6000"/>
+                    <value value="4100"/>
+                </entry>
+                <entry>
+                    <key value="9999"/>
+                    <value value="9999"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C96e802a1-da43-4f82-91e0-7183ec0f6747" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SchienenverkehrType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SchienenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C63472d8b-e84f-427e-b5a7-2bc3d87ba275" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SiedlungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SiedlungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccb09aad4-c060-4984-b727-404b4aa6a49f" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SonstVerkehrType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SonstVerkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf193b3df-021f-4044-af0c-d3c9c7da2290" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SonstigeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SonstigeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C75df4dc7-1c95-4d62-91bc-906d129da25e" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SonstigerFreiraumschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SonstigerFreiraumschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C19f557bc-b2ad-434e-97e6-a6ed2dc0874d" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SonstigerSiedlungsbereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SonstigerSiedlungsbereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cec7c805a-45f1-4812-bc27-d1e94c85ff80" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SozialeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SozialeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce168a03e-b837-494c-bb17-c5bd6f691c3b" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SperrgebietType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SperrgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C4e7a420f-67df-4e7e-a304-ed22233fe307" priority="normal">
+        <source>
+            <class>
+                <type name="RP_SportanlageType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_SportanlageType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf5b1d412-ee97-4a2e-b446-a269f3d5078f" priority="normal">
+        <source>
+            <class>
+                <type name="RP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5d64c3ab-6ff6-4fe3-9151-ea06c2b57e38" priority="normal">
+        <source>
+            <class>
+                <type name="RP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="Cf8ef497e-30f3-42c2-bbc8-aac743193017" priority="normal">
+        <target>
+            <property>
+                <type name="RP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="9998" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce5592544-bc33-4a88-980f-9e3c60b975e5" priority="normal">
+        <source>
+            <class>
+                <type name="RP_VerkehrType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_VerkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cddd086c1-9777-46c8-b1a9-e1100f44ecd1" priority="normal">
+        <source>
+            <class>
+                <type name="RP_WasserschutzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_WasserschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca6c0b52e-0948-48ce-b504-29c7a5441fc0" priority="normal">
+        <source>
+            <class>
+                <type name="RP_WasserverkehrType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_WasserverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce1797bc7-40d7-4098-8f6a-b4dff929c47d" priority="normal">
+        <source>
+            <class>
+                <type name="RP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-103&#xD;
+Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_WasserwirtschaftTypen&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C549cb707-7a91-4a32-a826-8c6cf685c7dc" priority="normal">
+        <source>
+            <class>
+                <type name="RP_WohnenSiedlungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_WohnenSiedlungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca03cd2b7-14f2-4c8a-83b1-d0088a9a9bcd" priority="normal">
+        <source>
+            <class>
+                <type name="RP_ZentralerOrtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_ZentralerOrtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C7846934e-2f4b-4040-bd4e-d2b55790d639" priority="normal">
+        <source>
+            <class>
+                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C69f2b73b-190e-48c6-b149-902d567cab04" priority="normal">
+        <source>
+            <property>
+                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="planinhalt" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="planinhalt" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca4d6a82e-a425-4c8b-afc1-1097f655b427" priority="normal">
+        <source>
+            <class>
+                <type name="SO_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
+BP_KennzeichnungFlaeche- bzw. FP_Kennzeichnung als Verdachtsflächen&#xD;
+- Neue Attrbute istVerdachtsflaeche (Boolean, 0..1) in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
+- Neue Attribute nummer (CharacterString, 0..1) zur Spezifikation einer "Nummer im Altlastkataster" in BP_Kennzeichnungsflaeche und FP_Kennzeichnung&#xD;
+Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbac2439c-5efa-4cc4-8c7d-fc9073a06464" priority="normal">
+        <source>
+            <class>
+                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-63&#xD;
+Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
+1500 (ArcheologischesDenkmal) &#xD;
+1600 (Bodendenkmal)&#xD;
+&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C1427e941-f109-49a4-9188-94bb39d414a5" priority="normal">
+        <target>
+            <property>
+                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="1100" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C77102fd2-902b-4ec3-a904-2a6a2306ec3e" priority="normal">
+        <target>
+            <property>
+                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="1000" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdaad6d1d-71f9-436c-86a1-f47c9b4fa807" priority="normal">
+        <source>
+            <class>
+                <type name="SO_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C03f5f29e-05ca-4514-88c2-923434120321" priority="normal">
+        <source>
+            <class>
+                <type name="SO_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
+- Gleiche Attributierung der Klassen BP_WaldFlaeche, FP_WaldFlaeche und SO_Forstrecht&#xD;
+- Neue Attribute eigentumsart (XP_EigentumsartWald, 0..1) und betreten (XP_Waldbetretung, 0..*) in BP_WaldFlaeche und FP_WaldFlaeche&#xD;
+- Neue Attribute funktion (XP_ZweckbestimmungWald, 0..)  und betreten (XP_Waldbetretung, 0..) in SO_Forstrecht&#xD;
+- Umbenennung SO_KlassifizNachForstrecht --&gt; XP_Eigentumsart mit zusätzlichen Einträgen&#xD;
+- Erweiterung der Enumeration XP_ZweckbestimmungWald&#xD;
+- Neue Enumeration XP_WaldbetretungTyp&#xD;
+- Der "Waldabstand" kann über die neuen Klasse SO_Bauverbotszone abgebildet werden.</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C60fc9b5f-7621-41ba-9cbd-79f431ab3b93" priority="normal">
+        <source>
+            <class>
+                <type name="SO_GebietType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_GebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce173767c-c0aa-4592-9ee8-5bb68246d6ac" priority="normal">
+        <source>
+            <class>
+                <type name="SO_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cec97b33a-6323-4286-8c36-aaceb5622ff1" priority="normal">
+        <source>
+            <class>
+                <type name="SO_GrenzeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_GrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf29f1011-de41-4286-90e7-2eb1c5bcd0e1" priority="normal">
+        <source>
+            <class>
+                <type name="SO_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca1682938-029d-4127-ae45-d98d5ca6e36a" priority="normal">
+        <source>
+            <class>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C246613b8-0f37-4ac1-a617-5343a5cce62c" priority="normal">
+        <source>
+            <class>
+                <type name="SO_ObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C83ffcdd5-f80c-4b81-920f-dc0b25d06c06" priority="normal">
+        <source>
+            <class>
+                <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-57&#xD;
+Einführung der Attribute &#xD;
+versionBauGBDatum, &#xD;
+versionBauGBText, &#xD;
+versionSonstRechtsgrundlageDatum und &#xD;
+versionSonstRechtsgrundlageText&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="Cdc499f04-d416-4e73-8912-691355941151" priority="normal">
+        <source name="var">
+            <property>
+                <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/5/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="{href}_SO" name="pattern"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc1083c7b-a246-42fe-81d6-5479fd814f53" priority="normal">
+        <source>
+            <class>
+                <type name="SO_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C31fb6283-c813-4433-b686-84807a9ea04c" priority="normal">
+        <source>
+            <class>
+                <type name="SO_SchienenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchienenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdf1cda8d-d9a0-4901-9798-5fc55a73dabb" priority="normal">
+        <source>
+            <class>
+                <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfb30e5d0-6cd5-4d33-83dc-5e5670a3fc34" priority="normal">
+        <source>
+            <class>
+                <type name="SO_SchutzgebietSonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchutzgebietSonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8779ff77-a339-40d5-ae46-eb53d9fc378a" priority="normal">
+        <source>
+            <class>
+                <type name="SO_SchutzgebietWasserrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchutzgebietWasserrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C83aa03d6-f8bb-4605-964d-eeb925fa9420" priority="normal">
+        <source>
+            <class>
+                <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce2e87775-cb0b-4b92-8eb9-5f80172dc888" priority="normal">
+        <source>
+            <class>
+                <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce9c9ee86-b0a3-4875-9252-e2dcc8f87ac2" priority="normal">
+        <source>
+            <class>
+                <type name="SO_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C73ded155-847f-40d5-8263-b4f178441587" priority="normal">
+        <source>
+            <class>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-79&#xD;
+    Neue Definition: "Festlegung nach Wasserhaushaltsgesetz (WHG)"&#xD;
+    Änderungen in der Enumeration SO_KLassifizNachWasserrecht:&#xD;
+        Die Einträge 1000, 10000, 10001, 10002 " werden als "zukünftig wegfallend" deklariert&#xD;
+        Geänderte Definition Code 2000: "Allgemeines Überschwemmungsgebiet nach WHG"&#xD;
+        Geänderte Definition Code 20000: "Überschwemmungsgebiet nach §76 Abs.2 WHG"&#xD;
+        Geänderte Definition Code 20001: "Noch nicht festgesetztes Überschwemmungsgebiet, das vorläufig gesichert ist nach. § 76 Abs. 3 WHG'"&#xD;
+        Neuer Code 3000: "Risikogebiet nach § 76 Abs. 3 WHG"&#xD;
+        Neuer Code 4000: "Risikogebiet außerhalb von Überschwemmungsgebieten nach. § 78b Abs. 1 WHG "&#xD;
+        Neuer Code 5000: "Hochwasserentstehungsgebiet nach § 78d Abs. 1 WHG"&#xD;
+    Neue Klasse SO_Gewaesser (Flächenschlussobjekt, Abbildung eines bestehenden Gewässers)&#xD;
+    Die Klassen BP_GewaesserFlaeche und FP_Gewaesser werden als "eventuell zukünftig wegfallend" deklariert.&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca2c3c37f-dd15-4060-bd70-14db8afc9a4f" priority="normal">
+        <source>
+            <class>
+                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C0cbc3de2-8960-44d0-8e8f-c8da7aa500ae" priority="normal">
+        <source>
+            <class>
+                <type name="XP_BegruendungAbschnittType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_BegruendungAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8b34ae94-55b4-4ce8-aeb7-b4e60cebf8d2" priority="normal">
+        <source>
+            <class>
+                <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C6ab958ab-cc41-4b2e-be85-21daa7be6c2a" priority="normal">
+        <source>
+            <class>
+                <type name="XP_DatumAttributType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_DatumAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C691b4c1e-670b-40ad-a0aa-3a6e5fe01dc5" priority="normal">
+        <source>
+            <class>
+                <type name="XP_DoubleAttributType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_DoubleAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C0eaab630-b55c-46d6-ba44-531d709d9b1a" priority="normal">
+        <source>
+            <class>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-105&#xD;
+Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#xD;
+&#xD;
+</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccb78f6e7-cfce-4686-bf54-fda299eeccf0" priority="high">
+        <source>
+            <class>
+                <type name="XP_FPOType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_FPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C76c9175e-ebbf-464f-a366-d23834a2c810" priority="normal">
+        <source>
+            <class>
+                <type name="XP_GemeindeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_GemeindeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C818f0673-19f4-4109-afd0-e6db60edb430" priority="normal">
+        <source>
+            <class>
+                <type name="XP_GenerAttributType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_GenerAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cefb6c7b7-275a-4ec9-b780-0b7d3d8c2c4f" priority="normal">
+        <source>
+            <class>
+                <type name="XP_HoehenangabeType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_HoehenangabeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C421fce9d-7119-41a6-8a9b-c0eb26151e1f" priority="normal">
+        <source>
+            <class>
+                <type name="XP_IntegerAttributType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_IntegerAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc36b8a54-c530-43ce-ac9b-f48be1e4410e" priority="high">
+        <source>
+            <class>
+                <type name="XP_LPOType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_LPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C83ea7331-9e33-40bb-b034-fd756bb57aeb" priority="high">
+        <source>
+            <class>
+                <type name="XP_LTOType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_LTOType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C109f6a11-a297-4fe8-823a-10e3b0b38208" priority="normal">
+        <source>
+            <class>
+                <type name="XP_NutzungsschabloneType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_NutzungsschabloneType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C5698878a-caed-4aed-bf61-edd722a7b7b9" priority="normal">
+        <source>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C44efef9f-85a6-4bd8-9067-e3c7fc5c5d51" priority="high">
+        <source>
+            <class>
+                <type name="XP_PPOType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_PPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2d31878b-88a8-4180-a261-4bfd072b7c2f" priority="high">
+        <source>
+            <class>
+                <type name="XP_PTOType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_PTOType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C83d3691a-8125-4b15-a411-1ac35e29ae4f" priority="normal">
+        <source>
+            <class>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C09740c91-a405-4840-8fe7-a3a2c0715793" priority="normal">
+        <source>
+            <class>
+                <type name="XP_PlangeberType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_PlangeberType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C979ea684-6971-465f-8937-7a0a6ceacdb8" priority="high">
+        <source>
+            <class>
+                <type name="XP_PraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_PraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbf555057-084b-415d-8459-0cd65265eedf" priority="normal">
+        <source>
+            <class>
+                <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1cbb81ee-4619-4c8a-84af-43123750aa99" priority="normal">
+        <source>
+            <class>
+                <type name="XP_SPEMassnahmenDatenType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_SPEMassnahmenDatenType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc61b190d-7ef7-4df1-b179-a6e388927e32" priority="normal">
+        <source>
+            <class>
+                <type name="XP_SpezExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_SpezExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C9cde0437-2371-4799-9c02-845ef78748ac" priority="normal">
+        <source>
+            <class>
+                <type name="XP_StringAttributType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_StringAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc04a4721-fb80-430d-b2a5-78a6757f7abf" priority="normal">
+        <source>
+            <class>
+                <type name="XP_TPOType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_TPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc0926484-e8c3-428d-8c0d-b0a52b9ba290" priority="normal">
+        <source>
+            <class>
+                <type name="XP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C0b541de6-fc0f-409d-a0f2-618fa448e404" priority="normal">
+        <source>
+            <class>
+                <type name="XP_URLAttributType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_URLAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2ae23e9a-ce78-497c-8aab-348caaf7a552" priority="normal">
+        <source>
+            <class>
+                <type name="XP_VerbundenerPlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_VerbundenerPlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C3f0880c3-0d5f-448e-a3c8-cd4b6ce59e9c" priority="normal">
+        <source>
+            <class>
+                <type name="XP_VerfahrensMerkmalType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_VerfahrensMerkmalType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Caa8983c3-1cf7-47f6-8fc4-c762b1b5c244" priority="normal">
+        <source>
+            <class>
+                <type name="XP_WirksamkeitBedingungType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_WirksamkeitBedingungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C0bf93f6e-3985-48d6-812a-c4db131cf469" priority="normal">
+        <source>
+            <class>
+                <type name="XPlanAuszugType" ns="http://www.xplanung.de/xplangml/5/1"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XPlanAuszugType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+</alignment>
