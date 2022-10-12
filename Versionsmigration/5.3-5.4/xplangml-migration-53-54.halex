@@ -3,7 +3,7 @@
     <name>XPlanung 5.3 nach 5.4</name>
     <author>Claudia Schulte</author>
     <created>2022-09-19T12:26:53.679+02:00</created>
-    <modified>2022-10-06T11:48:23.160+02:00</modified>
+    <modified>2022-10-12T14:20:41.279+02:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
@@ -26,7 +26,7 @@
     </resource>
     <resource action-id="eu.esdihumboldt.hale.io.instance.read.source" provider-id="eu.esdihumboldt.hale.io.gml.reader">
         <setting name="charset">UTF-8</setting>
-        <setting name="resourceId">ed819531-fd05-4560-a898-905f5e1ae76f</setting>
+        <setting name="resourceId">6cbf7905-a767-4a05-9825-108fc5ce411b</setting>
         <setting name="source">file:/C:/cs/SERVICE/SVC-1230/Testdaten/geowerkstatt-hamburg-xplan-testdaten-957bc254e51b/valide/5_3/bp/BPlan003_5-3.gml</setting>
         <setting name="interpolation.maxError">0.1</setting>
         <setting name="interpolation.algorithm">segment</setting>
@@ -1540,6 +1540,10 @@
     <property name="defaultGeometry:{http://www.xplanung.de/xplangml/5/4}XPlanAuszugType/count">2</property>
     <property name="resource-1d0d4797-bd3d-42f3-bb97-19fea3304757:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_BauGrenzeType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}LineString">code:EPSG:4258</property>
     <property name="resource-1d0d4797-bd3d-42f3-bb97-19fea3304757:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_NutzungsartenGrenzeType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}LineString">code:EPSG:4258</property>
+    <property name="resource-589acbc2-15a5-41d5-b85d-446f8e3e16d9:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_BauGrenzeType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}Curve/{http://www.opengis.net/gml/3.2}segments/{http://www.opengis.net/gml/3.2}LineStringSegment">code:EPSG:25832</property>
+    <property name="resource-589acbc2-15a5-41d5-b85d-446f8e3e16d9:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_NutzungsartenGrenzeType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}Curve/{http://www.opengis.net/gml/3.2}segments/{http://www.opengis.net/gml/3.2}LineStringSegment">code:EPSG:25832</property>
+    <property name="resource-589acbc2-15a5-41d5-b85d-446f8e3e16d9:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_StrassenbegrenzungsLinieType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}Curve/{http://www.opengis.net/gml/3.2}segments/{http://www.opengis.net/gml/3.2}LineStringSegment">code:EPSG:25832</property>
+    <property name="resource-589acbc2-15a5-41d5-b85d-446f8e3e16d9:defaultCRS:{http://www.xplanung.de/xplangml/5/3}XP_LPOType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}Curve/{http://www.opengis.net/gml/3.2}segments/{http://www.opengis.net/gml/3.2}LineStringSegment">code:EPSG:25832</property>
     <property name="resource-ac594fba-8439-4a99-9c7c-7e43f20eabe4:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_BauGrenzeType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}Curve/{http://www.opengis.net/gml/3.2}segments/{http://www.opengis.net/gml/3.2}LineStringSegment">code:EPSG:25832</property>
     <property name="resource-ac594fba-8439-4a99-9c7c-7e43f20eabe4:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_NutzungsartenGrenzeType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}Curve/{http://www.opengis.net/gml/3.2}segments/{http://www.opengis.net/gml/3.2}LineStringSegment">code:EPSG:25832</property>
     <property name="resource-ac594fba-8439-4a99-9c7c-7e43f20eabe4:defaultCRS:{http://www.xplanung.de/xplangml/5/3}BP_StrassenbegrenzungsLinieType/{http://www.xplanung.de/xplangml/5/3}position/{http://www.opengis.net/gml/3.2}Curve/{http://www.opengis.net/gml/3.2}segments/{http://www.opengis.net/gml/3.2}LineStringSegment">code:EPSG:25832</property>
