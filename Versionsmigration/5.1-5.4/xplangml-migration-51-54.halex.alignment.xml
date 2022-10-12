@@ -1358,23 +1358,6 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C683d01b3-ba32-4c27-9848-011cee34ff94" priority="normal">
-        <source name="var">
-            <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </target>
-        <parameter value="{href}_FP" name="pattern"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C173ecaa7-6c15-4aab-aa0e-e30b007cca67" priority="normal">
         <source>
             <class>
@@ -1463,15 +1446,6 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign" id="C4c41368f-9055-44a5-b8d6-508c44e230ac" priority="normal">
-        <target>
-            <property>
-                <type name="FP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <parameter value="9998" name="value"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C66edecb0-cb81-4ae5-a486-66bcbc793550" priority="normal">
         <source>
             <class>
@@ -1527,130 +1501,6 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Ca8bc0612-88ab-4a7a-b49d-e9ab0bb07bdc" priority="normal">
-        <source name="var">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
-else return besondereZweckbestimmung
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
-        <annotation type="message">
-            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
-                <core:content>
-                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
-                </core:content>
-            </core:message>
-        </annotation>
-    </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cbf18f787-f127-480c-aac3-a680e4197084" priority="normal">
-        <source name="var">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
-else return besondereZweckbestimmung
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
-        <annotation type="message">
-            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
-                <core:content>
-                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
-                </core:content>
-            </core:message>
-        </annotation>
-    </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cc5eb135b-9dcc-4136-bcd7-e06cf324088f" priority="normal">
-        <source name="var">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
-else return besondereZweckbestimmung
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
-        <annotation type="message">
-            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
-                <core:content>
-                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
-                </core:content>
-            </core:message>
-        </annotation>
-    </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cca73fbe6-d26c-4f3a-86ea-5103adca0903" priority="normal">
-        <source name="var">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/1"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
-else return besondereZweckbestimmung
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
-        <annotation type="message">
-            <core:message xmlns:core="http://www.esdi-humboldt.eu/hale/core" category="migration">
-                <core:content>
-                    <core:text xml:space="preserve">The cell's entities have been replaced, the new entities may have a different structure and/or names and may require updating the Groovy script accordingly</core:text>
-                </core:content>
-            </core:message>
-        </annotation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cca0acd1c-04cc-488e-9276-b7ecf70c09dd" priority="normal">
         <source>
@@ -1857,9 +1707,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C4f24897a-4cb6-4891-ae97-9da176c673ce" priority="normal">
@@ -1874,9 +1721,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbc9e2dbe-329a-4f5e-b22d-5b8e8b789b4c" priority="normal">
@@ -1905,9 +1749,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C26d5afcb-d57f-4c46-b802-106d20bd1868" priority="normal">
@@ -1936,9 +1777,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cadd494cd-62d2-43fa-82c6-9ce01701a2f8" priority="normal">
@@ -1953,9 +1791,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C00424300-59f5-4540-a832-94c0018b5ad6" priority="normal">
@@ -1989,23 +1824,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="Cba8317d4-f0cf-4ad4-a26f-9601aac26704" priority="normal">
-        <source name="var">
-            <property>
-                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </target>
-        <parameter value="{href}_LP" name="pattern"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cae2b95d2-63d7-4fef-ad57-4c7ff5ba28e2" priority="normal">
         <source>
             <class>
@@ -2018,9 +1836,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
+
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C1632e161-6865-4437-807a-6acf3d1c246f" priority="normal">
@@ -2049,9 +1865,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
+
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca984ccf0-b065-4928-8d71-bf9a756ccb3a" priority="normal">
@@ -2066,9 +1880,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
+
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc50c8ac7-fc46-41f9-819f-1a41820e0e92" priority="normal">
@@ -2097,9 +1909,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
+
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C4939d2c3-15f7-461d-8203-dad19f1f14e7" priority="normal">
@@ -2116,15 +1926,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign" id="Cf4e9467d-bc0d-4bc3-8f1a-c532868b852d" priority="normal">
-        <target>
-            <property>
-                <type name="LP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <parameter value="9998" name="value"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C1dd06347-6e2f-451b-ba5c-01b4ce4de083" priority="normal">
         <source>
             <class>
@@ -2137,9 +1938,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C22fe599d-51ad-43b2-80cd-5a70775bf77b" priority="normal">
@@ -2154,9 +1952,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C9f6270bf-c95b-468b-9d7d-6f9f82a3e28c" priority="normal">
@@ -2171,9 +1966,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C1eab1994-97aa-419a-907e-112127ef18ec" priority="normal">
@@ -2188,9 +1980,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd307225b-efd6-4e03-bdea-8571edeb145b" priority="normal">
@@ -2205,9 +1994,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C4dbac76d-1308-4096-9029-7652aff18b92" priority="normal">
@@ -2222,9 +2008,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cae104419-3dac-4fc5-b2e7-1c5caee5c3f1" priority="normal">
@@ -2239,9 +2022,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce2d0969c-1b61-4363-90e1-13ce24bfbe73" priority="normal">
@@ -2312,12 +2092,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Caa77248e-a41b-4db3-ad8a-68ed94388ad1" priority="normal">
@@ -2332,12 +2106,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5103b71e-f411-443f-bd00-9b1304b68872" priority="normal">
@@ -2352,12 +2120,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce6036625-6d8d-4e5c-b7ad-e5facab64cca" priority="normal">
@@ -2372,12 +2134,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf4f7e5a1-6e0b-49d6-989c-a367202f875f" priority="normal">
@@ -2392,12 +2148,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">rechtscharakter</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/1">refTextInhalt</core:name>
-        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5c86a9d6-1889-4dc0-8ae8-742299fc328a" priority="normal">
@@ -2427,31 +2177,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.classification" id="C0881a3be-cbc4-4ba5-a3b9-8f934c4e4139" priority="normal">
-        <target>
-            <property>
-                <type name="RP_FunktionszuweisungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="typ" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <complexParameter name="lookupTable">
-            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
-                <entry>
-                    <key value="3000"/>
-                    <value value="5000"/>
-                </entry>
-                <entry>
-                    <key value="5000"/>
-                    <value value="6000"/>
-                </entry>
-                <entry>
-                    <key value="6000"/>
-                    <value value="7000"/>
-                </entry>
-            </lookup-table>
-        </complexParameter>
-        <parameter value="source" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C2d6bf069-3bed-4f9a-8472-ff56a30d33b3" priority="normal">
         <source>
@@ -2595,15 +2320,6 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="Cd8088140-6379-4d63-ab5b-ab861eab8b35" priority="normal">
-        <target>
-            <property>
-                <type name="RP_KulturlandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="typ" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <parameter value="1000" name="value"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C8fbb40d5-6412-4317-8342-149e5f52471f" priority="normal">
         <source>
@@ -2795,191 +2511,6 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.classification" id="C00d53769-57b7-4f25-a652-f01cf23008f8" priority="normal">
-        <target>
-            <property>
-                <type name="RP_RohstoffType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="rohstoffTyp" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <complexParameter name="lookupTable">
-            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
-                <entry>
-                    <key value="1700"/>
-                    <value value="1800"/>
-                </entry>
-                <entry>
-                    <key value="1800"/>
-                    <value value="1900"/>
-                </entry>
-                <entry>
-                    <key value="1900"/>
-                    <value value="2000"/>
-                </entry>
-                <entry>
-                    <key value="2000"/>
-                    <value value="2100"/>
-                </entry>
-                <entry>
-                    <key value="2100"/>
-                    <value value="2200"/>
-                </entry>
-                <entry>
-                    <key value="2200"/>
-                    <value value="2300"/>
-                </entry>
-                <entry>
-                    <key value="2300"/>
-                    <value value="2500"/>
-                </entry>
-                <entry>
-                    <key value="2400"/>
-                    <value value="2600"/>
-                </entry>
-                <entry>
-                    <key value="2500"/>
-                    <value value="2700"/>
-                </entry>
-                <entry>
-                    <key value="2600"/>
-                    <value value="2900"/>
-                </entry>
-                <entry>
-                    <key value="2800"/>
-                    <value value="3000"/>
-                </entry>
-                <entry>
-                    <key value="2900"/>
-                    <value value="3200"/>
-                </entry>
-                <entry>
-                    <key value="3000"/>
-                    <value value="3300"/>
-                </entry>
-                <entry>
-                    <key value="3100"/>
-                    <value value="3400"/>
-                </entry>
-                <entry>
-                    <key value="3200"/>
-                    <value value="3600"/>
-                </entry>
-                <entry>
-                    <key value="3300"/>
-                    <value value="4000"/>
-                </entry>
-                <entry>
-                    <key value="3400"/>
-                    <value value="3800"/>
-                </entry>
-                <entry>
-                    <key value="3500"/>
-                    <value value="4200"/>
-                </entry>
-                <entry>
-                    <key value="3600"/>
-                    <value value="4300"/>
-                </entry>
-                <entry>
-                    <key value="3700"/>
-                    <value value="4400"/>
-                </entry>
-                <entry>
-                    <key value="3800"/>
-                    <value value="4600"/>
-                </entry>
-                <entry>
-                    <key value="3900"/>
-                    <value value="4700"/>
-                </entry>
-                <entry>
-                    <key value="4100"/>
-                    <value value="5000"/>
-                </entry>
-                <entry>
-                    <key value="4200"/>
-                    <value value="5200"/>
-                </entry>
-                <entry>
-                    <key value="4300"/>
-                    <value value="5400"/>
-                </entry>
-                <entry>
-                    <key value="4400"/>
-                    <value value="5500"/>
-                </entry>
-                <entry>
-                    <key value="4500"/>
-                    <value value="5600"/>
-                </entry>
-                <entry>
-                    <key value="4600"/>
-                    <value value="5900"/>
-                </entry>
-                <entry>
-                    <key value="4700"/>
-                    <value value="6000"/>
-                </entry>
-                <entry>
-                    <key value="4800"/>
-                    <value value="6100"/>
-                </entry>
-                <entry>
-                    <key value="4900"/>
-                    <value value="6200"/>
-                </entry>
-                <entry>
-                    <key value="5000"/>
-                    <value value="6400"/>
-                </entry>
-                <entry>
-                    <key value="5100"/>
-                    <value value="6500"/>
-                </entry>
-                <entry>
-                    <key value="5200"/>
-                    <value value="6600"/>
-                </entry>
-                <entry>
-                    <key value="5300"/>
-                    <value value="6700"/>
-                </entry>
-                <entry>
-                    <key value="5400"/>
-                    <value value="6800"/>
-                </entry>
-                <entry>
-                    <key value="5500"/>
-                    <value value="6900"/>
-                </entry>
-                <entry>
-                    <key value="5600"/>
-                    <value value="7000"/>
-                </entry>
-                <entry>
-                    <key value="5700"/>
-                    <value value="3900"/>
-                </entry>
-                <entry>
-                    <key value="5800"/>
-                    <value value="5100"/>
-                </entry>
-                <entry>
-                    <key value="5900"/>
-                    <value value="5300"/>
-                </entry>
-                <entry>
-                    <key value="6000"/>
-                    <value value="4100"/>
-                </entry>
-                <entry>
-                    <key value="9999"/>
-                    <value value="9999"/>
-                </entry>
-            </lookup-table>
-        </complexParameter>
-        <parameter value="null" name="notClassifiedAction"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C96e802a1-da43-4f82-91e0-7183ec0f6747" priority="normal">
         <source>
             <class>
@@ -3134,15 +2665,6 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign" id="Cf8ef497e-30f3-42c2-bbc8-aac743193017" priority="normal">
-        <target>
-            <property>
-                <type name="RP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <parameter value="9998" name="value"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce5592544-bc33-4a88-980f-9e3c60b975e5" priority="normal">
         <source>
             <class>
@@ -3244,22 +2766,6 @@ Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_Wa
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C69f2b73b-190e-48c6-b149-902d567cab04" priority="normal">
-        <source>
-            <property>
-                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/1"/>
-                <child name="planinhalt" ns="http://www.xplanung.de/xplangml/5/1"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="planinhalt" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca4d6a82e-a425-4c8b-afc1-1097f655b427" priority="normal">
         <source>
             <class>
@@ -3298,24 +2804,6 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
 1600 (Bodendenkmal)&#xD;
 &#xD;
 </documentation>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C1427e941-f109-49a4-9188-94bb39d414a5" priority="normal">
-        <target>
-            <property>
-                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <parameter value="1100" name="value"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C77102fd2-902b-4ec3-a904-2a6a2306ec3e" priority="normal">
-        <target>
-            <property>
-                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </target>
-        <parameter value="1000" name="value"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdaad6d1d-71f9-436c-86a1-f47c9b4fa807" priority="normal">
         <source>

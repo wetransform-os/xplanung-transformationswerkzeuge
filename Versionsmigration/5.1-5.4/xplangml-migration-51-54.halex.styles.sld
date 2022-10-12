@@ -2,5 +2,32 @@
   <sld:Name>Default Styler</sld:Name>
   <sld:FeatureTypeStyle>
     <sld:Name>name</sld:Name>
+    <sld:FeatureTypeName>RP_Erholung</sld:FeatureTypeName>
+    <sld:Rule>
+      <sld:PolygonSymbolizer>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#1F3699</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.4</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke">#1F3699</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
+  </sld:FeatureTypeStyle>
+  <sld:FeatureTypeStyle>
+    <sld:Name>name</sld:Name>
+    <sld:FeatureTypeName>RP_Erholung</sld:FeatureTypeName>
+    <sld:Rule>
+      <sld:PolygonSymbolizer>
+        <sld:Fill>
+          <sld:CssParameter name="fill">#1F3699</sld:CssParameter>
+          <sld:CssParameter name="fill-opacity">0.4</sld:CssParameter>
+        </sld:Fill>
+        <sld:Stroke>
+          <sld:CssParameter name="stroke">#1F3699</sld:CssParameter>
+        </sld:Stroke>
+      </sld:PolygonSymbolizer>
+    </sld:Rule>
   </sld:FeatureTypeStyle>
 </sld:UserStyle>

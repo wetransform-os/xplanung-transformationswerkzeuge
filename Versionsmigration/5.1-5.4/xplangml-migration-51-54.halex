@@ -3,7 +3,7 @@
     <name>XPlanung 5.1 nach 5.4</name>
     <author>Claudia Schulte</author>
     <created>2022-09-19T12:26:53.679+02:00</created>
-    <modified>2022-10-06T16:41:25.209+02:00</modified>
+    <modified>2022-10-12T13:23:39.275+02:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
@@ -24,10 +24,10 @@
         <setting name="source">https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/5.4/XPlanung-Operationen.xsd</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
     </resource>
-    <resource action-id="eu.esdihumboldt.hale.io.instance.read.source" provider-id="eu.esdihumboldt.hale.io.gml.reader">
+    <resource action-id="eu.esdihumboldt.hale.io.instance.read.source" provider-id="eu.esdihumboldt.hale.io.xml.reader">
         <setting name="charset">UTF-8</setting>
-        <setting name="resourceId">b4a811c1-7d3b-426a-a3ee-76a5f536e3ac</setting>
-        <setting name="source">file:/C:/cs/SERVICE/SVC-1230/Testdaten/geowerkstatt-hamburg-xplan-testdaten-957bc254e51b/valide/5_1/BPlan003_5-1/xplan.gml</setting>
+        <setting name="resourceId">f5064f06-e071-404e-8cef-d1185429917a</setting>
+        <setting name="source">file:/C:/cs/SERVICE/SVC-1230/5.1%20nach%205.4/ammerland_xplanURIOhneLeerzeichen.xml</setting>
         <setting name="interpolation.maxError">0.1</setting>
         <setting name="interpolation.algorithm">segment</setting>
         <setting name="ignoreNamespaces">false</setting>
@@ -37,7 +37,7 @@
         <setting name="ignoreNumberMatched">false</setting>
         <setting name="interpolation.grid.moveAllToGrid">false</setting>
         <setting name="strict">false</setting>
-        <setting name="contentType">eu.esdihumboldt.hale.io.gml</setting>
+        <setting name="contentType">org.eclipse.core.runtime.xml</setting>
     </resource>
     <file name="alignment.xml" location="xplangml-migration-51-54.halex.alignment.xml"/>
     <file name="styles.sld" location="xplangml-migration-51-54.halex.styles.sld"/>
