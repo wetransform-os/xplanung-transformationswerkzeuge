@@ -2981,6 +2981,20 @@
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbfd723de-db78-4872-9e33-6a3b2d0aee4e" priority="normal">
+        <source>
+            <class>
+                <type name="BP_ErneuerbareEnergieFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_ErneuerbareEnergieFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf778d0ee-6b48-4b76-b51f-b64572aa028e" priority="normal">
         <target>
             <class>
@@ -4051,6 +4065,20 @@
                 <type name="BP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf96d4bc5-93a6-4024-ae21-e1efa127d9fd" priority="normal">
+        <source>
+            <class>
+                <type name="BP_LuftreinhalteFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_LuftreinhalteFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
@@ -6699,6 +6727,20 @@ if (gehoertZuFP_Bereich &amp;&amp; gehoertZuFP_Bereich.p.first()) {&#xD;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C32eb60d8-04a6-4cb6-9522-7059ff6e662c" priority="normal">
+        <source>
+            <class>
+                <type name="FP_RasterplanAenderungType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_RasterplanAenderungType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6e317aa0-ffc1-4fdb-821e-3c6d88c3ad3f" priority="normal">
         <source>
             <class>
@@ -8069,6 +8111,34 @@ c.text['LP'].values()[0].each { tex -&gt;&#xD;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C102bc45d-a431-4d06-9f7e-b42f54d3edcb" priority="normal">
+        <source>
+            <class>
+                <type name="RP_FreizeitErholungType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_FreizeitErholungType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C3dd8dd6c-dfdf-4356-b3ae-6b318c685b80" priority="normal">
+        <source>
+            <class>
+                <type name="RP_GemeindeFunktionSiedlungsentwicklungType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_GemeindeFunktionSiedlungsentwicklungType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C2d6bf069-3bed-4f9a-8472-ff56a30d33b3" priority="normal">
         <source>
             <class>
@@ -8597,6 +8667,20 @@ c.text['RP'].values()[0].each { tex -&gt;&#xD;
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
         </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C7e718386-adc6-4c28-9c23-3e857f381f5d" priority="normal">
+        <source>
+            <class>
+                <type name="RP_VorbHochwasserschutzType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_VorbHochwasserschutzType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cddd086c1-9777-46c8-b1a9-e1100f44ecd1" priority="normal">
@@ -9586,6 +9670,20 @@ if (texte &amp;&amp; _sourceTypes) {&#xD;
         <target>
             <class>
                 <type name="XP_PraesentationsobjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C230b5539-a554-49ad-88bf-c5cc062a6e95" priority="normal">
+        <source>
+            <class>
+                <type name="XP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/4/1"/>
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
