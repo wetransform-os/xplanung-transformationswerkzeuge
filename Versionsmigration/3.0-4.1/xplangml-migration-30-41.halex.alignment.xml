@@ -3980,6 +3980,62 @@ if (refUmweltbericht_href) {&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C7f94e28c-28d4-4efa-bc9f-ef83da4dbc65" priority="normal">
+        <source>
+            <class>
+                <type name="BP_LuftverkehrFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce51a4e7b-021e-40cd-b0e8-f95f78bfbb7f" priority="normal">
+        <source>
+            <class>
+                <type name="FP_LuftverkehrType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C67668748-f48b-42d7-b5a5-1cc164a9ca30" priority="normal">
+        <source>
+            <class>
+                <type name="BP_BahnVerkehrType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchienenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cd59aa0f7-cb7e-4b9a-aba8-277867773757" priority="normal">
+        <source>
+            <class>
+                <type name="FP_BahnverkehrType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchienenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C8653bc6b-9e06-4bbc-ab4f-80f41af9a641" priority="normal">
         <source>
             <class>
