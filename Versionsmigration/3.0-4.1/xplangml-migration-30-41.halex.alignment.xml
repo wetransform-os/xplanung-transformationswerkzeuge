@@ -2608,6 +2608,22 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cdd902f76-7e39-4014-bb79-884eabe031fa" priority="normal">
+        <source>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="auslegungsDatum" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="auslegungsStartDatum" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Ccbcb882d-5607-431f-bed9-e85fde93eaa4" priority="normal">
         <source name="var">
             <property>
@@ -2642,6 +2658,22 @@ if (refUmweltbericht_href) {&#xD;
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cb931a94f-0082-4eaf-bfd0-d04fbd708c7c" priority="normal">
+        <source>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="traegerbeteiligungsDatum" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="traegerbeteiligungsStartDatum" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C173ecaa7-6c15-4aab-aa0e-e30b007cca67" priority="normal">
         <source>
