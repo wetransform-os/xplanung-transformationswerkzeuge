@@ -3888,6 +3888,20 @@ else return typ
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8c63deb9-ba2c-4542-8bfe-75195fa1a349" priority="normal">
+        <source>
+            <class>
+                <type name="BP_VorbHochwSchutzFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cc828f08c-2ca5-4b96-ad64-8d493f11650f" priority="normal">
         <source name="var">
             <property>
