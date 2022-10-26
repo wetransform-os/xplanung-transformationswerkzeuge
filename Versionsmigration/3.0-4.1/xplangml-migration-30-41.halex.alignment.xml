@@ -3159,6 +3159,20 @@ if (refUmweltbericht_href) {&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C2b965e57-1bcd-4bb7-b431-a0f4d78a57eb" priority="normal">
+        <source>
+            <class>
+                <type name="FP_SchutzgebietType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C54f18eeb-e3af-464d-b4a8-e697bbb23190" priority="normal">
         <source>
             <class>
@@ -3188,6 +3202,33 @@ if (refUmweltbericht_href) {&#xD;
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Cd130990a-af90-4106-a117-0d53e637cd34" priority="normal">
+        <source>
+            <property>
+                <type name="FP_SchutzgebietType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1800"/>
+                    <value value="18000"/>
+                </entry>
+                <entry>
+                    <key value="1900"/>
+                    <value value="18001"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="source" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Ceea4633e-1664-4187-bbc7-070132392326" priority="normal">
         <source name="var">
