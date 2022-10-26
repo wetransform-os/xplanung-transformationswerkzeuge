@@ -990,6 +990,24 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C0d03b745-6d20-4f27-b20c-f675255ab362" priority="normal">
+        <source>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="rechtlicheCharakterisierung" ns="http://www.xplanung.de/xplangml/3/0">
+                    <condition lang="ECQL">value &lt;&gt; 2000</condition>
+                </child>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C22ee1b53-d7ac-403e-b998-67cb74a20dfd" priority="normal">
         <source>
             <property>
