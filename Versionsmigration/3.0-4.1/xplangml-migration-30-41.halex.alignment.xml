@@ -874,6 +874,44 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
             </core:message>
         </annotation>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cb26f2810-f62b-494c-a7b8-15c1cd4a15e1" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+//c.hoehe[_source.p.id.value()]&lt;&lt;[_source.p.abweichenderHoeherbezug.value(), _source.p.bezugspunkt.value(), _source.p.h.value(), _source.p.hMax.value(),&#xD;
+//_source.p.hMin.value(), _source.p.hoehenbezug.value(), _source.p.hZwingend.value()] &#xD;
+&#xD;
+hoehenangabe.p.href.each { link -&gt;&#xD;
+	def _id = link.replaceAll('#','')&#xD;
+	_target {&#xD;
+		XP_Hoehenangabe {&#xD;
+			abweichenderHoehenbezug( c.hoehe[_id].value()[0] )&#xD;
+			bezugspunkt( c.hoehe[_id].value()[1] )&#xD;
+			h( c.hoehe[_id].value()[2] )&#xD;
+			hMax( c.hoehe[_id].value()[3] )&#xD;
+			hMin( c.hoehe[_id].value()[4] )&#xD;
+			hoehenbezug( c.hoehe[_id].value()[5] )&#xD;
+			hZwingend( c.hoehe[_id].value()[6] )&#xD;
+		}&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C00579d1d-5e57-4584-a3cc-f51346c5e3e6" priority="normal">
         <source>
             <property>
@@ -1871,6 +1909,44 @@ if (refMassnahmenText_href) {&#xD;
                 </core:content>
             </core:message>
         </annotation>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C2542207d-ee4b-4f39-b105-d0771db923a0" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+//c.hoehe[_source.p.id.value()]&lt;&lt;[_source.p.abweichenderHoeherbezug.value(), _source.p.bezugspunkt.value(), _source.p.h.value(), _source.p.hMax.value(),&#xD;
+//_source.p.hMin.value(), _source.p.hoehenbezug.value(), _source.p.hZwingend.value()] &#xD;
+&#xD;
+hoehenangabe.p.href.each { link -&gt;&#xD;
+	def _id = link.replaceAll('#','')&#xD;
+	_target {&#xD;
+		XP_Hoehenangabe {&#xD;
+			abweichenderHoehenbezug( c.hoehe[_id].value()[0] )&#xD;
+			bezugspunkt( c.hoehe[_id].value()[1] )&#xD;
+			h( c.hoehe[_id].value()[2] )&#xD;
+			hMax( c.hoehe[_id].value()[3] )&#xD;
+			hMin( c.hoehe[_id].value()[4] )&#xD;
+			hoehenbezug( c.hoehe[_id].value()[5] )&#xD;
+			hZwingend( c.hoehe[_id].value()[6] )&#xD;
+		}&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C85b614c0-e843-4876-89c4-e87bb252c8cc" priority="normal">
         <source>
@@ -3355,6 +3431,27 @@ c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _sour
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cd6758f21-ad54-4e3c-b40e-614844884a9e" priority="high">
+        <source>
+            <class>
+                <type name="XP_HoehenangabeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_HoehenangabeType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//dummy retype to collect information needed for references&#xD;
+&#xD;
+def c = _.context.collector()&#xD;
+&#xD;
+c.hoehe[_source.p.id.value()]&lt;&lt;[_source.p.abweichenderHoeherbezug.value(), _source.p.bezugspunkt.value(), _source.p.h.value(), _source.p.hMax.value(), _source.p.hMin.value(), _source.p.hoehenbezug.value(), _source.p.hZwingend.value()] 
+</core:text>
+        </complexParameter>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Ca5d059c1-f90f-4607-96a6-c5fe368091f2" priority="high">
         <source>
