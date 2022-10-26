@@ -752,25 +752,57 @@ if (refMassnahmenText_href) {&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C520aefd1-dfea-4e37-bff7-a2556cefa2cc" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc28285c0-4eae-4cb5-8fdf-65840ed6c196" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
         <target>
             <property>
                 <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="klassifizMassnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C82ef62cd-f3dd-4c5f-97ab-05f87b279a27" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C91b2a61e-a125-4a8e-a61c-13682600d085" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C7355543c-e925-4b17-bef9-47ab7216e43a" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
         <target>
             <property>
                 <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C399ef672-0a2c-483e-a1c0-a3458f7b3938" priority="normal">
         <source>
@@ -786,25 +818,57 @@ if (refMassnahmenText_href) {&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C8cb74075-3f7f-4f96-a548-4adc7890bb25" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc88d07f2-3cc1-449d-b2db-2af452e3d830" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
         <target>
             <property>
                 <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="klassifizMassnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cede9df11-f834-4ceb-a6a5-97f72bb5eb6f" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C4001c5a5-f441-40a3-bda1-163e5e8dbd94" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ccd8d5044-77c5-42d9-9a79-ebf17cbdf309" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
         <target>
             <property>
                 <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6d484281-1972-47e9-ad56-3ae901e22071" priority="normal">
         <source>
