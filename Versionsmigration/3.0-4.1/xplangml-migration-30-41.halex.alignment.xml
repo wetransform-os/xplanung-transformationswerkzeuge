@@ -1188,22 +1188,6 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C00579d1d-5e57-4584-a3cc-f51346c5e3e6" priority="normal">
-        <source>
-            <property>
-                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="rechtlicheCharakterisierung" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C0d03b745-6d20-4f27-b20c-f675255ab362" priority="normal">
         <source>
             <property>
@@ -2089,6 +2073,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C4c05fe02-0d9a-425b-aed7-2e528c321461" priority="normal">
@@ -2103,6 +2090,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C4dba2791-f839-4ce5-ae26-9b363cf9d198" priority="normal">
@@ -2117,6 +2107,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C40672bd7-16e4-477e-b341-b5826e2a0a93" priority="normal">
@@ -2279,6 +2272,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C775538b0-ccaf-4998-8e67-475e52b8481e" priority="normal">
@@ -2307,6 +2303,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cceed0055-2dcd-4ba8-809b-8ac68321e24f" priority="normal">
@@ -2321,6 +2320,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C7f949686-a085-4f1e-9e47-d870e9d94f0c" priority="normal">
@@ -2335,6 +2337,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C8bba817a-3ea4-4919-bf10-65e9ac7c966e" priority="normal">
@@ -2398,6 +2403,9 @@ if (refMassnahmenText_href) {&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">zweckbestimmung</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
@@ -2437,6 +2445,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfa3edb43-18a1-478d-8385-26384064cefe" priority="normal">
@@ -2451,6 +2462,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C1e4ad6b9-3dbe-47de-a4a5-7f650485ebfb" priority="normal">
@@ -2465,6 +2479,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C93c84774-1bde-4a49-9611-82fb8222b3f6" priority="normal">
@@ -2479,6 +2496,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C95e3b5af-17dc-468a-9011-337ec98e1534" priority="normal">
@@ -2493,6 +2513,9 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C6bb1b105-9fe3-4c9b-b4b7-927cbe6b6f5e" priority="normal">
@@ -2557,6 +2580,24 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C6985a021-5760-4216-970e-f0fa0d703a0c" priority="normal">
+        <source>
+            <property>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/3/0">
+                    <condition lang="ECQL">value &lt;&gt; 2000</condition>
+                </child>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C85b614c0-e843-4876-89c4-e87bb252c8cc" priority="normal">
         <source>
@@ -2624,6 +2665,29 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Ca2a23b38-71ba-417c-992d-91161110b50b" priority="normal">
+        <source>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="planArt" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="planArt" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="5000"/>
+                    <value value="9999"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="source" name="notClassifiedAction"/>
+    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Ccbcb882d-5607-431f-bed9-e85fde93eaa4" priority="normal">
         <source name="var">
             <property>
@@ -2687,6 +2751,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C32eb60d8-04a6-4cb6-9522-7059ff6e662c" priority="normal">
@@ -2724,6 +2791,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C790c055d-b24f-4f93-b848-709bc12a4714" priority="normal">
@@ -2758,6 +2828,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C093c2486-2456-40b8-8b79-9465c7f0669d" priority="normal">
@@ -2772,6 +2845,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C66edecb0-cb81-4ae5-a486-66bcbc793550" priority="normal">
@@ -2786,6 +2862,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cde027023-363b-4885-8820-c7260ad767ea" priority="normal">
@@ -2800,6 +2879,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf280715c-2877-485e-abbf-f7bbdf8b43f9" priority="normal">
@@ -2814,6 +2896,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cca0acd1c-04cc-488e-9276-b7ecf70c09dd" priority="normal">
@@ -2828,6 +2913,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C8a609e84-a7a6-4ce3-bcf8-70e243b18dee" priority="normal">
@@ -2842,6 +2930,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cce8c7000-64bf-484f-b6dc-23e2a7b97c8c" priority="normal">
@@ -2872,6 +2963,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6374a65f-9353-43ac-aa53-389a56f7e783" priority="normal">
@@ -3775,6 +3869,9 @@ if (refUmweltbericht_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C54f18eeb-e3af-464d-b4a8-e697bbb23190" priority="normal">
