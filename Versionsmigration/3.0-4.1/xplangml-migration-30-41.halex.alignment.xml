@@ -3172,30 +3172,6 @@ if (dientZurDarstellungVon.p.first()) {&#xD;
             </core:message>
         </annotation>
     </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd9da10e6-c34b-45d4-9aab-3a4de4df582d" priority="normal">
-        <source name="var">
-            <property>
-                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="art" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="index" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (!index &amp;&amp; art) {&#xD;
-	art.p.each { value -&gt;&#xD;
-		_target (0)&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C0cbc3de2-8960-44d0-8e8f-c8da7aa500ae" priority="normal">
         <source>
             <class>
@@ -3247,6 +3223,22 @@ if (refText_href) {&#xD;
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C1c896e31-dfde-478e-86c1-79430d3c7ea1" priority="normal">
+        <source>
+            <property>
+                <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="sonstigeBedeutung" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="detaillierteBedeutung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C4c16ef99-36c1-4d72-9b0b-3649b6dac68f" priority="normal">
         <source>
