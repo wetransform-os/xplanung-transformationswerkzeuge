@@ -562,6 +562,34 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce54c1488-1ba9-4da3-bb5d-57706ffd1de7" priority="normal">
+        <source>
+            <class>
+                <type name="BP_DenkmalschutzEinzelanlagePunktType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_DenkmalschutzEinzelanlageType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8cc46f38-b50a-4c6d-a283-bd30a73d132d" priority="normal">
+        <source>
+            <class>
+                <type name="BP_DenkmalschutzEnsembleFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_DenkmalschutzEnsembleFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C2f701d88-97d3-4fd2-8a69-7a100d3174cd" priority="normal">
         <source>
             <class>
@@ -3314,6 +3342,20 @@ if (refUmweltbericht_href) {&#xD;
         <target>
             <class>
                 <type name="RP_ZentralerOrtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca7717b66-5c8b-41d2-87af-d7821ed2ece1" priority="normal">
+        <source>
+            <class>
+                <type name="BP_GrabungsschutzgebietType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
