@@ -755,6 +755,20 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf63032d3-f5cd-4126-88ec-cc673720d434" priority="normal">
+        <source>
+            <class>
+                <type name="BP_TechnikBestimmteFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_ErneuerbareEnergieFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5898b9aa-97fb-478f-bb2a-4bef93bbb297" priority="normal">
         <source>
             <class>
