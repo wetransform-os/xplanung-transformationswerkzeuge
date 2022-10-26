@@ -863,6 +863,20 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C12056e14-e4b2-4c21-b7c5-82aaa1913d7a" priority="normal">
+        <source>
+            <class>
+                <type name="BP_LandwirtschaftsLinieType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf96d4bc5-93a6-4024-ae21-e1efa127d9fd" priority="normal">
         <source>
             <class>
