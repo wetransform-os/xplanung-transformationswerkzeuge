@@ -875,6 +875,42 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc38583e7-3351-40a3-81cb-cda48ad35e7b" priority="normal">
+        <source>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="bedingungEnde" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="endeBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="BP_WirksamkeitBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="bedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C89f77088-e070-4b08-92d4-0d3a7d2e8139" priority="normal">
+        <source>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="endDatum" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="endeBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="BP_WirksamkeitBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="datumAbsolut" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C7955b44f-a122-485b-b51a-44f7b6175ac9" priority="normal">
         <source>
             <property>
@@ -949,6 +985,42 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
             <property>
                 <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C22ee1b53-d7ac-403e-b998-67cb74a20dfd" priority="normal">
+        <source>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="bedingungStart" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="startBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="BP_WirksamkeitBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="bedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C070e70b8-b401-4822-baa8-3b67daef64ab" priority="normal">
+        <source>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="startDatum" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="startBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="BP_WirksamkeitBedingung" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="datumAbsolut" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
