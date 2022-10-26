@@ -927,6 +927,10 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refKoordinatenListe</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">aendert</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refPlangrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refPlangrundlage</core:name>
@@ -958,7 +962,6 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refPflanzliste</core:name>
         </complexParameter>
->>>>>>> fc49101 (fixup: XP_ExterneReferenz)
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cd16d303d-17fc-4b02-8da8-08b98ae27310" priority="normal">
@@ -1900,6 +1903,9 @@ if (refMassnahmenText_href) {&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refLegende</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">wurdeGeaendertVon</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refRechtsplan</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
@@ -1910,6 +1916,9 @@ if (refMassnahmenText_href) {&#xD;
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refBegruendung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">aendert</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2357,6 +2366,12 @@ if (refUmweltbericht_href) {&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refBeschreibung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">aendert</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">wurdeGeaendertVon</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">informell</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
@@ -2789,7 +2804,13 @@ if (refUmweltbericht_href) {&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">wurdeGeaendertVon</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refPlangrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">aendert</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refRechtsplan</core:name>
@@ -3616,7 +3637,6 @@ hatGenerAttribut.p.href.each { link -&gt;&#xD;
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
     </cell>
->>>>>>> 8caecbb (fixup: hatGenerAttribut)
     <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C6c69b5bc-f478-4c84-83ac-e9e9e4f1f845" priority="normal">
         <source name="var">
             <property>
@@ -3996,6 +4016,38 @@ verfahrensMerkmale.p.href.each { link -&gt;&#xD;
 			signiert( merk[_id].value()[2] )&#xD;
 			vermerk( merk[_id].value()[3] )&#xD;
 		}&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
+	<cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd4bb5258-de59-4dd8-bfe3-506085c28764" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/3/0"/>
+				</property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+				<child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/4/1"/>
+				</property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+//c.merk[_source.p.id.value()]&lt;&lt;[ _source.p.datum.value(), _source.p.signatur.value(), _source.p.signiert.value(), _source.p.vermerk.value()] &#xD;
+&#xD;
+				wurdeGeaendertVon.p.each { string -&gt;&#xD;
+	_target {&#xD;
+		XP_VerbundenerPlan {&#xD;
+			planName( string )&#xD;
+			_log.warn ('Die Relation XP_Plan.wurdeGeandertVon mit Planname $string enthält als rechtscharakter den Code 1000 (Aenderung). Sollte ein anderer Code erforderlich sein, nehmen Sie bitte Kontakt mit der XLeitstelle auf.')&#xD;
+			rechtscharakter( '1000' )&#xD;
+			}&#xD;
 	}&#xD;
 }
 </core:text>
