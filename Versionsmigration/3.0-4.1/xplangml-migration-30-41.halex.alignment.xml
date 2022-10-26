@@ -3248,6 +3248,24 @@ if (refText_href) {&#xD;
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C4c16ef99-36c1-4d72-9b0b-3649b6dac68f" priority="normal">
+        <source>
+            <property>
+                <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="fachobjekt" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="nachrichtlich" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cac640d54-0e22-497a-9396-d183c852ed8a" priority="high">
         <source>
             <class>
@@ -3394,6 +3412,24 @@ c.gener['integer', _source.p.id.value()]&lt;&lt;[_source.p.name('http://www.xpla
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cb4d5eeb2-9ae1-4c21-af74-2a871ab7a807" priority="normal">
+        <source>
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="gehoertNachrichtlichZuBereich" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C7da99c54-c2f5-43f5-a7af-e84a947b599f" priority="normal">
         <source name="var">
