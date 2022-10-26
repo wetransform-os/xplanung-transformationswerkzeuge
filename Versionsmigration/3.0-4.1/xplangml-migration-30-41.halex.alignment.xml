@@ -718,7 +718,33 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">zweckbestimmung</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Cc458966a-2218-472d-b6dd-794548fdb48e" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1300"/>
+                    <value value="9999"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="source" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C55ab8a2e-2c41-4524-9736-94d3cbfb40a9" priority="normal">
         <source>
@@ -1813,7 +1839,33 @@ if (refMassnahmenText_href) {&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">zweckbestimmung</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Ca68c4d5a-1d11-4514-844c-0dde71866728" priority="normal">
+        <source>
+            <property>
+                <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1300"/>
+                    <value value="9999"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="source" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C1448ff13-ce87-4d88-9ae3-18a0f1fec26c" priority="normal">
         <source>
@@ -3074,6 +3126,20 @@ if (refUmweltbericht_href) {&#xD;
         <target>
             <class>
                 <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C274bcee6-a396-4931-b8d8-4ed5dab6f51d" priority="normal">
+        <source>
+            <class>
+                <type name="XP_GrenzeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_GrenzeType" ns="http://www.xplanung.de/xplangml/4/1"/>
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
