@@ -3815,6 +3815,34 @@ if (refUmweltbericht_href) {&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C05fd2be7-5dc6-4fd4-a15f-ae4db406d113" priority="normal">
+        <source>
+            <class>
+                <type name="FP_DenkmalschutzEnsembleType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C3b649340-832c-46d2-9e28-60b1cf5666a1" priority="normal">
+        <source>
+            <class>
+                <type name="FP_GrabungsschutzgebietType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbac2439c-5efa-4cc4-8c7d-fc9073a06464" priority="normal">
         <source>
             <class>
@@ -3824,6 +3852,20 @@ if (refUmweltbericht_href) {&#xD;
         <target>
             <class>
                 <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C9c2d5cb6-6b50-4c45-ad1b-78fad17b66f6" priority="normal">
+        <source>
+            <class>
+                <type name="FP_ErhaltungssatzungType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_GebietType" ns="http://www.xplanung.de/xplangml/4/1"/>
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
