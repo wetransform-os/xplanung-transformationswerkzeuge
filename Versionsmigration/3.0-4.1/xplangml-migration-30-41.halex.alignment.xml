@@ -2108,6 +2108,9 @@ if (refUmweltbericht_href) {&#xD;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahme</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
@@ -2152,6 +2155,12 @@ if (refLandschaftsplan_href) {&#xD;
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refMassnahmenText</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahmeKuerzel</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahmeText</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C4a56ca62-f719-452c-bf86-00619034a953" priority="normal">
@@ -2188,7 +2197,61 @@ if (refMassnahmenText_href) {&#xD;
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
->>>>>>> a198411 (fixup: remove remainders from old alignment)
+		</cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf05b2846-f66b-4703-8304-552663e3e0b1" priority="normal">
+        <source>
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="klassifizMassnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf34b357c-8978-411f-bcfd-cef6f8562e1b" priority="normal">
+        <source>
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C64bbf86c-75ad-4b51-8199-56b2b6e4c468" priority="normal">
+        <source>
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+>>>>>>> b24a9d4 (feat: implement massnahme mapping for FP objects)
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C40672bd7-16e4-477e-b341-b5826e2a0a93" priority="normal">
         <source name="var">
