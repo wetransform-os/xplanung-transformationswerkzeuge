@@ -924,6 +924,45 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ca70618aa-51ed-4257-bc70-542f7a68c801" priority="normal">
+        <source>
+            <property>
+                <type name="BP_HoehenPunktType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="hoehe" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_HoehenMassType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/4/1">
+                    <context>0</context>
+                </child>
+                <child name="XP_Hoehenangabe" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="hZwingend" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="Ca6970bc8-6a15-47a2-b7df-028939805a30" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="BP_HoehenPunktType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="hoehe" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_HoehenMassType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/4/1">
+                    <context>0</context>
+                </child>
+                <child name="XP_Hoehenangabe" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="hoehenbezug" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="1000" name="value"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce1c42423-bdda-4ff2-86c9-ba782e3d1a6a" priority="normal">
         <source>
             <class>
