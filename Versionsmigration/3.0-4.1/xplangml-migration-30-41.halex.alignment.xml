@@ -1489,6 +1489,70 @@ if (refUmweltbericht_href) {&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cff0b56af-c262-4cac-b4e3-9d3a7623e2e2" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="BMax" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="Bmax" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc1f1377f-0782-462e-a8e5-5361d818e218" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="BMin" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="Bmin" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C19caabf3-3e06-4215-b9af-7aaf6d687f28" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="TMax" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="Tmax" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C7de88bf7-7add-4cb7-b3c0-e7b3df0c5616" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="TMin" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="Tmin" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5ae9b985-b617-4ff8-945f-fb51d57652ef" priority="normal">
         <source>
             <class>
