@@ -4092,6 +4092,20 @@ else return typ
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ceb98db4f-4c72-42bd-b855-c89cb4085275" priority="normal">
+        <source>
+            <class>
+                <type name="FP_BauschutzbereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchutzgebietSonstigesRechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5f6d7cd4-3d3c-4190-967e-eba1eab62320" priority="normal">
         <source>
             <class>
@@ -4124,6 +4138,20 @@ else return typ
         <source>
             <class>
                 <type name="BP_FachgesetzType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C65c45dcb-7dc0-4bf5-ae90-5089e15308f8" priority="normal">
+        <source>
+            <class>
+                <type name="FP_FachgesetzType" ns="http://www.xplanung.de/xplangml/3/0"/>
             </class>
         </source>
         <target>
