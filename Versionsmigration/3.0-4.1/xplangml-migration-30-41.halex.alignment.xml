@@ -4120,6 +4120,20 @@ else return typ
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C26e1bcfa-051d-4373-ad03-6c904ff789c1" priority="normal">
+        <source>
+            <class>
+                <type name="FP_WasserrechtType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_SchutzgebietWasserrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C868d8830-1c61-4a85-8c0d-07699b1497e9" priority="normal">
         <source>
             <class>
@@ -4186,6 +4200,20 @@ else return typ
         <source>
             <class>
                 <type name="BP_VorbHochwSchutzFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Caa541f3a-5e80-465f-9ee0-f4719794f652" priority="normal">
+        <source>
+            <class>
+                <type name="FP_VorbHochwSchutzType" ns="http://www.xplanung.de/xplangml/3/0"/>
             </class>
         </source>
         <target>
