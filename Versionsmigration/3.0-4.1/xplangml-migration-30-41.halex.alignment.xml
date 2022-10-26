@@ -2842,6 +2842,38 @@ if (refUmweltbericht_href) {&#xD;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C69dc475c-e1ea-4f3a-9443-ae0060121a39" priority="normal">
+        <source>
+            <property>
+                <type name="FP_RasterplanAenderungType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="auslegungsDatum" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_RasterplanAenderungType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="auslegungsStartDatum" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C4dc601d8-30a3-4774-b36e-25492a93999a" priority="normal">
+        <source>
+            <property>
+                <type name="FP_RasterplanAenderungType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="traegerbeteiligungsDatum" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_RasterplanAenderungType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="traegerbeteiligungsStartDatum" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6e317aa0-ffc1-4fdb-821e-3c6d88c3ad3f" priority="normal">
         <source>
             <class>
