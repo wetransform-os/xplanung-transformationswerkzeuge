@@ -1100,6 +1100,11 @@ Neue Definition: "Flächen für die Wasserwirtschaft (§9 Abs. 1 Nr. 16a BauGB),
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-85&#xD;
+Korrektur der Definition des Attributs sondernutzung von FP_BebauungsFlaeche&#xD;
+&#xD;
+Beschluss:&#xD;
+Präzisierung der Definition: sondernutzung differenziert nur Sondernutzungen nach §10 und §11 der BauNVO von 1977 und 1990 (besondereArtDerBaulNutzung = 2000 oder 2100)</documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C775538b0-ccaf-4998-8e67-475e52b8481e" priority="normal">
         <source>
@@ -1836,7 +1841,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C1632e161-6865-4437-807a-6acf3d1c246f" priority="normal">
@@ -1865,7 +1869,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca984ccf0-b065-4928-8d71-bf9a756ccb3a" priority="normal">
@@ -1880,7 +1883,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc50c8ac7-fc46-41f9-819f-1a41820e0e92" priority="normal">
@@ -1909,7 +1911,6 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
-
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C4939d2c3-15f7-461d-8203-dad19f1f14e7" priority="normal">
@@ -2207,7 +2208,9 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-93&#xD;
 In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das Attribut nordwinkel, dies ist im RPBereich nicht der Fall. Das führt bei der Diensterstellung zur Schwierigkeit, wenn gerichtete/linienbegleitende Objekte wie z. B. Bahnhof visualisiert werden sollen. (s. Beispiel unten)&#xD;
-</documentation>
+&#xD;
+https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-355&#xD;
+Attribut flaechenschluss muss im Modellbereich RP nicht belegt werden</documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cf5f43496-5d7d-498c-b6a4-06eff63d290d" priority="normal">
         <source>
@@ -3089,8 +3092,11 @@ versionSonstRechtsgrundlageText&#xD;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-79&#xD;
-    Neue Definition: "Festlegung nach Wasserhaushaltsgesetz (WHG)"&#xD;
-    Änderungen in der Enumeration SO_KLassifizNachWasserrecht:&#xD;
+Überarbeitung der Klasse SO_Wasserrecht&#xD;
+&#xD;
+Beschluss&#xD;
+- Neue Definition: "Festlegung nach Wasserhaushaltsgesetz (WHG)"&#xD;
+- Änderungen in der Enumeration SO_KLassifizNachWasserrecht:&#xD;
         Die Einträge 1000, 10000, 10001, 10002 " werden als "zukünftig wegfallend" deklariert&#xD;
         Geänderte Definition Code 2000: "Allgemeines Überschwemmungsgebiet nach WHG"&#xD;
         Geänderte Definition Code 20000: "Überschwemmungsgebiet nach §76 Abs.2 WHG"&#xD;
@@ -3098,8 +3104,8 @@ versionSonstRechtsgrundlageText&#xD;
         Neuer Code 3000: "Risikogebiet nach § 76 Abs. 3 WHG"&#xD;
         Neuer Code 4000: "Risikogebiet außerhalb von Überschwemmungsgebieten nach. § 78b Abs. 1 WHG "&#xD;
         Neuer Code 5000: "Hochwasserentstehungsgebiet nach § 78d Abs. 1 WHG"&#xD;
-    Neue Klasse SO_Gewaesser (Flächenschlussobjekt, Abbildung eines bestehenden Gewässers)&#xD;
-    Die Klassen BP_GewaesserFlaeche und FP_Gewaesser werden als "eventuell zukünftig wegfallend" deklariert.&#xD;
+- Neue Klasse SO_Gewaesser (Flächenschlussobjekt, Abbildung eines bestehenden Gewässers)&#xD;
+- Die Klassen BP_GewaesserFlaeche und FP_Gewaesser werden als "eventuell zukünftig wegfallend" deklariert.&#xD;
 </documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca2c3c37f-dd15-4060-bd70-14db8afc9a4f" priority="normal">
