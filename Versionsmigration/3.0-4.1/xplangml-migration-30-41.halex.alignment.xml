@@ -3688,15 +3688,6 @@ if (refUmweltbericht_href) {&#xD;
             </core:message>
         </annotation>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign" id="C409e72ba-aa53-4041-835a-0c292f88a1ed" priority="low">
-        <target>
-            <property>
-                <type name="RP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="9998" name="value"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5ce851e6-a683-451c-a91f-11626788ea49" priority="normal">
         <source>
             <class>
