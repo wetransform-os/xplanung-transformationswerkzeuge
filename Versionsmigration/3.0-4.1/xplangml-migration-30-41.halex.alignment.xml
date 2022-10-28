@@ -69,7 +69,6 @@
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refLandschaftsplan</core:name>
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahme</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
@@ -169,42 +168,6 @@ if (refLandschaftsplan_href) {&#xD;
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C2886c9f3-1dbc-4198-9397-681e1b980d3f" priority="normal">
-        <source name="var">
-            <property>
-                <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="refLandschaftsplan" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-if (refMassnahmenText_href) {&#xD;
-	def _id = refMassnahmenText_href.replaceAll('#','')&#xD;
-	_target {&#xD;
-		beschreibung( c.extern[_id].value()[0] )&#xD;
-		informationssystemURL( c.extern[_id].value()[1] )&#xD;
-		referenzMimeType( c.extern[_id].value()[2] )&#xD;
-		referenzName( c.extern[_id].value()[3] )&#xD;
-		referenzURL( c.extern[_id].value()[4] )&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
->>>>>>> 4ad4bc8 (fixup: delete remainders from old mapping)
-    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C7a96f122-0f54-4d5d-9676-3ce7b0645907" priority="normal">
         <source name="var">
             <property>
@@ -228,6 +191,41 @@ def c = _.context.collector()&#xD;
 &#xD;
 if (refLandschaftsplan_href) {&#xD;
 	def _id = refLandschaftsplan_href.replaceAll('#','')&#xD;
+	_target {&#xD;
+		beschreibung( c.extern[_id].value()[0] )&#xD;
+		informationssystemURL( c.extern[_id].value()[1] )&#xD;
+		referenzMimeType( c.extern[_id].value()[2] )&#xD;
+		referenzName( c.extern[_id].value()[3] )&#xD;
+		referenzURL( c.extern[_id].value()[4] )&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C2886c9f3-1dbc-4198-9397-681e1b980d3f" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refLandschaftsplan" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+&#xD;
+if (refMassnahmenText_href) {&#xD;
+	def _id = refMassnahmenText_href.replaceAll('#','')&#xD;
 	_target {&#xD;
 		beschreibung( c.extern[_id].value()[0] )&#xD;
 		informationssystemURL( c.extern[_id].value()[1] )&#xD;
@@ -393,42 +391,6 @@ if (refLandschaftsplan_href) {&#xD;
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C0173bbf1-fe1e-4d46-acb6-ee61bbc1bda8" priority="normal">
-        <source name="var">
-            <property>
-                <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-if (refMassnahmenText_href) {&#xD;
-	def _id = refMassnahmenText_href.replaceAll('#','')&#xD;
-	_target {&#xD;
-		beschreibung( c.extern[_id].value()[0] )&#xD;
-		informationssystemURL( c.extern[_id].value()[1] )&#xD;
-		referenzMimeType( c.extern[_id].value()[2] )&#xD;
-		referenzName( c.extern[_id].value()[3] )&#xD;
-		referenzURL( c.extern[_id].value()[4] )&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
->>>>>>> 4ad4bc8 (fixup: delete remainders from old mapping)
-    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C457dc726-f270-45e2-8168-2855391d0c33" priority="normal">
         <source name="var">
             <property>
@@ -452,6 +414,41 @@ def c = _.context.collector()&#xD;
 &#xD;
 if (refLandschaftsplan_href) {&#xD;
 	def _id = refLandschaftsplan_href.replaceAll('#','')&#xD;
+	_target {&#xD;
+		beschreibung( c.extern[_id].value()[0] )&#xD;
+		informationssystemURL( c.extern[_id].value()[1] )&#xD;
+		referenzMimeType( c.extern[_id].value()[2] )&#xD;
+		referenzName( c.extern[_id].value()[3] )&#xD;
+		referenzURL( c.extern[_id].value()[4] )&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C0173bbf1-fe1e-4d46-acb6-ee61bbc1bda8" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+&#xD;
+if (refMassnahmenText_href) {&#xD;
+	def _id = refMassnahmenText_href.replaceAll('#','')&#xD;
 	_target {&#xD;
 		beschreibung( c.extern[_id].value()[0] )&#xD;
 		informationssystemURL( c.extern[_id].value()[1] )&#xD;
@@ -1278,7 +1275,6 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refBeschreibung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refKoordinatenListe</core:name>
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">aendert</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
@@ -1590,43 +1586,9 @@ if (refUmweltbericht_href) {&#xD;
         <target>
             <property>
                 <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="klassifizMassnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C91b2a61e-a125-4a8e-a61c-13682600d085" priority="normal">
-        <source>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C7355543c-e925-4b17-bef9-47ab7216e43a" priority="normal">
-        <source>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="klassifizMassnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
@@ -1663,6 +1625,42 @@ if (refUmweltbericht_href) {&#xD;
                 <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C91b2a61e-a125-4a8e-a61c-13682600d085" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C7355543c-e925-4b17-bef9-47ab7216e43a" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
@@ -1719,43 +1717,9 @@ if (refUmweltbericht_href) {&#xD;
         <target>
             <property>
                 <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="klassifizMassnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C4001c5a5-f441-40a3-bda1-163e5e8dbd94" priority="normal">
-        <source>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ccd8d5044-77c5-42d9-9a79-ebf17cbdf309" priority="normal">
-        <source>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="klassifizMassnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
@@ -1792,6 +1756,42 @@ if (refUmweltbericht_href) {&#xD;
                 <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C4001c5a5-f441-40a3-bda1-163e5e8dbd94" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeKuerzel" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ccd8d5044-77c5-42d9-9a79-ebf17cbdf309" priority="normal">
+        <source>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_SPEMassnahmenDaten" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="massnahmeText" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
@@ -2115,89 +2115,6 @@ if (refUmweltbericht_href) {&#xD;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C40672bd7-16e4-477e-b341-b5826e2a0a93" priority="normal">
-        <source name="var">
-            <property>
-                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="refLandschaftsplan" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="refLandschaftsplan" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-if (refLandschaftsplan_href) {&#xD;
-	def _id = refLandschaftsplan_href.replaceAll('#','')&#xD;
-	_target {&#xD;
-		beschreibung( c.extern[_id].value()[0] )&#xD;
-		informationssystemURL( c.extern[_id].value()[1] )&#xD;
-		referenzMimeType( c.extern[_id].value()[2] )&#xD;
-		referenzName( c.extern[_id].value()[3] )&#xD;
-		referenzURL( c.extern[_id].value()[4] )&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refLandschaftsplan</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refMassnahmenText</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahmeKuerzel</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahmeText</core:name>
-        </complexParameter>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C4a56ca62-f719-452c-bf86-00619034a953" priority="normal">
-        <source name="var">
-            <property>
-                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-if (refMassnahmenText_href) {&#xD;
-	def _id = refMassnahmenText_href.replaceAll('#','')&#xD;
-	_target {&#xD;
-		beschreibung( c.extern[_id].value()[0] )&#xD;
-		informationssystemURL( c.extern[_id].value()[1] )&#xD;
-		referenzMimeType( c.extern[_id].value()[2] )&#xD;
-		referenzName( c.extern[_id].value()[3] )&#xD;
-		referenzURL( c.extern[_id].value()[4] )&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
-		</cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf05b2846-f66b-4703-8304-552663e3e0b1" priority="normal">
         <source>
             <property>
@@ -2251,7 +2168,6 @@ if (refMassnahmenText_href) {&#xD;
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
->>>>>>> b24a9d4 (feat: implement massnahme mapping for FP objects)
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C40672bd7-16e4-477e-b341-b5826e2a0a93" priority="normal">
         <source name="var">
@@ -2276,6 +2192,89 @@ def c = _.context.collector()&#xD;
 &#xD;
 if (refLandschaftsplan_href) {&#xD;
 	def _id = refLandschaftsplan_href.replaceAll('#','')&#xD;
+	_target {&#xD;
+		beschreibung( c.extern[_id].value()[0] )&#xD;
+		informationssystemURL( c.extern[_id].value()[1] )&#xD;
+		referenzMimeType( c.extern[_id].value()[2] )&#xD;
+		referenzName( c.extern[_id].value()[3] )&#xD;
+		referenzURL( c.extern[_id].value()[4] )&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refLandschaftsplan</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refMassnahmenText</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahmeKuerzel</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">massnahmeText</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C40672bd7-16e4-477e-b341-b5826e2a0a93" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="refLandschaftsplan" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refLandschaftsplan" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+&#xD;
+if (refLandschaftsplan_href) {&#xD;
+	def _id = refLandschaftsplan_href.replaceAll('#','')&#xD;
+	_target {&#xD;
+		beschreibung( c.extern[_id].value()[0] )&#xD;
+		informationssystemURL( c.extern[_id].value()[1] )&#xD;
+		referenzMimeType( c.extern[_id].value()[2] )&#xD;
+		referenzName( c.extern[_id].value()[3] )&#xD;
+		referenzURL( c.extern[_id].value()[4] )&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C4a56ca62-f719-452c-bf86-00619034a953" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refMassnahmenText" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+&#xD;
+if (refMassnahmenText_href) {&#xD;
+	def _id = refMassnahmenText_href.replaceAll('#','')&#xD;
 	_target {&#xD;
 		beschreibung( c.extern[_id].value()[0] )&#xD;
 		informationssystemURL( c.extern[_id].value()[1] )&#xD;
@@ -4719,6 +4718,35 @@ rechtsverbindlich.p.href.each { link -&gt;&#xD;
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C840372c8-c157-4048-b65f-3633c6231f09" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="id" ns="http://www.opengis.net/gml"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="wirdDargestelltDurch" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def c = _.context.collector()&#xD;
+&#xD;
+/*if (dientZurDarstellungVon.p.first()) {&#xD;
+	dientZurDarstellungVon.p.each { dar -&gt;&#xD;
+		c.dars[dar.p.href.value().toString().replaceAll('#','')] &lt;&lt; id.p.value()&#xD;
+	}&#xD;
+}*/&#xD;
+&#xD;
+return '#' + c.dars[id].value()
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C44efef9f-85a6-4bd8-9067-e3c7fc5c5d51" priority="high">
         <source>
             <class>
@@ -5156,6 +5184,40 @@ verfahrensMerkmale.p.href.each { link -&gt;&#xD;
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C21e60864-fe68-4356-85d7-dc7b69acb4b6" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="verfahrensMerkmale" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="verfahrensMerkmale" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+				def c = _.context.collector()&#xD;
+&#xD;
+//c.merk[_source.p.id.value()]&lt;&lt;[ _source.p.datum.value(), _source.p.signatur.value(), _source.p.signiert.value(), _source.p.vermerk.value()] &#xD;
+&#xD;
+verfahrensMerkmale.p.href.each { link -&gt;&#xD;
+	def _id = link.replaceAll('#','')&#xD;
+	_target {&#xD;
+		XP_VerfahrensMerkmal {&#xD;
+			datum( merk[_id].value()[0] )&#xD;
+			signatur( merk[_id].value()[1] )&#xD;
+			signiert( merk[_id].value()[2] )&#xD;
+			vermerk( merk[_id].value()[3] )&#xD;
+		}&#xD;
+	}&#xD;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd4bb5258-de59-4dd8-bfe3-506085c28764" priority="normal">
         <source name="var">
             <property>
@@ -5184,52 +5246,18 @@ wurdeGeaendertVon.p.each { string -&gt;&#xD;
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
     </cell>
-	<cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C21e60864-fe68-4356-85d7-dc7b69acb4b6" priority="normal">
-        <source name="var">
-            <property>
-                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="verfahrensMerkmale" ns="http://www.xplanung.de/xplangml/3/0"/>
-				</property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
-				<child name="verfahrensMerkmale" ns="http://www.xplanung.de/xplangml/4/1"/>
-				</property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-				def c = _.context.collector()&#xD;
-&#xD;
-//c.merk[_source.p.id.value()]&lt;&lt;[ _source.p.datum.value(), _source.p.signatur.value(), _source.p.signiert.value(), _source.p.vermerk.value()] &#xD;
-&#xD;
-verfahrensMerkmale.p.href.each { link -&gt;&#xD;
-	def _id = link.replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_VerfahrensMerkmal {&#xD;
-			datum( merk[_id].value()[0] )&#xD;
-			signatur( merk[_id].value()[1] )&#xD;
-			signiert( merk[_id].value()[2] )&#xD;
-			vermerk( merk[_id].value()[3] )&#xD;
-		}&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="true" name="variablesAsInstances"/>
-    </cell>
-	<cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd4bb5258-de59-4dd8-bfe3-506085c28764" priority="normal">
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd4bb5258-de59-4dd8-bfe3-506085c28764" priority="normal">
         <source name="var">
             <property>
                 <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
                 <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/3/0"/>
-				</property>
+            </property>
         </source>
         <target name="result">
             <property>
                 <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
-				<child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/4/1"/>
-				</property>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
