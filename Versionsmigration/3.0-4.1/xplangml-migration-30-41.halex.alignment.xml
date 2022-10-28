@@ -4102,26 +4102,6 @@ if (refUmweltbericht_href) {&#xD;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C790c055d-b24f-4f93-b848-709bc12a4714" priority="normal">
-        <target>
-            <property>
-                <type name="FP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cbdcfdb86-ea1b-4cf6-b660-f3f59c7b2d38" priority="normal">
-        <target>
-            <property>
-                <type name="FP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="massnahme" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdc6d48ef-2f31-4986-80ad-e3d9e8424c8d" priority="normal">
         <source>
             <class>
