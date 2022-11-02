@@ -3,7 +3,7 @@
     <name>XPlanung 5.1 nach 5.4</name>
     <author>Claudia Schulte</author>
     <created>2022-09-19T12:26:53.679+02:00</created>
-    <modified>2022-10-27T14:41:06.518+02:00</modified>
+    <modified>2022-11-02T13:10:11.072+01:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>

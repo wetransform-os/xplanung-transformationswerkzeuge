@@ -1134,20 +1134,6 @@ Präzisierung der Definition: sondernutzung differenziert nur Sondernutzungen na
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca01412b8-b36e-4ab5-8963-e9559a2e2217" priority="normal">
-        <source>
-            <class>
-                <type name="FP_BodenschaetzeType" ns="http://www.xplanung.de/xplangml/5/1"/>
-            </class>
-        </source>
-        <target>
-            <class>
-                <type name="FP_BodenschaetzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </class>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce4f6fc4f-5aa4-4291-a5b5-9dac5aa130c0" priority="normal">
         <source>
             <class>
