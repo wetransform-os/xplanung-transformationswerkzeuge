@@ -5996,6 +5996,38 @@ if (refUmweltbericht_href) {&#xD;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdfa9b2e9-b8a9-4ad5-a02d-0c65f4ff3f9e" priority="normal">
+        <source>
+            <class>
+                <type name="BP_LaermschutzbereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">hoehenangabe</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">gehoertZuBereich</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">informell</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">hatGenerAttribut</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtlicheCharakterisierung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtsverbindlich</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C7f94e28c-28d4-4efa-bc9f-ef83da4dbc65" priority="normal">
         <source>
             <class>
@@ -6018,10 +6050,42 @@ if (refUmweltbericht_href) {&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtsverbindlich</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">hoehenangabe</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">informell</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtlicheCharakterisierung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">hoehenangabe</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cc78d49f8-ca96-4f5d-a2e0-f898f537e4c1" priority="normal">
+        <source>
+            <class>
+                <type name="FP_LaermschutzbereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">gehoertZuBereich</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">hoehenangabe</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">hatGenerAttribut</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtsverbindlich</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">informell</core:name>
@@ -6059,6 +6123,36 @@ if (refUmweltbericht_href) {&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtsverbindlich</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="Cf90fab41-279e-4fd6-a69d-7bbe1c8f4e58" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="BP_LaermschutzbereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="id" ns="http://www.opengis.net/gml"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="6000" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C9f1b449e-cfe3-4961-a018-ca74a57c93b3" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="FP_LaermschutzbereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="id" ns="http://www.opengis.net/gml"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="6000" name="value"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C7abba9e9-7869-4461-9218-03bbd5d3f1b3" priority="normal">
         <source>
