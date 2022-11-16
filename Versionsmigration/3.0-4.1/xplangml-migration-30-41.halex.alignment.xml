@@ -4047,13 +4047,25 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refExternalCodeList</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refUmweltbericht</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refBegruendung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refPlangrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">aendert</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">planArt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">wurdeGeaendertVon</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refLegende</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refUmweltbericht</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refRechtsplan</core:name>
@@ -4062,19 +4074,10 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">rechtsverbindlich</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">aendert</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">informell</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.opengis.net/gml">boundedBy</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">wurdeGeaendertVon</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refLegende</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">refBeschreibung</core:name>
@@ -4092,6 +4095,24 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="auslegungsStartDatum" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C13fd7fef-bc2b-42f9-b4b2-f0c179d57fa7" priority="normal">
+        <source>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="gkz" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
