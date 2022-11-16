@@ -2126,25 +2126,30 @@ if (position) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
+if (hoehenangabe) {&#xD;
 &#xD;
-//c.hoehe[_source.p.id.value()]&lt;&lt;[_source.p.abweichenderHoeherbezug.value(), _source.p.bezugspunkt.value(), _source.p.h.value(), _source.p.hMax.value(),&#xD;
-//_source.p.hMin.value(), _source.p.hoehenbezug.value(), _source.p.hZwingend.value()] &#xD;
-&#xD;
-hoehenangabe.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_Hoehenangabe {&#xD;
-			abweichenderHoehenbezug( c.hoehe[_id].value()[0] )&#xD;
-			bezugspunkt( c.hoehe[_id].value()[1] )&#xD;
-			h( c.hoehe[_id].value()[2] )&#xD;
-			hMax( c.hoehe[_id].value()[3] )&#xD;
-			hMin( c.hoehe[_id].value()[4] )&#xD;
-			hoehenbezug( c.hoehe[_id].value()[5] )&#xD;
-			hZwingend( c.hoehe[_id].value()[6] )&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.hoehe[_source.p.id.value()]&lt;&lt;[_source.p.abweichenderHoeherbezug.value(), _source.p.bezugspunkt.value(), _source.p.h.value(), _source.p.hMax.value(),&#xD;
+	//_source.p.hMin.value(), _source.p.hoehenbezug.value(), _source.p.hZwingend.value()] &#xD;
+	&#xD;
+	hoehenangabe.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_Hoehenangabe {&#xD;
+				abweichenderHoehenbezug( c.hoehe[_id].value()[0] )&#xD;
+				bezugspunkt( c.hoehe[_id].value()[1] )&#xD;
+				h( c.hoehe[_id].value()[2] )&#xD;
+				hMax( c.hoehe[_id].value()[3] )&#xD;
+				hMin( c.hoehe[_id].value()[4] )&#xD;
+				hoehenbezug( c.hoehe[_id].value()[5] )&#xD;
+				hZwingend( c.hoehe[_id].value()[6] )&#xD;
+			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -8509,45 +8514,50 @@ if (position) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
+if (hatGenerAttribut){&#xD;
 &#xD;
-//c.gener['double', _source.p.id.value()]&lt;&lt;[_source.p.name('http://www.xplanung.de/xplangml/3/0').value(), _source.p.wert.value()]&#xD;
-&#xD;
-hatGenerAttribut.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target{&#xD;
-		if (c.gener['datum', _id].value()) {&#xD;
-			XP_DatumAttribut {&#xD;
-				name(c.gener['datum', _id].value()[0])&#xD;
-				wert(c.gener['datum', _id].value()[1])&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.gener['double', _source.p.id.value()]&lt;&lt;[_source.p.name('http://www.xplanung.de/xplangml/3/0').value(), _source.p.wert.value()]&#xD;
+	&#xD;
+	hatGenerAttribut.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target{&#xD;
+			if (c.gener['datum', _id].value()) {&#xD;
+				XP_DatumAttribut {&#xD;
+					name(c.gener['datum', _id].value()[0])&#xD;
+					wert(c.gener['datum', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['double', _id].value()) {&#xD;
-			XP_DoubleAttribut {&#xD;
-				name(c.gener['double', _id].value()[0])&#xD;
-				wert(c.gener['double', _id].value()[1])&#xD;
+			else if (c.gener['double', _id].value()) {&#xD;
+				XP_DoubleAttribut {&#xD;
+					name(c.gener['double', _id].value()[0])&#xD;
+					wert(c.gener['double', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['integer', _id].value()) {&#xD;
-			XP_IntegerAttribut {&#xD;
-				name(c.gener['integer', _id].value()[0])&#xD;
-				wert(c.gener['integer', _id].value()[1])&#xD;
+			else if (c.gener['integer', _id].value()) {&#xD;
+				XP_IntegerAttribut {&#xD;
+					name(c.gener['integer', _id].value()[0])&#xD;
+					wert(c.gener['integer', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['string', _id].value()) {&#xD;
-			XP_StringAttribut {&#xD;
-				name(c.gener['string', _id].value()[0])&#xD;
-				wert(c.gener['string', _id].value()[1])&#xD;
+			else if (c.gener['string', _id].value()) {&#xD;
+				XP_StringAttribut {&#xD;
+					name(c.gener['string', _id].value()[0])&#xD;
+					wert(c.gener['string', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['url', _id].value()) {&#xD;
-			XP_URLAttribut {&#xD;
-				name(c.gener['url', _id].value()[0])&#xD;
-				wert(c.gener['url', _id].value()[1])&#xD;
+			else if (c.gener['url', _id].value()) {&#xD;
+				XP_URLAttribut {&#xD;
+					name(c.gener['url', _id].value()[0])&#xD;
+					wert(c.gener['url', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -8567,32 +8577,36 @@ hatGenerAttribut.p.href.each { link -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-informell.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_ExterneReferenz {&#xD;
-			if (c.extern[_id].value()[0]) {&#xD;
-				beschreibung( c.extern[_id].value()[0] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[1]) {&#xD;
-				informationssystemURL( c.extern[_id].value()[1] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[2]) {&#xD;
-				referenzMimeType( c.extern[_id].value()[2] )&#xD;
+if (informell) {&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+	&#xD;
+	informell.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_ExterneReferenz {&#xD;
+				if (c.extern[_id].value()[0]) {&#xD;
+					beschreibung( c.extern[_id].value()[0] )&#xD;
 				}&#xD;
-			if (c.extern[_id].value()[3]) {&#xD;
-				referenzName( c.extern[_id].value()[3] )&#xD;
+				if (c.extern[_id].value()[1]) {&#xD;
+					informationssystemURL( c.extern[_id].value()[1] )&#xD;
+				}&#xD;
+				if (c.extern[_id].value()[2]) {&#xD;
+					referenzMimeType( c.extern[_id].value()[2] )&#xD;
 					}&#xD;
-			if (c.extern[_id].value()[4]) {&#xD;
-				referenzURL( c.extern[_id].value()[4] )&#xD;
+				if (c.extern[_id].value()[3]) {&#xD;
+					referenzName( c.extern[_id].value()[3] )&#xD;
+						}&#xD;
+				if (c.extern[_id].value()[4]) {&#xD;
+					referenzURL( c.extern[_id].value()[4] )&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -8612,32 +8626,37 @@ informell.p.href.each { link -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-rechtsverbindlich.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_ExterneReferenz {&#xD;
-			if (c.extern[_id].value()[0]) {&#xD;
-				beschreibung( c.extern[_id].value()[0] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[1]) {&#xD;
-				informationssystemURL( c.extern[_id].value()[1] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[2]) {&#xD;
-				referenzMimeType( c.extern[_id].value()[2] )&#xD;
+if (rechtsverbindlich) {&#xD;
+		&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+	&#xD;
+	rechtsverbindlich.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_ExterneReferenz {&#xD;
+				if (c.extern[_id].value()[0]) {&#xD;
+					beschreibung( c.extern[_id].value()[0] )&#xD;
 				}&#xD;
-			if (c.extern[_id].value()[3]) {&#xD;
-				referenzName( c.extern[_id].value()[3] )&#xD;
+				if (c.extern[_id].value()[1]) {&#xD;
+					informationssystemURL( c.extern[_id].value()[1] )&#xD;
+				}&#xD;
+				if (c.extern[_id].value()[2]) {&#xD;
+					referenzMimeType( c.extern[_id].value()[2] )&#xD;
 					}&#xD;
-			if (c.extern[_id].value()[4]) {&#xD;
-				referenzURL( c.extern[_id].value()[4] )&#xD;
+				if (c.extern[_id].value()[3]) {&#xD;
+					referenzName( c.extern[_id].value()[3] )&#xD;
+						}&#xD;
+				if (c.extern[_id].value()[4]) {&#xD;
+					referenzURL( c.extern[_id].value()[4] )&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -8772,18 +8791,22 @@ if (position) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-aendert.p.each { string -&gt;&#xD;
-	_target {&#xD;
-		XP_VerbundenerPlan {&#xD;
-			planName( string )&#xD;
-			_log.warn ('Die Relation XP_Plan.aendert mit Planname $string enthält als rechtscharakter den Code 1000 (Aenderung). Sollte ein anderer Code erforderlich sein, nehmen Sie bitte Kontakt mit der XLeitstelle auf.')&#xD;
-			rechtscharakter( '1000' )&#xD;
+if (aendert) {&#xD;
+	aendert.p.each { string -&gt;&#xD;
+		_target {&#xD;
+			XP_VerbundenerPlan {&#xD;
+				planName( string )&#xD;
+				_log.warn ('Die Relation XP_Plan.aendert mit Planname $string enthält als rechtscharakter den Code 1000 (Aenderung). Sollte ein anderer Code erforderlich sein, nehmen Sie bitte Kontakt mit der XLeitstelle auf.')&#xD;
+				rechtscharakter( '1000' )&#xD;
+			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
-        <parameter value="false" name="variablesAsInstances"/>
+        <parameter value="true" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Caa0d1956-17fc-44e8-bf36-806ed9ab23b9" priority="normal">
         <source name="var">
@@ -8800,45 +8823,50 @@ aendert.p.each { string -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.gener['double', _source.p.id.value()]&lt;&lt;[_source.p.name('http://www.xplanung.de/xplangml/3/0').value(), _source.p.wert.value()]&#xD;
-&#xD;
-hatGenerAttribut.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target{&#xD;
-		if (c.gener['datum', _id].value()) {&#xD;
-			XP_DatumAttribut {&#xD;
-				name(c.gener['datum', _id].value()[0])&#xD;
-				wert(c.gener['datum', _id].value()[1])&#xD;
+if (hatGenerAttribut) {&#xD;
+		&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.gener['double', _source.p.id.value()]&lt;&lt;[_source.p.name('http://www.xplanung.de/xplangml/3/0').value(), _source.p.wert.value()]&#xD;
+	&#xD;
+	hatGenerAttribut.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target{&#xD;
+			if (c.gener['datum', _id].value()) {&#xD;
+				XP_DatumAttribut {&#xD;
+					name(c.gener['datum', _id].value()[0])&#xD;
+					wert(c.gener['datum', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['double', _id].value()) {&#xD;
-			XP_DoubleAttribut {&#xD;
-				name(c.gener['double', _id].value()[0])&#xD;
-				wert(c.gener['double', _id].value()[1])&#xD;
+			else if (c.gener['double', _id].value()) {&#xD;
+				XP_DoubleAttribut {&#xD;
+					name(c.gener['double', _id].value()[0])&#xD;
+					wert(c.gener['double', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['integer', _id].value()) {&#xD;
-			XP_IntegerAttribut {&#xD;
-				name(c.gener['integer', _id].value()[0])&#xD;
-				wert(c.gener['integer', _id].value()[1])&#xD;
+			else if (c.gener['integer', _id].value()) {&#xD;
+				XP_IntegerAttribut {&#xD;
+					name(c.gener['integer', _id].value()[0])&#xD;
+					wert(c.gener['integer', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['string', _id].value()) {&#xD;
-			XP_StringAttribut {&#xD;
-				name(c.gener['string', _id].value()[0])&#xD;
-				wert(c.gener['string', _id].value()[1])&#xD;
+			else if (c.gener['string', _id].value()) {&#xD;
+				XP_StringAttribut {&#xD;
+					name(c.gener['string', _id].value()[0])&#xD;
+					wert(c.gener['string', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
-		}&#xD;
-		else if (c.gener['url', _id].value()) {&#xD;
-			XP_URLAttribut {&#xD;
-				name(c.gener['url', _id].value()[0])&#xD;
-				wert(c.gener['url', _id].value()[1])&#xD;
+			else if (c.gener['url', _id].value()) {&#xD;
+				XP_URLAttribut {&#xD;
+					name(c.gener['url', _id].value()[0])&#xD;
+					wert(c.gener['url', _id].value()[1])&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -8858,32 +8886,37 @@ hatGenerAttribut.p.href.each { link -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-informell.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_ExterneReferenz {&#xD;
-			if (c.extern[_id].value()[0]) {&#xD;
-				beschreibung( c.extern[_id].value()[0] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[1]) {&#xD;
-				informationssystemURL( c.extern[_id].value()[1] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[2]) {&#xD;
-				referenzMimeType( c.extern[_id].value()[2] )&#xD;
+if (informell) {&#xD;
+	&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+	&#xD;
+	informell.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_ExterneReferenz {&#xD;
+				if (c.extern[_id].value()[0]) {&#xD;
+					beschreibung( c.extern[_id].value()[0] )&#xD;
 				}&#xD;
-			if (c.extern[_id].value()[3]) {&#xD;
-				referenzName( c.extern[_id].value()[3] )&#xD;
+				if (c.extern[_id].value()[1]) {&#xD;
+					informationssystemURL( c.extern[_id].value()[1] )&#xD;
+				}&#xD;
+				if (c.extern[_id].value()[2]) {&#xD;
+					referenzMimeType( c.extern[_id].value()[2] )&#xD;
 					}&#xD;
-			if (c.extern[_id].value()[4]) {&#xD;
-				referenzURL( c.extern[_id].value()[4] )&#xD;
+				if (c.extern[_id].value()[3]) {&#xD;
+					referenzName( c.extern[_id].value()[3] )&#xD;
+						}&#xD;
+				if (c.extern[_id].value()[4]) {&#xD;
+					referenzURL( c.extern[_id].value()[4] )&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -8925,32 +8958,37 @@ if (raeumlicherGeltungsbereich) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-rechtsverbindlich.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_ExterneReferenz {&#xD;
-			if (c.extern[_id].value()[0]) {&#xD;
-				beschreibung( c.extern[_id].value()[0] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[1]) {&#xD;
-				informationssystemURL( c.extern[_id].value()[1] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[2]) {&#xD;
-				referenzMimeType( c.extern[_id].value()[2] )&#xD;
+if (rechtsverbindlich) {&#xD;
+		&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+	&#xD;
+	rechtsverbindlich.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_ExterneReferenz {&#xD;
+				if (c.extern[_id].value()[0]) {&#xD;
+					beschreibung( c.extern[_id].value()[0] )&#xD;
 				}&#xD;
-			if (c.extern[_id].value()[3]) {&#xD;
-				referenzName( c.extern[_id].value()[3] )&#xD;
+				if (c.extern[_id].value()[1]) {&#xD;
+					informationssystemURL( c.extern[_id].value()[1] )&#xD;
+				}&#xD;
+				if (c.extern[_id].value()[2]) {&#xD;
+					referenzMimeType( c.extern[_id].value()[2] )&#xD;
 					}&#xD;
-			if (c.extern[_id].value()[4]) {&#xD;
-				referenzURL( c.extern[_id].value()[4] )&#xD;
+				if (c.extern[_id].value()[3]) {&#xD;
+					referenzName( c.extern[_id].value()[3] )&#xD;
+						}&#xD;
+				if (c.extern[_id].value()[4]) {&#xD;
+					referenzURL( c.extern[_id].value()[4] )&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -9107,32 +9145,37 @@ if (refExternalCodeList_href) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-refLegende.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_ExterneReferenz {&#xD;
-			if (c.extern[_id].value()[0]) {&#xD;
-				beschreibung( c.extern[_id].value()[0] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[1]) {&#xD;
-				informationssystemURL( c.extern[_id].value()[1] )&#xD;
-			}&#xD;
-			if (c.extern[_id].value()[2]) {&#xD;
-				referenzMimeType( c.extern[_id].value()[2] )&#xD;
+if (refLegende) {&#xD;
+	&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+	&#xD;
+	refLegende.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_ExterneReferenz {&#xD;
+				if (c.extern[_id].value()[0]) {&#xD;
+					beschreibung( c.extern[_id].value()[0] )&#xD;
 				}&#xD;
-			if (c.extern[_id].value()[3]) {&#xD;
-				referenzName( c.extern[_id].value()[3] )&#xD;
+				if (c.extern[_id].value()[1]) {&#xD;
+					informationssystemURL( c.extern[_id].value()[1] )&#xD;
+				}&#xD;
+				if (c.extern[_id].value()[2]) {&#xD;
+					referenzMimeType( c.extern[_id].value()[2] )&#xD;
 					}&#xD;
-			if (c.extern[_id].value()[4]) {&#xD;
-				referenzURL( c.extern[_id].value()[4] )&#xD;
+				if (c.extern[_id].value()[3]) {&#xD;
+					referenzName( c.extern[_id].value()[3] )&#xD;
+						}&#xD;
+				if (c.extern[_id].value()[4]) {&#xD;
+					referenzURL( c.extern[_id].value()[4] )&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -9152,39 +9195,44 @@ refLegende.p.href.each { link -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(), _source.p.georefMimeType.value(), _source.p.georefURL.value(),  _source.p.informationssystemURL.value(),&#xD;
-//_source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-refPlangrundlage.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_ExterneReferenz {&#xD;
-			if (c.externRef[_id].value()[0]) {&#xD;
-				beschreibung( c.externRef[_id].value()[0] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[1]) {&#xD;
-				georefMimeType( c.externRef[_id].value()[1] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[2]) {&#xD;
-				georefURL( c.externRef[_id].value()[2] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[3]) {&#xD;
-				informationssystemURL( c.externRef[_id].value()[3] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[4]) {&#xD;
-				referenzMimeType( c.externRef[_id].value()[4] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[5]) {&#xD;
-				referenzName( c.externRef[_id].value()[5] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[6]) {&#xD;
-				referenzURL( c.externRef[_id].value()[6] )&#xD;
+	if (refPlangrundlage) {&#xD;
+	&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(), _source.p.georefMimeType.value(), _source.p.georefURL.value(),  _source.p.informationssystemURL.value(),&#xD;
+	//_source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+	&#xD;
+	refPlangrundlage.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_ExterneReferenz {&#xD;
+				if (c.externRef[_id].value()[0]) {&#xD;
+					beschreibung( c.externRef[_id].value()[0] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[1]) {&#xD;
+					georefMimeType( c.externRef[_id].value()[1] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[2]) {&#xD;
+					georefURL( c.externRef[_id].value()[2] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[3]) {&#xD;
+					informationssystemURL( c.externRef[_id].value()[3] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[4]) {&#xD;
+					referenzMimeType( c.externRef[_id].value()[4] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[5]) {&#xD;
+					referenzName( c.externRef[_id].value()[5] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[6]) {&#xD;
+					referenzURL( c.externRef[_id].value()[6] )&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -9204,39 +9252,44 @@ refPlangrundlage.p.href.each { link -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(), _source.p.georefMimeType.value(), _source.p.georefURL.value(),  _source.p.informationssystemURL.value(),&#xD;
-//_source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
-&#xD;
-refRechtsplan.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_ExterneReferenz {&#xD;
-			if (c.externRef[_id].value()[0]) {&#xD;
-				beschreibung( c.externRef[_id].value()[0] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[1]) {&#xD;
-				georefMimeType( c.externRef[_id].value()[1] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[2]) {&#xD;
-				georefURL( c.externRef[_id].value()[2] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[3]) {&#xD;
-				informationssystemURL( c.externRef[_id].value()[3] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[4]) {&#xD;
-				referenzMimeType( c.externRef[_id].value()[4] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[5]) {&#xD;
-				referenzName( c.externRef[_id].value()[5] )&#xD;
-			}&#xD;
-			if (c.externRef[_id].value()[6]) {&#xD;
-				referenzURL( c.externRef[_id].value()[6] )&#xD;
+if (refRechtsplan) {&#xD;
+	&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(), _source.p.georefMimeType.value(), _source.p.georefURL.value(),  _source.p.informationssystemURL.value(),&#xD;
+	//_source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] &#xD;
+	&#xD;
+	refRechtsplan.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_ExterneReferenz {&#xD;
+				if (c.externRef[_id].value()[0]) {&#xD;
+					beschreibung( c.externRef[_id].value()[0] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[1]) {&#xD;
+					georefMimeType( c.externRef[_id].value()[1] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[2]) {&#xD;
+					georefURL( c.externRef[_id].value()[2] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[3]) {&#xD;
+					informationssystemURL( c.externRef[_id].value()[3] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[4]) {&#xD;
+					referenzMimeType( c.externRef[_id].value()[4] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[5]) {&#xD;
+					referenzName( c.externRef[_id].value()[5] )&#xD;
+				}&#xD;
+				if (c.externRef[_id].value()[6]) {&#xD;
+					referenzURL( c.externRef[_id].value()[6] )&#xD;
+				}&#xD;
 			}&#xD;
 		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
@@ -9256,81 +9309,59 @@ refRechtsplan.p.href.each { link -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.merk[_source.p.id.value()]&lt;&lt;[ _source.p.datum.value(), _source.p.signatur.value(), _source.p.signiert.value(), _source.p.vermerk.value()] &#xD;
-&#xD;
-verfahrensMerkmale.p.href.each { link -&gt;&#xD;
-	def _id = link.toString().replaceAll('#','')&#xD;
-	_target {&#xD;
-		XP_VerfahrensMerkmal {&#xD;
-			datum( c.merk[_id].value()[0] )&#xD;
-			signatur( c.merk[_id].value()[1] )&#xD;
-			signiert( c.merk[_id].value()[2] )&#xD;
-			vermerk( c.merk[_id].value()[3] )&#xD;
-		}&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="true" name="variablesAsInstances"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd4bb5258-de59-4dd8-bfe3-506085c28764" priority="normal">
-        <source name="var">
-            <property>
-                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-wurdeGeaendertVon.p.each { string -&gt;&#xD;
-	_target {&#xD;
-		XP_VerbundenerPlan {&#xD;
-			planName( string )&#xD;
-			_log.warn ('Die Relation XP_Plan.wurdeGeandertVon mit Planname $string enthält als rechtscharakter den Code 1000 (Aenderung). Sollte ein anderer Code erforderlich sein, nehmen Sie bitte Kontakt mit der XLeitstelle auf.')&#xD;
-			rechtscharakter( '1000' )&#xD;
-		}&#xD;
-	}&#xD;
-}
-</core:text>
-        </complexParameter>
-        <parameter value="true" name="variablesAsInstances"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd4bb5258-de59-4dd8-bfe3-506085c28764" priority="normal">
-        <source name="var">
-            <property>
-                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
-                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/3/0"/>
-            </property>
-        </source>
-        <target name="result">
-            <property>
-                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
-                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/4/1"/>
-            </property>
-        </target>
-        <complexParameter name="script">
-            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-//c.merk[_source.p.id.value()]&lt;&lt;[ _source.p.datum.value(), _source.p.signatur.value(), _source.p.signiert.value(), _source.p.vermerk.value()] &#xD;
-&#xD;
-				wurdeGeaendertVon.p.each { string -&gt;&#xD;
-	_target {&#xD;
-		XP_VerbundenerPlan {&#xD;
-			planName( string )&#xD;
-			_log.warn ('Die Relation XP_Plan.wurdeGeandertVon mit Planname $string enthält als rechtscharakter den Code 1000 (Aenderung). Sollte ein anderer Code erforderlich sein, nehmen Sie bitte Kontakt mit der XLeitstelle auf.')&#xD;
-			rechtscharakter( '1000' )&#xD;
+if (verfahrensMerkmale) {&#xD;
+	&#xD;
+	def c = _.context.collector()&#xD;
+	&#xD;
+	//c.merk[_source.p.id.value()]&lt;&lt;[ _source.p.datum.value(), _source.p.signatur.value(), _source.p.signiert.value(), _source.p.vermerk.value()] &#xD;
+	&#xD;
+	verfahrensMerkmale.p.href.each { link -&gt;&#xD;
+		def _id = link.toString().replaceAll('#','')&#xD;
+		_target {&#xD;
+			XP_VerfahrensMerkmal {&#xD;
+				datum( c.merk[_id].value()[0] )&#xD;
+				signatur( c.merk[_id].value()[1] )&#xD;
+				signiert( c.merk[_id].value()[2] )&#xD;
+				vermerk( c.merk[_id].value()[3] )&#xD;
 			}&#xD;
+		}&#xD;
 	}&#xD;
-}
+}&#xD;
+&#xD;
+else throw new NoResultException()
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd4bb5258-de59-4dd8-bfe3-506085c28764" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (wurdeGeaendertVon) {&#xD;
+&#xD;
+	wurdeGeaendertVon.p.each { string -&gt;&#xD;
+		_target {&#xD;
+			XP_VerbundenerPlan {&#xD;
+				planName( string )&#xD;
+				_log.warn ('Die Relation XP_Plan.wurdeGeandertVon mit Planname $string enthält als rechtscharakter den Code 1000 (Aenderung). Sollte ein anderer Code erforderlich sein, nehmen Sie bitte Kontakt mit der XLeitstelle auf.')&#xD;
+				rechtscharakter( '1000' )&#xD;
+			}&#xD;
+		}&#xD;
+	}&#xD;
+}&#xD;
+&#xD;
+else throw new NoResultException()
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
