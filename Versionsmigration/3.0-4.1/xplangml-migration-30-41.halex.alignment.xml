@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <alignment xmlns="http://www.esdi-humboldt.eu/hale/alignment">
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cdd3f8ded-8db8-4f00-be70-74334a6052a5" priority="normal">
+        <source>
+            <property>
+                <type name="AbstractFeatureType" ns="http://www.opengis.net/gml"/>
+                <child name="boundedBy" ns="http://www.opengis.net/gml"/>
+                <child name="choice_1" ns="http://www.opengis.net/gml/boundingShape"/>
+                <child name="Envelope" ns="http://www.opengis.net/gml"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="AbstractFeatureType" ns="http://www.opengis.net/gml/3.2"/>
+                <child name="boundedBy" ns="http://www.opengis.net/gml/3.2"/>
+                <child name="Envelope" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C06e519fe-0ccc-44d2-a76d-49f42d1323a4" priority="normal">
         <source>
             <class>
@@ -690,7 +709,61 @@ refGebaeudequerschnitt.p.href.each { link -&gt;&#xD;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/3/0">versionBauNVO</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C7243ca13-0ef2-4dac-bac6-fa87c5181858" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="Version_1990"/>
+                    <value value="4000"/>
+                </entry>
+                <entry>
+                    <key value="Version_1962"/>
+                    <value value="1000"/>
+                </entry>
+                <entry>
+                    <key value="Version_1968"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="Version_1977"/>
+                    <value value="3000"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="fixed:9999" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C3f2dc946-6a36-45e7-8cc9-fd3a29cf7afc" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="versionBauNVOText" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6d42207b-c960-4a98-88e7-4363ba8afec0" priority="normal">
         <source>
@@ -1882,6 +1955,24 @@ hoehenangabe.p.href.each { link -&gt;&#xD;
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
                 <child name="auslegungsStartDatum" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C66f5f9c3-f8d7-44ed-8a19-93d15bbf44f0" priority="normal">
+        <source>
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/3/0"/>
+                <child name="gkz" ns="http://www.xplanung.de/xplangml/3/0"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/4/1"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
@@ -6892,7 +6983,9 @@ def c = _.context.collector()&#xD;
 	}&#xD;
 }*/&#xD;
 &#xD;
-return '#' + c.dars[id].value()
+if (c.dars[id].value()) {&#xD;
+	return '#' + c.dars[id].value()&#xD;
+}
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
