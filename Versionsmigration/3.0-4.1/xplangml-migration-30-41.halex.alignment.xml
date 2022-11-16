@@ -6613,7 +6613,7 @@ c.gener['double', _source.p.id.value()]&lt;&lt;[_source.p.name('http://www.xplan
 &#xD;
 def c = _.context.collector()&#xD;
 &#xD;
-c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(), _source.p.georefMimeType.value(), _source.p.georefURL.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] 
+c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(), _source.p.georefMimeType.value(), _source.p.georefURL.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] 
 </core:text>
         </complexParameter>
     </cell>
@@ -6634,7 +6634,7 @@ c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(), _source.p
 &#xD;
 def c = _.context.collector()&#xD;
 &#xD;
-c.externRef[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()] 
+c.extern[_source.p.id.value()]&lt;&lt;[_source.p.beschreibung.value(),  _source.p.informationssystemURL.value(),  _source.p.referenzMimeType.value(), _source.p.referenzName.value(), _source.p.referenzURL.value()]
 </core:text>
         </complexParameter>
     </cell>
@@ -7247,13 +7247,13 @@ refPlangrundlage.p.href.each { link -&gt;&#xD;
 	def _id = link.toString().replaceAll('#','')&#xD;
 	_target {&#xD;
 		XP_ExterneReferenz {&#xD;
-			beschreibung( c.extern[_id].value()[0] )&#xD;
-			georefMimeType( c.extern[_id].value()[1] )&#xD;
-			georefURL( c.extern[_id].value()[2] )&#xD;
-			informationssystemURL( c.extern[_id].value()[3] )&#xD;
-			referenzMimeType( c.extern[_id].value()[4] )&#xD;
-			referenzName( c.extern[_id].value()[5] )&#xD;
-			referenzURL( c.extern[_id].value()[6] )&#xD;
+			beschreibung( c.externRef[_id].value()[0] )&#xD;
+			georefMimeType( c.externRef[_id].value()[1] )&#xD;
+			georefURL( c.externRef[_id].value()[2] )&#xD;
+			informationssystemURL( c.externRef[_id].value()[3] )&#xD;
+			referenzMimeType( c.externRef[_id].value()[4] )&#xD;
+			referenzName( c.externRef[_id].value()[5] )&#xD;
+			referenzURL( c.externRef[_id].value()[6] )&#xD;
 		}&#xD;
 	}&#xD;
 }
@@ -7285,13 +7285,13 @@ refRechtsplan.p.href.each { link -&gt;&#xD;
 	def _id = link.toString().replaceAll('#','')&#xD;
 	_target {&#xD;
 		XP_ExterneReferenz {&#xD;
-			beschreibung( c.extern[_id].value()[0] )&#xD;
-			georefMimeType( c.extern[_id].value()[1] )&#xD;
-			georefURL( c.extern[_id].value()[2] )&#xD;
-			informationssystemURL( c.extern[_id].value()[3] )&#xD;
-			referenzMimeType( c.extern[_id].value()[4] )&#xD;
-			referenzName( c.extern[_id].value()[5] )&#xD;
-			referenzURL( c.extern[_id].value()[6] )&#xD;
+			beschreibung( c.externRef[_id].value()[0] )&#xD;
+			georefMimeType( c.externRef[_id].value()[1] )&#xD;
+			georefURL( c.externRef[_id].value()[2] )&#xD;
+			informationssystemURL( c.externRef[_id].value()[3] )&#xD;
+			referenzMimeType( c.externRef[_id].value()[4] )&#xD;
+			referenzName( c.externRef[_id].value()[5] )&#xD;
+			referenzURL( c.externRef[_id].value()[6] )&#xD;
 		}&#xD;
 	}&#xD;
 }&#xD;
@@ -7601,13 +7601,13 @@ refScan.p.href.each { link -&gt;&#xD;
 	def _id = link.toString().replaceAll('#','')&#xD;
 	_target {&#xD;
 		XP_ExterneReferenz {&#xD;
-			beschreibung( c.extern[_id].value()[0] )&#xD;
-			georefMimeType( c.extern[_id].value()[1] )&#xD;
-			georefURL( c.extern[_id].value()[2] )&#xD;
-			informationssystemURL( c.extern[_id].value()[3] )&#xD;
-			referenzMimeType( c.extern[_id].value()[4] )&#xD;
-			referenzName( c.extern[_id].value()[5] )&#xD;
-			referenzURL( c.extern[_id].value()[6] )&#xD;
+			beschreibung( c.externRef[_id].value()[0] )&#xD;
+			georefMimeType( c.externRef[_id].value()[1] )&#xD;
+			georefURL( c.externRef[_id].value()[2] )&#xD;
+			informationssystemURL( c.externRef[_id].value()[3] )&#xD;
+			referenzMimeType( c.externRef[_id].value()[4] )&#xD;
+			referenzName( c.externRef[_id].value()[5] )&#xD;
+			referenzURL( c.externRef[_id].value()[6] )&#xD;
 		}&#xD;
 	}&#xD;
 }
