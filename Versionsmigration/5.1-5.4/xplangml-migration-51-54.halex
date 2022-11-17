@@ -3,7 +3,7 @@
     <name>XPlanung 5.1 nach 5.4</name>
     <author>Claudia Schulte</author>
     <created>2022-09-19T12:26:53.679+02:00</created>
-    <modified>2022-11-02T13:10:11.072+01:00</modified>
+    <modified>2022-11-17T15:32:38.964+01:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
@@ -23,21 +23,6 @@
         <setting name="resourceId">b125c25e-d851-463a-b30a-a8f24e7d5f1d</setting>
         <setting name="source">https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/5.4/XPlanung-Operationen.xsd</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
-    </resource>
-    <resource action-id="eu.esdihumboldt.hale.io.instance.read.source" provider-id="eu.esdihumboldt.hale.io.xml.reader">
-        <setting name="charset">UTF-8</setting>
-        <setting name="resourceId">f5064f06-e071-404e-8cef-d1185429917a</setting>
-        <setting name="source">file:/C:/cs/SERVICE/SVC-1230/5.1%20nach%205.4/ammerland_xplanURIOhneLeerzeichen.xml</setting>
-        <setting name="interpolation.maxError">0.1</setting>
-        <setting name="interpolation.algorithm">segment</setting>
-        <setting name="ignoreNamespaces">false</setting>
-        <setting name="paginateRequest">true</setting>
-        <setting name="featuresPerWfsRequest">1000</setting>
-        <setting name="ignoreRoot">true</setting>
-        <setting name="ignoreNumberMatched">false</setting>
-        <setting name="interpolation.grid.moveAllToGrid">false</setting>
-        <setting name="strict">false</setting>
-        <setting name="contentType">org.eclipse.core.runtime.xml</setting>
     </resource>
     <file name="alignment.xml" location="xplangml-migration-51-54.halex.alignment.xml"/>
     <file name="styles.sld" location="xplangml-migration-51-54.halex.styles.sld"/>
