@@ -1075,104 +1075,6 @@
         </complexParameter>
         <parameter value="null" name="notClassifiedAction"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.classification" id="C4cebcd54-db53-4cbb-a95a-cfb7b1280ec7" priority="normal">
-        <source>
-            <property>
-                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <complexParameter name="lookupTable">
-            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
-                <entry>
-                    <key value="1000"/>
-                    <value value="3000"/>
-                </entry>
-                <entry>
-                    <key value="2000"/>
-                    <value value="2000"/>
-                </entry>
-                <entry>
-                    <key value="3000"/>
-                    <value value="6000"/>
-                </entry>
-                <entry>
-                    <key value="4000"/>
-                    <value value="8000"/>
-                </entry>
-                <entry>
-                    <key value="5000"/>
-                    <value value="7000"/>
-                </entry>
-                <entry>
-                    <key value="9998"/>
-                    <value value="9998"/>
-                </entry>
-            </lookup-table>
-        </complexParameter>
-        <parameter value="null" name="notClassifiedAction"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.classification" id="Ceb389d2a-36e3-4601-a172-a7786616be66" priority="normal">
-        <source>
-            <property>
-                <type name="RP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <complexParameter name="lookupTable">
-            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
-                <entry>
-                    <key value="1000"/>
-                    <value value="4000"/>
-                </entry>
-                <entry>
-                    <key value="2000"/>
-                    <value value="4100"/>
-                </entry>
-                <entry>
-                    <key value="4000"/>
-                    <value value="4200"/>
-                </entry>
-                <entry>
-                    <key value="5000"/>
-                    <value value="4300"/>
-                </entry>
-                <entry>
-                    <key value="6000"/>
-                    <value value="4400"/>
-                </entry>
-                <entry>
-                    <key value="7000"/>
-                    <value value="4500"/>
-                </entry>
-                <entry>
-                    <key value="8000"/>
-                    <value value="4600"/>
-                </entry>
-                <entry>
-                    <key value="9000"/>
-                    <value value="4700"/>
-                </entry>
-                <entry>
-                    <key value="9998"/>
-                    <value value="9998"/>
-                </entry>
-            </lookup-table>
-        </complexParameter>
-        <parameter value="null" name="notClassifiedAction"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdee671c3-3c43-40ad-80ac-c3de45ce59f0" priority="normal">
         <source>
             <class>
@@ -2251,24 +2153,24 @@
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def inputTyp = typ&#xD;
-&#xD;
-if (typ) {&#xD;
-	if (inputTyp == '3000') { // GehFahrrecht&#xD;
-		return ['1000', '2000']&#xD;
-	}&#xD;
-	else if (inputTyp == '4100') { // GehLeitungsrecht &#xD;
-		return ['1000', '4000']&#xD;
-	}&#xD;
-	else if (inputTyp == '4200') { // FahrLeitungsrecht &#xD;
-		return ['2000', '4000']&#xD;
-	}&#xD;
-	else if (inputTyp == '5000') { // GehFahrLeitungsrecht &#xD;
-		return ['1000','2000', '4000']&#xD;
-	}&#xD;
-	else {&#xD;
-		return inputTyp;&#xD;
-	}&#xD;
+def inputTyp = typ&#13;
+&#13;
+if (typ) {&#13;
+	if (inputTyp == '3000') { // GehFahrrecht&#13;
+		return ['1000', '2000']&#13;
+	}&#13;
+	else if (inputTyp == '4100') { // GehLeitungsrecht &#13;
+		return ['1000', '4000']&#13;
+	}&#13;
+	else if (inputTyp == '4200') { // FahrLeitungsrecht &#13;
+		return ['2000', '4000']&#13;
+	}&#13;
+	else if (inputTyp == '5000') { // GehFahrLeitungsrecht &#13;
+		return ['1000','2000', '4000']&#13;
+	}&#13;
+	else {&#13;
+		return inputTyp;&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -2824,6 +2726,49 @@ if (typ) {&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C4cebcd54-db53-4cbb-a95a-cfb7b1280ec7" priority="normal">
+        <source>
+            <property>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="5000"/>
+                    <value value="7000"/>
+                </entry>
+                <entry>
+                    <key value="4000"/>
+                    <value value="8000"/>
+                </entry>
+                <entry>
+                    <key value="9998"/>
+                    <value value="9998"/>
+                </entry>
+                <entry>
+                    <key value="1000"/>
+                    <value value="3000"/>
+                </entry>
+                <entry>
+                    <key value="2000"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="3000"/>
+                    <value value="6000"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.join" id="C79ec0c08-2c79-4ae0-8589-2e246e220e55" priority="normal">
         <source name="types">
@@ -4779,6 +4724,61 @@ if (typ) {&#xD;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Ceb389d2a-36e3-4601-a172-a7786616be66" priority="normal">
+        <source>
+            <property>
+                <type name="RP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="RP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="7000"/>
+                    <value value="4500"/>
+                </entry>
+                <entry>
+                    <key value="8000"/>
+                    <value value="4600"/>
+                </entry>
+                <entry>
+                    <key value="5000"/>
+                    <value value="4300"/>
+                </entry>
+                <entry>
+                    <key value="6000"/>
+                    <value value="4400"/>
+                </entry>
+                <entry>
+                    <key value="4000"/>
+                    <value value="4200"/>
+                </entry>
+                <entry>
+                    <key value="9998"/>
+                    <value value="9998"/>
+                </entry>
+                <entry>
+                    <key value="1000"/>
+                    <value value="4000"/>
+                </entry>
+                <entry>
+                    <key value="2000"/>
+                    <value value="4100"/>
+                </entry>
+                <entry>
+                    <key value="9000"/>
+                    <value value="4700"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C35b3affa-6417-4387-b1b1-27bd6c900af3" priority="normal">
         <source>
