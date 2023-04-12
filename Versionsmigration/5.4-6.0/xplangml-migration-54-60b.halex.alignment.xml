@@ -5931,26 +5931,6 @@ if (typ) {&#13;
         </target>
         <parameter value="false" name="value"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="C215f071c-735a-4b82-ab8f-2a03f70e8aba" priority="normal">
-        <source>
-            <class>
-                <type name="SO_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </class>
-        </source>
-        <target>
-            <class>
-                <type name="SO_TextAbschnittFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </class>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
-        </complexParameter>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6c461b6a-ba8d-4c05-85c5-3e27a3783237" priority="normal">
         <source>
             <class>
@@ -6154,6 +6134,26 @@ if (typ) {&#13;
         <source>
             <class>
                 <type name="RP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C215f071c-735a-4b82-ab8f-2a03f70e8aba" priority="normal">
+        <source>
+            <class>
+                <type name="SO_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </source>
         <target>
