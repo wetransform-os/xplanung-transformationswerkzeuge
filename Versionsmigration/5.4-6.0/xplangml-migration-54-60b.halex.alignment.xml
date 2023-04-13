@@ -6116,6 +6116,262 @@ if (typ) {&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf3953198-4a3e-4674-896c-3a1d064ae22c" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="aendert" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="_GenericApplicationPropertyOfXP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="aendertPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="_GenericApplicationPropertyOfXP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Cc1b182e0-f9b2-41ae-ade6-72c9c7d3178e" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="aendert" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="aendertPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="aenderungsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1000"/>
+                    <value value="1000"/>
+                </entry>
+                <entry>
+                    <key value="1100"/>
+                    <value value="10001"/>
+                </entry>
+                <entry>
+                    <key value="2000"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="20000"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="20001"/>
+                    <value value="3000"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C458c98cd-9e75-45fe-9e50-973a543da937" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="aendert" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="nummer" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="aendertPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="nummer" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C554e3110-7cf4-4a86-93dc-48b2bc48d92c" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="aendert" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="planName" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="aendertPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="planName" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cda558f18-8f45-4ae9-a419-e0da7087cc88" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="aendert" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="verbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="aendertPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="verbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C3aee1d06-82f0-43a1-a695-da9f1685d8ab" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="_GenericApplicationPropertyOfXP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="wurdeGeaendertVonPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="_GenericApplicationPropertyOfXP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C0220bc6c-8069-42a9-9d58-b72ddc084d1d" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="rechtscharakter" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="wurdeGeaendertVonPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="aenderungsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1000"/>
+                    <value value="1000"/>
+                </entry>
+                <entry>
+                    <key value="1100"/>
+                    <value value="10001"/>
+                </entry>
+                <entry>
+                    <key value="2000"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="20000"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="20001"/>
+                    <value value="3000"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cdf17c957-d77f-4a73-b5d1-29f9ed9214b6" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="nummer" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="wurdeGeaendertVonPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="nummer" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ccb815b75-f8cb-4956-86f4-c7691909d787" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="planName" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="wurdeGeaendertVonPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="planName" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ce7a62582-87dd-4453-83b3-9e8fd68a7ddd" priority="normal">
+        <source>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wurdeGeaendertVon" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="verbundenerPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="wurdeGeaendertVonPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="choice" ns="http://www.xplanung.de/xplangml/6/0/XP_VerbundenerPlan"/>
+                <child name="XP_VerbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="verbundenerPlan" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C8a017f27-8d94-4ff8-8404-2e1fafd92a14" priority="normal">
         <source>
             <class>
