@@ -751,7 +751,7 @@
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C81642130-0b64-4f1b-bc68-b73dcb78235d" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C81642130-0b64-4f1b-bc68-b73dcb78235d" priority="normal">
         <source>
             <property>
                 <type name="BP_GruenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -766,8 +766,19 @@
                 <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="14007"/>
+                    <value value="1400"/>
+                </entry>
+                <entry>
+                    <key value="24002"/>
+                    <value value="2400"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="source" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbea7ec93-7b46-4737-bbc8-4364d6fc5ffe" priority="normal">
         <source>
