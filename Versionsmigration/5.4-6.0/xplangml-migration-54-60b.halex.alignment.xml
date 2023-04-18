@@ -1143,10 +1143,13 @@ return verfahren
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1167,6 +1170,24 @@ return verfahren
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C53def05a-0584-4b53-bf17-94433686bd71" priority="normal">
+        <source>
+            <property>
+                <type name="BP_NebenanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_NebenanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestNebenanlagen" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ca8ad908f-47dc-46a7-a565-eb97655199e3" priority="normal">
         <source>
