@@ -345,6 +345,86 @@
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.join" id="Ca52252bd-71d1-4726-bb84-4b92b6b3720b" priority="highest">
+        <source name="types">
+            <class>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <source name="types">
+            <class>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="join">
+            <jp:join-parameter xmlns:jp="http://www.esdi-humboldt.eu/hale/join">
+                <class>
+                    <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <class>
+                    <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <jp:condition>
+                    <property>
+                        <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="href" ns="http://www.w3.org/1999/xlink"/>
+                    </property>
+                    <property>
+                        <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+                    </property>
+                </jp:condition>
+            </jp:join-parameter>
+        </complexParameter>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//this groovy script collects the values of the attribute &#13;
+//BP_Plan.verfahren for each BP_Bereich.id&#13;
+&#13;
+withTransformationContext {&#13;
+	def c = _.context.collector(it)&#13;
+	&#13;
+	def bereichId = _source.p.id.value()&#13;
+	def verfahren = _source.links.BP_Plan.p.verfahren.value()&#13;
+	&#13;
+	c.bereichId_verfahren[bereichId] &lt;&lt; verfahren&#13;
+}
+</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C161be572-2888-4fe2-ac7c-7986420aa9e7" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="verfahren" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//this groovy script assigns the collected values&#13;
+//of collector 'bereichId_verfahren'&#13;
+&#13;
+withTransformationContext{&#13;
+	def c = _.context.collector(it)&#13;
+	verfahren = c.bereichId_verfahren[id].value()&#13;
+}&#13;
+return verfahren
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce797be8e-b3eb-400e-a978-c40865820c52" priority="normal">
         <source>
             <class>
