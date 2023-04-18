@@ -807,8 +807,50 @@ return verfahren
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cd4e75904-fe37-4706-a6df-110c8cb587e0" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestGemeinschaftsanlagen" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ccd8ce073-77bd-4310-86bd-11f849429e50" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestGemeinschaftsanlagen" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6f5b5432-fb8f-4513-a5af-8dc1e6f8d796" priority="normal">
