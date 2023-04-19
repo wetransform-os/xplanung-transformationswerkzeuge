@@ -927,13 +927,16 @@ return verfahren
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -965,6 +968,24 @@ return verfahren
             </lookup-table>
         </complexParameter>
         <parameter value="source" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C6fda6446-6de8-41c8-91b3-b3ed069d54af" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GruenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GruenFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestGruen" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cbea7ec93-7b46-4737-bbc8-4364d6fc5ffe" priority="normal">
         <source>
@@ -1082,13 +1103,16 @@ return verfahren
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1127,6 +1151,42 @@ return verfahren
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C76d8a26d-be4d-4d18-a23d-9a2c827c7ec5" priority="normal">
+        <source>
+            <property>
+                <type name="BP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestLandwirtschaft" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C475f9a75-6a2b-4b53-a679-99d2686a3d2b" priority="normal">
+        <source>
+            <property>
+                <type name="BP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestLandwirtschaft" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccc15506d-b9e8-4487-a526-1f2cba1f3294" priority="normal">
         <source>
@@ -2210,10 +2270,13 @@ return verfahren
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
@@ -2244,6 +2307,24 @@ return verfahren
             </lookup-table>
         </complexParameter>
         <parameter value="source" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf711d9c1-d5fe-4b82-972e-595b21beadf4" priority="normal">
+        <source>
+            <property>
+                <type name="BP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestVerEntsorgung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5b6aa656-4bc9-4d98-a516-65dbf61f8176" priority="normal">
         <source>
@@ -2398,10 +2479,13 @@ return verfahren
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
@@ -2425,6 +2509,24 @@ return verfahren
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cae620a7e-f2c0-4474-b62d-0e17c36a378e" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="BP_KomplexeZweckbestWald" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C8ef1f701-1d8c-4781-9dec-b9afdbb4f977" priority="normal">
         <source>
