@@ -5570,6 +5570,12 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
@@ -5614,6 +5620,24 @@ if (typ) {&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cafefe433-0ee3-459b-aaa2-3b2e824baa16" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeFestlegungGewaesser" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.classification" id="Cec05bf5c-1e30-4c79-8e76-34f7b984193b" priority="normal">
         <source>
             <property>
@@ -5647,6 +5671,24 @@ if (typ) {&#13;
         </complexParameter>
         <parameter value="source" name="notClassifiedAction"/>
         <documentation>TODO: Has to be checked</documentation>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C80e67d91-a715-44ee-a8fb-66952752d63e" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeFestlegungGewaesser" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5b1ec9af-7eba-4c6d-afbc-12e9da3fe5dd" priority="normal">
         <source>
