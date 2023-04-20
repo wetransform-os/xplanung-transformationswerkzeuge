@@ -6243,7 +6243,16 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -6392,6 +6401,24 @@ if (typ) {&#13;
         </complexParameter>
         <parameter value="null" name="notClassifiedAction"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C633abe5c-de38-4de9-81ad-1c2a35d8f46e" priority="normal">
+        <source>
+            <property>
+                <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeZweckbestStrassenverkehr" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C41a73cb5-9882-4272-9719-9ebd4a734553" priority="normal">
         <source>
             <property>
@@ -6414,6 +6441,24 @@ if (typ) {&#13;
         <source>
             <property>
                 <type name="BP_VerkehrsflaecheBesondererZweckbestimmungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeZweckbestStrassenverkehr" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cbb203e58-6743-4c63-bfe8-509607e45ebf" priority="normal">
+        <source>
+            <property>
+                <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
