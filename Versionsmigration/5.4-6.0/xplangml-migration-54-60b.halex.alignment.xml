@@ -2782,12 +2782,75 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">nutzungText</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteSondernutzung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">sonderNutzung</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ce38153b3-bd42-4ed2-b290-8039fe97b92b" priority="normal">
+        <source>
+            <property>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="sonderNutzung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="sondernutzung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="FP_KomplexeSondernutzung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C7ffa5210-3134-4eda-8c81-3ac1e581a514" priority="normal">
+        <source>
+            <property>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteSondernutzung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="sondernutzung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="FP_KomplexeSondernutzung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C2679a10f-8809-443d-8384-309ca6dd5e0c" priority="normal">
+        <source>
+            <property>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="nutzungText" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="sondernutzung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="FP_KomplexeSondernutzung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="nutzungText" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C010523a2-c6b1-4c7d-9123-a68dfc760804" priority="normal">
         <source>
