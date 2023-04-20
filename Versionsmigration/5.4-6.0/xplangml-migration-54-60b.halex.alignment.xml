@@ -5815,10 +5815,16 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -5846,6 +5852,24 @@ if (typ) {&#13;
         <source>
             <property>
                 <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeFestlegungGewaesser" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C3125b5af-72da-4d61-9472-211e79aba5d1" priority="normal">
+        <source>
+            <property>
+                <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
@@ -5898,6 +5922,24 @@ if (typ) {&#13;
         <source>
             <property>
                 <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeFestlegungGewaesser" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cd1846990-361c-4920-b4a8-81f82234a19f" priority="normal">
+        <source>
+            <property>
+                <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
@@ -6535,7 +6577,16 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -6550,6 +6601,38 @@ if (typ) {&#13;
             <property>
                 <type name="SO_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C428aad29-6f89-4ac8-a7a4-975749e816bb" priority="normal">
+        <source>
+            <property>
+                <type name="FP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cd05c0358-f826-4d37-8dd1-fa8197e877c8" priority="normal">
+        <source>
+            <property>
+                <type name="FP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detailArtDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
