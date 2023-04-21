@@ -6483,6 +6483,85 @@ if (typ) {&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1bcab38a-86ca-402e-a33c-ab5ef33c6f8d" priority="normal">
+        <source>
+            <class>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">referenzURL</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">referenzName</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C76d6b9c4-5ff1-40e5-ae6a-54dcdcb0e81d" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="referenzName" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="referenzName" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (referenzName) {&#13;
+	return referenzName&#13;
+}&#13;
+else {&#13;
+	return 'Unbekannt'&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C82e6c58f-4380-4a8d-9af4-c5ef1eba0fea" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="referenzURL" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="referenzName" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="referenzURL" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (referenzURL) {&#13;
+	return referenzURL&#13;
+}&#13;
+else if (referenzName) {&#13;
+	return referenzName&#13;
+}&#13;
+else {&#13;
+	return 'Unbekannt'&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C06cf2256-482b-47ad-9c8f-8c2e0fb7e05a" priority="normal">
         <source>
             <class>
