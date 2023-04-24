@@ -5285,6 +5285,22 @@ if (typ) {&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C044e7952-7b0e-4c2d-b95b-f37e170f253f" priority="normal">
+        <source>
+            <property>
+                <type name="LP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="konkretisierung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="rechtsCharText" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.classification" id="Cca72a9f1-0668-431a-9a80-e199c65cd6b4" priority="normal">
         <source>
             <property>
@@ -5423,6 +5439,9 @@ if (typ) {&#13;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">konkretisierung</core:name>
+        </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
