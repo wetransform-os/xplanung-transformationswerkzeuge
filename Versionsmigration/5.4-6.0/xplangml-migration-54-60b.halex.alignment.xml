@@ -7452,24 +7452,6 @@ if (typ) {&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C41a73cb5-9882-4272-9719-9ebd4a734553" priority="normal">
-        <source>
-            <property>
-                <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="SO_KomplexeZweckbestStrassenverkehr" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C3df764e6-0b51-4e4b-9b55-551ae5d58eaf" priority="normal">
         <source>
             <property>
@@ -7501,6 +7483,22 @@ if (typ) {&#13;
                 <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="SO_KomplexeZweckbestStrassenverkehr" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C218036f8-824b-4681-8c25-d9e672ff6dda" priority="normal">
+        <source>
+            <property>
+                <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="einteilung" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
