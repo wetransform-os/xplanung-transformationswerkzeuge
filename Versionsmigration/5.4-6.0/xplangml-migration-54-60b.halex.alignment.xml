@@ -6897,12 +6897,20 @@ if (typ) {&#13;
                     <value value="20000"/>
                 </entry>
                 <entry>
+                    <key value="10002"/>
+                    <value value="20002"/>
+                </entry>
+                <entry>
                     <key value="10001"/>
                     <value value="20001"/>
                 </entry>
                 <entry>
-                    <key value="10002"/>
-                    <value value="20002"/>
+                    <key value="10003"/>
+                    <value value="3000"/>
+                </entry>
+                <entry>
+                    <key value="2000"/>
+                    <value value="4000"/>
                 </entry>
             </lookup-table>
         </complexParameter>
@@ -6932,6 +6940,24 @@ if (typ) {&#13;
             <property>
                 <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="detaillierteZweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeFestlegungGewaesser" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cbeb76a1a-7577-487e-8738-2723187a3c41" priority="normal">
+        <source>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detailArtDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
         <target>
