@@ -6854,6 +6854,34 @@ if (typ) {&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C8f8915ce-b494-492c-9095-6d6b641d9be1" priority="normal">
+        <source>
+            <class>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4">
+                    <condition lang="ECQL">artDerFestlegung = 1000 OR artDerFestlegung = 10000 OR artDerFestlegung = 10001 OR artDerFestlegung = 10002</condition>
+                </type>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detailArtDerFestlegung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">artDerFestlegung</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.classification" id="Cafefe433-0ee3-459b-aaa2-3b2e824baa16" priority="normal">
         <source>
             <property>
@@ -6978,6 +7006,45 @@ if (typ) {&#13;
         <parameter value="source" name="notClassifiedAction"/>
         <documentation>TODO: Has to be checked</documentation>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Cdd95a1ff-66a3-4230-abea-2a814c89804e" priority="normal">
+        <source>
+            <property>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4">
+                    <condition lang="ECQL">artDerFestlegung = 1000 OR artDerFestlegung = 10000 OR artDerFestlegung = 10001 OR artDerFestlegung = 10002</condition>
+                </type>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeFestlegungGewaesser" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1000"/>
+                    <value value="1000"/>
+                </entry>
+                <entry>
+                    <key value="10000"/>
+                    <value value="20000"/>
+                </entry>
+                <entry>
+                    <key value="10001"/>
+                    <value value="20001"/>
+                </entry>
+                <entry>
+                    <key value="10002"/>
+                    <value value="20002"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C80e67d91-a715-44ee-a8fb-66952752d63e" priority="normal">
         <source>
             <property>
@@ -7018,6 +7085,26 @@ if (typ) {&#13;
         <source>
             <property>
                 <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detailArtDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="SO_KomplexeFestlegungGewaesser" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detail" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C85df44ac-947f-4a0e-96b1-a377d245e3c0" priority="normal">
+        <source>
+            <property>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4">
+                    <condition lang="ECQL">artDerFestlegung = 1000 OR artDerFestlegung = 10000 OR artDerFestlegung = 10001 OR artDerFestlegung = 10002</condition>
+                </type>
                 <child name="detailArtDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
@@ -7758,7 +7845,9 @@ if (typ) {&#13;
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6c461b6a-ba8d-4c05-85c5-3e27a3783237" priority="normal">
         <source>
             <class>
-                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4">
+                    <condition lang="ECQL">NOT(artDerFestlegung = 1000 OR artDerFestlegung = 10000 OR artDerFestlegung = 10001 OR artDerFestlegung = 10002)</condition>
+                </type>
             </class>
         </source>
         <target>
