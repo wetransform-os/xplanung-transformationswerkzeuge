@@ -6693,6 +6693,9 @@ if (typ) {&#13;
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C43783597-d9d9-45c9-9da5-0f88e606f784" priority="normal">
@@ -6782,6 +6785,9 @@ if (typ) {&#13;
             </class>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
         </complexParameter>
@@ -7343,6 +7349,9 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
@@ -7400,6 +7409,9 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
@@ -7425,6 +7437,9 @@ if (typ) {&#13;
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C8165fde9-9787-47c0-8e74-05ca9f34211e" priority="normal">
@@ -7440,13 +7455,13 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
@@ -7716,13 +7731,16 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
