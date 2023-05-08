@@ -6845,7 +6845,7 @@ if (typ) {&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cafefe433-0ee3-459b-aaa2-3b2e824baa16" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Cafefe433-0ee3-459b-aaa2-3b2e824baa16" priority="normal">
         <source>
             <property>
                 <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -6860,10 +6860,33 @@ if (typ) {&#13;
                 <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1000"/>
+                    <value value="4000"/>
+                </entry>
+                <entry>
+                    <key value="10000"/>
+                    <value value="40000"/>
+                </entry>
+                <entry>
+                    <key value="1100"/>
+                    <value value="3000"/>
+                </entry>
+                <entry>
+                    <key value="1200"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="9999"/>
+                    <value value="9999"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C3125b5af-72da-4d61-9472-211e79aba5d1" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C3125b5af-72da-4d61-9472-211e79aba5d1" priority="normal">
         <source>
             <property>
                 <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -6878,8 +6901,31 @@ if (typ) {&#13;
                 <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1000"/>
+                    <value value="4000"/>
+                </entry>
+                <entry>
+                    <key value="10000"/>
+                    <value value="40000"/>
+                </entry>
+                <entry>
+                    <key value="1100"/>
+                    <value value="3000"/>
+                </entry>
+                <entry>
+                    <key value="1200"/>
+                    <value value="2000"/>
+                </entry>
+                <entry>
+                    <key value="9999"/>
+                    <value value="9999"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.classification" id="Cec05bf5c-1e30-4c79-8e76-34f7b984193b" priority="normal">
         <source>
