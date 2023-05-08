@@ -6629,6 +6629,31 @@ if (typ) {&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C1ab11bdd-f157-48ff-8f2d-b2186c508ff3" priority="normal">
+        <source>
+            <class>
+                <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4">
+                    <condition lang="ECQL">artDerFestlegung = 1000 OR artDerFestlegung = 1200</condition>
+                </type>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_BaubeschraenkungType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">artDerFestlegung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.classification" id="C5354f7b1-f24f-46a5-8262-72d2f6dd9dae" priority="normal">
         <source>
             <property>
@@ -6648,6 +6673,35 @@ if (typ) {&#13;
             <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
                 <entry>
                     <key value="7000"/>
+                    <value value="2000"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="C5ccc5854-6aa1-4bde-ab12-a3bae468b3ec" priority="normal">
+        <source>
+            <property>
+                <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4">
+                    <condition lang="ECQL">artDerFestlegung = 1000 OR artDerFestlegung = 1200</condition>
+                </type>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_BaubeschraenkungType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1000"/>
+                    <value value="9999"/>
+                </entry>
+                <entry>
+                    <key value="1200"/>
                     <value value="2000"/>
                 </entry>
             </lookup-table>
@@ -7518,7 +7572,9 @@ if (typ) {&#13;
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C91afc0ef-c44e-4489-a351-cdcf9ec11812" priority="normal">
         <source>
             <class>
-                <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4">
+                    <condition lang="ECQL">NOT(artDerFestlegung = 1000 OR artDerFestlegung = 1200)</condition>
+                </type>
             </class>
         </source>
         <target>
