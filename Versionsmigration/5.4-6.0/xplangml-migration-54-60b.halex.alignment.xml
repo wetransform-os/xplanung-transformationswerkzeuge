@@ -1857,40 +1857,6 @@ return verfahren
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C83d6eb14-891d-4dc2-a50a-f0b7856e7ae2" priority="normal">
-        <source>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C136c3e16-8af3-4c3d-9ce6-89c660b0af55" priority="normal">
-        <source name="var">
-            <property>
-                <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
-            </property>
-        </target>
-        <parameter value="#{id}" name="pattern"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C3973f811-11ba-4c36-8a9d-e32b1d118bc4" priority="normal">
         <source>
             <property>
@@ -8824,6 +8790,22 @@ else {&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C136c3e16-8af3-4c3d-9ce6-89c660b0af55" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="#{id}" name="pattern"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cbb250a76-f578-4fad-8714-747b252a32b1" priority="normal">
         <source>
             <property>
@@ -9062,9 +9044,7 @@ else {&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def refText = _source.p.refText.first()&#13;
-&#13;
-if(refText){&#13;
+if(_source.links.BP_Bereich.BP_Plan.first()){&#13;
 	_target{&#13;
 &#13;
 	}&#13;
@@ -9116,33 +9096,33 @@ if(refText){&#13;
         <complexParameter name="join">
             <jp:join-parameter xmlns:jp="http://www.esdi-humboldt.eu/hale/join">
                 <class>
-                    <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                    <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 </class>
                 <class>
                     <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 </class>
                 <class>
-                    <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                    <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 </class>
                 <jp:condition>
                     <property>
                         <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                        <child name="rasterBasis" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="href" ns="http://www.w3.org/1999/xlink"/>
                     </property>
                     <property>
-                        <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="id" ns="http://www.opengis.net/gml/3.2"/>
                     </property>
                 </jp:condition>
                 <jp:condition>
                     <property>
-                        <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="id" ns="http://www.opengis.net/gml/3.2"/>
                     </property>
                     <property>
                         <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="rasterBasis" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="href" ns="http://www.w3.org/1999/xlink"/>
                     </property>
                 </jp:condition>
@@ -9150,8 +9130,7 @@ if(refText){&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def refText = _source.p.refText.first()&#13;
-if(refText){ 	&#13;
+if(_source.links.FP_Bereich.FP_Plan.first()){ 	&#13;
 	_target{ &#13;
 	&#13;
 	} &#13;
@@ -9223,33 +9202,33 @@ if(refText){ 	&#13;
         <complexParameter name="join">
             <jp:join-parameter xmlns:jp="http://www.esdi-humboldt.eu/hale/join">
                 <class>
-                    <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                    <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 </class>
                 <class>
                     <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 </class>
                 <class>
-                    <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                    <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 </class>
                 <jp:condition>
                     <property>
                         <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                        <child name="rasterBasis" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="href" ns="http://www.w3.org/1999/xlink"/>
                     </property>
                     <property>
-                        <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="id" ns="http://www.opengis.net/gml/3.2"/>
                     </property>
                 </jp:condition>
                 <jp:condition>
                     <property>
-                        <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="id" ns="http://www.opengis.net/gml/3.2"/>
                     </property>
                     <property>
                         <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="rasterBasis" ns="http://www.xplanung.de/xplangml/5/4"/>
                         <child name="href" ns="http://www.w3.org/1999/xlink"/>
                     </property>
                 </jp:condition>
@@ -9257,8 +9236,7 @@ if(refText){ 	&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def refText = _source.links.RP_Bereich.XP_Rasterdarstellung.p.refText.first()&#13;
-if(refText){&#13;
+if(_source.links.RP_Bereich.RP_Plan.first()){&#13;
 	_target{ &#13;
 	&#13;
 	} &#13;
