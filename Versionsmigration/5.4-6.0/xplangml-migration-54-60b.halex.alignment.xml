@@ -646,34 +646,6 @@ return verfahren
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="Ce81e7dfa-9911-4e7f-996e-d001771de0c7" priority="normal">
-        <source>
-            <class>
-                <type name="BP_EmissionskontingentLaermGebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </class>
-        </source>
-        <target>
-            <class>
-                <type name="BP_EmissionskontingentLaermGebietType" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </class>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cb769ba1e-94d3-4b67-b56b-fbe8cf96760c" priority="normal">
-        <source>
-            <class>
-                <type name="BP_EmissionskontingentLaermType" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </class>
-        </source>
-        <target>
-            <class>
-                <type name="BP_EmissionskontingentLaermType" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </class>
-        </target>
-        <parameter value="true" name="ignoreNamespaces"/>
-        <parameter value="true" name="structuralRename"/>
-    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C88d36a85-da04-4ce3-a575-a7d730ef5211" priority="normal">
         <source>
             <class>
