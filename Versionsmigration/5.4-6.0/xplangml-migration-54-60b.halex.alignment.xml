@@ -5686,6 +5686,29 @@ if (typ) {&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C305dcfb2-b3c0-4828-a830-b3b0acc88d14" priority="normal">
+        <source>
+            <class>
+                <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_SchutzBestimmterTeileVonNaturUndLandschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C9bc544ee-7336-47bf-affb-246161e5d15d" priority="normal">
         <source>
             <class>
