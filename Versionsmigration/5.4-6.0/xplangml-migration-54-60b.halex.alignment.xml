@@ -7336,7 +7336,32 @@ if (typ) {&#13;
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">sonstigerTyp</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C6d07230d-d8cf-4316-b1db-08570857d8f9" priority="normal">
+        <source name="var">
+            <property>
+                <type name="RP_ZentralerOrtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="sonstigerTyp" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="RP_ZentralerOrtType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="sonstigerTyp" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if(sonstigerTyp != '9999'){&#13;
+	sonstigerTyp&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C69046a19-e341-460b-9546-e28dc2e5a745" priority="normal">
         <source>
