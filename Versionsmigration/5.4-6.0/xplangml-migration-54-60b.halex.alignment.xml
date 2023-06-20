@@ -5330,6 +5330,14 @@ if (typ) {&#13;
         <complexParameter name="lookupTable">
             <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
                 <entry>
+                    <key value="4000"/>
+                    <value value="5200"/>
+                </entry>
+                <entry>
+                    <key value="9998"/>
+                    <value value="9998"/>
+                </entry>
+                <entry>
                     <key value="1000"/>
                     <value value="5000"/>
                 </entry>
@@ -5340,14 +5348,6 @@ if (typ) {&#13;
                 <entry>
                     <key value="3000"/>
                     <value value="2000"/>
-                </entry>
-                <entry>
-                    <key value="4000"/>
-                    <value value="5200"/>
-                </entry>
-                <entry>
-                    <key value="9998"/>
-                    <value value="9998"/>
                 </entry>
                 <entry>
                     <key value="9999"/>
@@ -6464,6 +6464,10 @@ if (typ) {&#13;
                 <entry>
                     <key value="9000"/>
                     <value value="4700"/>
+                </entry>
+                <entry>
+                    <key value="3000"/>
+                    <value value="2000"/>
                 </entry>
             </lookup-table>
         </complexParameter>
