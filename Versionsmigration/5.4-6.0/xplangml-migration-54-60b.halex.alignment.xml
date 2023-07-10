@@ -10763,7 +10763,12 @@ else {&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if(_source.links.BP_Bereich.BP_Plan.first()){&#13;
 	_target{&#13;
-&#13;
+		rechtscharakter( '9998' )&#13;
+		&#13;
+		def bereichId = _source.links.BP_Bereich.p.id.value()&#13;
+		_log.info("Hinweis: Für BP_Bereich ${bereichId} wird 'rasterBasis.XP_Rasterdarstellung.refText' " +&#13;
+				"nach 'XP_TextAbschnitt' abgebildet. 'XP_TextAbschnitt.rechtscharakter' ist verpflichtend, " +&#13;
+				"es wird der Wert '9998' (unbekannt) zugewiesen.")&#13;
 	}&#13;
 }
 </core:text>
@@ -10849,7 +10854,12 @@ if(_source.links.BP_Bereich.BP_Plan.first()){&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if(_source.links.FP_Bereich.FP_Plan.first()){ 	&#13;
 	_target{ &#13;
-	&#13;
+		rechtscharakter( '9998' )&#13;
+		&#13;
+		def bereichId = _source.links.FP_Bereich.p.id.value()&#13;
+		_log.info("Hinweis: Für FP_Bereich ${bereichId} wird 'rasterBasis.XP_Rasterdarstellung.refText' " +&#13;
+				"nach 'XP_TextAbschnitt' abgebildet. 'XP_TextAbschnitt.rechtscharakter' ist verpflichtend, " +&#13;
+				"es wird der Wert '9998' (unbekannt) zugewiesen.")&#13;
 	} &#13;
 }
 </core:text>
@@ -10936,7 +10946,13 @@ if(_source.links.FP_Bereich.FP_Plan.first()){ 	&#13;
 &#13;
 if(_source.links.LP_Bereich.LP_Plan.first()){&#13;
 	_target{&#13;
-&#13;
+		rechtscharakter( '9998' )&#13;
+		&#13;
+		def bereichId = _source.links.LP_Bereich.p.id.value()&#13;
+		_log.info("Hinweis: Für LP_Bereich ${bereichId} wird 'rasterBasis.XP_Rasterdarstellung.refText' " +&#13;
+				"nach 'XP_TextAbschnitt' abgebildet. 'XP_TextAbschnitt.rechtscharakter' ist verpflichtend, " +&#13;
+				"es wird der Wert '9998' (unbekannt) zugewiesen.")&#13;
+		&#13;
 	}&#13;
 }&#13;
 
@@ -11023,7 +11039,13 @@ if(_source.links.LP_Bereich.LP_Plan.first()){&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if(_source.links.RP_Bereich.RP_Plan.first()){&#13;
 	_target{ &#13;
-	&#13;
+		rechtscharakter( '9998' )&#13;
+		&#13;
+		def bereichId = _source.links.RP_Bereich.p.id.value()&#13;
+		_log.info("Hinweis: Für RP_Bereich ${bereichId} wird 'rasterBasis.XP_Rasterdarstellung.refText' " +&#13;
+				"nach 'XP_TextAbschnitt' abgebildet. 'XP_TextAbschnitt.rechtscharakter' ist verpflichtend, " +&#13;
+				"es wird der Wert '9998' (unbekannt) zugewiesen.")&#13;
+		&#13;
 	} &#13;
 }
 </core:text>
@@ -11109,7 +11131,13 @@ if(_source.links.RP_Bereich.RP_Plan.first()){&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if(_source.links.SO_Bereich.SO_Plan.first()){ 	&#13;
 	_target{ &#13;
-	&#13;
+		rechtscharakter( '9998' )&#13;
+		&#13;
+		def bereichId = _source.links.SO_Bereich.p.id.value()&#13;
+		_log.info("Hinweis: Für SO_Bereich ${bereichId} wird 'rasterBasis.XP_Rasterdarstellung.refText' " +&#13;
+				"nach 'XP_TextAbschnitt' abgebildet. 'XP_TextAbschnitt.rechtscharakter' ist verpflichtend, " +&#13;
+				"es wird der Wert '9998' (unbekannt) zugewiesen.")&#13;
+		&#13;
 	} &#13;
 }&#13;
 
