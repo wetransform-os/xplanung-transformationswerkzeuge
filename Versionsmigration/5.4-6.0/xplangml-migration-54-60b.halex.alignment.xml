@@ -5353,6 +5353,10 @@ if (typ) {&#13;
                     <key value="9999"/>
                     <value value="9999"/>
                 </entry>
+                <entry>
+                    <key value="5000"/>
+                    <value value="1000"/>
+                </entry>
             </lookup-table>
         </complexParameter>
         <parameter value="null" name="notClassifiedAction"/>
