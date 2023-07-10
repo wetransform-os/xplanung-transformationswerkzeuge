@@ -5542,6 +5542,42 @@ if (typ) {&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ce0566472-db68-4cee-a55c-795636e4e505" priority="normal">
+        <source>
+            <property>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="planungstraegerGKZ" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C8b6f0bcb-5782-41dc-b0bb-f7190ac1bda2" priority="normal">
+        <source>
+            <property>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="planungstraeger" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gemeindeName" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C7b80c2e9-4b84-4e6c-8a54-6d7c67eac890" priority="normal">
         <source>
             <property>
