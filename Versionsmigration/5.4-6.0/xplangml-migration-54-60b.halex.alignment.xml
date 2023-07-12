@@ -476,6 +476,9 @@
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteSondernutzung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">bebauungsArt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">sondernutzung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
@@ -488,6 +491,28 @@
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C31f87b39-cb80-4d08-abbf-58621490dfba" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (bebauungsArt != '8000') {&#13;
+	return bebauungsArt&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cbce4279c-3259-40f8-8405-088a0653cfa6" priority="normal">
         <source>
@@ -912,7 +937,32 @@ return verfahren
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">dachgestaltung</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">bebauungsArt</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C112ff57f-ed36-45d7-970d-e9f63f17354b" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (bebauungsArt != '8000') {&#13;
+	return bebauungsArt&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C5f82d94b-8a0f-4279-9f45-9715d90adcb1" priority="normal">
         <source>
@@ -1285,7 +1335,7 @@ return verfahren
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
@@ -1294,12 +1344,37 @@ return verfahren
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">zweckbestimmung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">bebauungsArt</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteZweckbestimmung</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C4a22a207-3d8e-4e79-91ac-89fd672e1c82" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (bebauungsArt != '8000') {&#13;
+	return bebauungsArt&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C49787805-f983-41a1-9292-720370ef6dca" priority="normal">
         <source>
@@ -3338,6 +3413,28 @@ return verfahren
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cb2426c73-c953-46e2-9a3e-114a084edf9b" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (bebauungsArt != '8000') {&#13;
+	return bebauungsArt&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cd69e84a1-2fa3-4687-a284-c60c94b04a63" priority="normal">
         <source>
             <property>
@@ -3927,9 +4024,34 @@ if (typ) {&#13;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">refGebaeudequerschnitt</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">bebauungsArt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C2152111b-565c-4cff-b5c2-8df3c91bc275" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="bebauungsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (bebauungsArt != '8000') {&#13;
+	return bebauungsArt&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C3474af47-bf7a-4626-a61b-654dbdaf8123" priority="normal">
         <source>
