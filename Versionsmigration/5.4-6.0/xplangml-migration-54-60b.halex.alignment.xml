@@ -6725,6 +6725,77 @@ if (bebauungsArt != '8000') {&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Ca98d36e2-0ba0-44fd-a9e4-5e9feb1b738c" priority="normal">
+        <source name="var">
+            <property>
+                <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="LP_SchutzBestimmterTeileVonNaturUndLandschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gesetzlGeschBiotop" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (artDerFestlegung == '1700') {&#13;
+	return '9999'&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cc3642fe9-ff97-4aad-ba12-73d05a8e76f8" priority="normal">
+        <source name="var">
+            <property>
+                <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="LP_SchutzBestimmterTeileVonNaturUndLandschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gesetzlGeschBiotopText" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (artDerFestlegung == '1700') {&#13;
+	return 'unbekannt'&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="C047ba0a6-733a-4cf9-924e-13880c4ef5d2" priority="normal">
+        <target>
+            <property>
+                <type name="LP_SchutzBestimmterTeileVonNaturUndLandschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="raumkonkretisierung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="9998" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="Cf722d33d-f445-41fe-b46c-4a2338510605" priority="normal">
+        <target>
+            <property>
+                <type name="LP_SchutzBestimmterTeileVonNaturUndLandschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="rechtsstandSchG" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="9999" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="C7c6b095b-ec92-4561-ba87-5c1378ba8b3f" priority="normal">
+        <target>
+            <property>
+                <type name="LP_SchutzBestimmterTeileVonNaturUndLandschaftType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="rechtsstandSchGText" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="Bei dem vorliegenden Plan handelt es sich um einen aus einer älteren XPlan-Version migrierten Plan, daher ist der Wert für 'rechtsstandSchGText' nicht bekannt." name="value"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C9bc544ee-7336-47bf-affb-246161e5d15d" priority="normal">
         <source>
             <class>
