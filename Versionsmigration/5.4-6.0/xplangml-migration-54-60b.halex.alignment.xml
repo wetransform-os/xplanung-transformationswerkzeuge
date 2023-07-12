@@ -8709,6 +8709,37 @@ if(sonstigerTyp != '9999'){&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.classification" id="Cc7e2cd5f-31e9-4926-9566-dd9d9bdbd973" priority="normal">
+        <source>
+            <property>
+                <type name="BP_ErhaltungsBereichFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="grund" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_GebietType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gebietsArt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="lookupTable">
+            <lookup-table xmlns:ns2="http://www.esdi-humboldt.eu/hale/alignment" xmlns="">
+                <entry>
+                    <key value="1000"/>
+                    <value value="17000"/>
+                </entry>
+                <entry>
+                    <key value="2000"/>
+                    <value value="17001"/>
+                </entry>
+                <entry>
+                    <key value="3000"/>
+                    <value value="17002"/>
+                </entry>
+            </lookup-table>
+        </complexParameter>
+        <parameter value="null" name="notClassifiedAction"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.classification" id="C444ebba0-ab17-4886-9b55-0be6632d0620" priority="normal">
         <source>
             <property>
