@@ -10154,7 +10154,58 @@ else {&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign" id="C1b608bd2-a2cf-48c0-aa1a-dffd860eae65" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="Ca7173133-f28e-40cd-a809-a2ac847719cb" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="BP_StrassenVerkehrsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="hatDarstellungMitBesondZweckbest" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C7ef2c3ec-f0a4-4f87-93c1-ef5e010830b9" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="BP_VerkehrsflaecheBesondererZweckbestimmungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="hatDarstellungMitBesondZweckbest" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C311e6510-ee49-4b01-8075-86dd9580fe60" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="hatDarstellungMitBesondZweckbest" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign.bound" id="C87f7290d-124f-430e-970d-85f86bceec0a" priority="normal">
+        <source name="anchor">
+            <property>
+                <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
         <target>
             <property>
                 <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
