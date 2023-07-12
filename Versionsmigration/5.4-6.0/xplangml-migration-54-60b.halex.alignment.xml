@@ -464,10 +464,19 @@
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteSondernutzung</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">dachgestaltung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">refGebaeudequerschnitt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">detaillierteSondernutzung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">sondernutzung</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">nutzungText</core:name>
@@ -478,12 +487,142 @@
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">sondernutzung</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
-        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cbce4279c-3259-40f8-8405-088a0653cfa6" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C1636d3bc-9dbf-4c89-b181-ff2ae72bca6f" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C4dd593c2-1471-483e-8e6b-08297fd61824" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C9ff31847-3c8d-409d-ab4b-fafdf29390cc" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNZwingend" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNzwingend" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cfe560435-614a-4462-9d5d-182ec731155b" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ce87e66ae-8764-4f76-987d-39fdcb85e775" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ccf2a2613-0462-4c15-887b-75706c4dbafa" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.inline" id="C3f00f4db-ca38-4755-b54b-06b009d9bdb1" priority="normal">
@@ -762,14 +901,153 @@ return verfahren
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">dachgestaltung</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C5f82d94b-8a0f-4279-9f45-9715d90adcb1" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Caea32564-e7f2-41fe-8d04-24fe1572fc71" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C7f1774f2-08d8-4335-8564-f9ab03bb0b16" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C76c1df56-9255-4b16-924b-294bd092f2ec" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNZwingend" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNzwingend" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C9053b2fa-fc84-4388-aff2-e77921ac5c00" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cd3c2b45b-0446-42c7-b3ad-8a5397bfcbf7" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C63c882dc-fbc8-49c5-821a-2808013f020b" priority="normal">
+        <source>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C7fdd6fba-9179-4a23-a9d2-256610da5c9d" priority="normal">
@@ -1022,6 +1300,142 @@ return verfahren
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C49787805-f983-41a1-9292-720370ef6dca" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C1dc1a2f7-bef3-42fc-85ca-3e604cddf7d8" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C55510136-aad0-46f5-8e62-e678a128baa1" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ca8615e22-b103-4df3-bdee-7fa9bc7e6c51" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNZwingend" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNzwingend" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc666139d-da9e-4a91-a832-f03403a31410" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C114697bb-74a0-4ff1-9bb3-58b2af812f67" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc2075ca2-8480-45c7-a701-a193210666b1" priority="normal">
+        <source>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.classification" id="Ca95ffea9-47c0-4ba7-b713-ef077a2e005f" priority="normal">
         <source>
@@ -2908,9 +3322,6 @@ return verfahren
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">refGebaeudequerschnitt</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
@@ -2919,7 +3330,149 @@ return verfahren
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">refGebaeudequerschnitt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">dachgestaltung</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cd69e84a1-2fa3-4687-a284-c60c94b04a63" priority="normal">
+        <source>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C0ce05a28-5b9d-4dbd-8a31-9b06567d5ca2" priority="normal">
+        <source>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C2f294e17-2739-479d-b7d5-fb305c19b4bf" priority="normal">
+        <source>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ca23d2c5e-b4d5-49c9-a0b2-3fdd2823212d" priority="normal">
+        <source>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNZwingend" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNzwingend" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C5a25f8c0-bb31-4cdb-bc69-defb89b0fb81" priority="normal">
+        <source>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cb034e5a7-c882-4c39-ba55-7fe2c777f58b" priority="normal">
+        <source>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C99486342-24b4-43bc-b494-1885a5642b15" priority="normal">
+        <source>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.inline" id="C925824eb-6cf3-4233-ae0c-4016d6383480" priority="normal">
         <source>
@@ -3362,17 +3915,156 @@ if (typ) {&#13;
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">refGebaeudequerschnitt</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
-            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
-        </complexParameter>
-        <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">rechtscharakter</core:name>
         </complexParameter>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">dachgestaltung</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">refGebaeudequerschnitt</core:name>
+        </complexParameter>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">gesetzlicheGrundlage</core:name>
+        </complexParameter>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C3474af47-bf7a-4626-a61b-654dbdaf8123" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DN" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C95cb19b7-6e8d-44e9-a1fd-6b8dce3330e3" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmax" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc02a3738-a2d5-4999-b783-8a2e3c3081fd" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNmin" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ce314f56f-7a61-406a-bd6d-fb1af785f32d" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="DNZwingend" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="DNzwingend" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C863f507b-8f3e-4253-8965-1e09ea030554" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf6c6f3dc-6e84-40d8-8030-4a69faa90512" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>0</context>
+                </child>
+                <child name="BP_Dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="detaillierteDachform" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="false" name="ignoreNamespaces"/>
+        <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C1fec7a38-2a7f-4170-b0b9-2539c85c0277" priority="normal">
+        <source>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_WohngebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="dachgestaltung" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.inline" id="Ca8fccf06-b85e-4276-a12c-70d34666d07e" priority="normal">
