@@ -10063,14 +10063,14 @@ if(sonstigerTyp != '9999'){&#13;
         </complexParameter>
         <parameter value="null" name="notClassifiedAction"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C633abe5c-de38-4de9-81ad-1c2a35d8f46e" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C633abe5c-de38-4de9-81ad-1c2a35d8f46e" priority="normal">
+        <source name="var">
             <property>
                 <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <target name="result">
             <property>
                 <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="artDerFestlegung" ns="http://www.xplanung.de/xplangml/6/0"/>
@@ -10078,8 +10078,29 @@ if(sonstigerTyp != '9999'){&#13;
                 <child name="allgemein" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (zweckbestimmung == '1300') {&#13;
+	_log.info('Keine Abbildung für "zweckbestimmung" = "1300", stattdessen "istOrtsdurchfahrt" = "true"')&#13;
+}&#13;
+else if (zweckbestimmung == '3000') {&#13;
+	return '16005'&#13;
+}&#13;
+else if (zweckbestimmung == '3100') {&#13;
+	return '16006'&#13;
+}&#13;
+else if (zweckbestimmung == '3200') {&#13;
+	return '16003'&#13;
+}&#13;
+else if (zweckbestimmung == '3300') {&#13;
+	return '16004'&#13;
+}&#13;
+else {&#13;
+	return zweckbestimmung&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C3df764e6-0b51-4e4b-9b55-551ae5d58eaf" priority="normal">
         <source>
@@ -10141,6 +10162,28 @@ if(sonstigerTyp != '9999'){&#13;
             </property>
         </target>
         <parameter value="false" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C8a40006f-8b57-4b31-8ebb-685be32344a3" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="zweckbestimmung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="istOrtsdurchfahrt" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (zweckbestimmung == '1300') {&#13;
+	return true&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6c461b6a-ba8d-4c05-85c5-3e27a3783237" priority="normal">
         <source>
