@@ -1169,6 +1169,24 @@ if (bebauungsArt != '8000') {&#13;
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="C9822578e-4a94-47e4-ade5-ec29c18af92c" priority="normal">
+        <target>
+            <property>
+                <type name="BP_EmissionskontingentLaermType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="berechnungsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="1000" name="value"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="C2e818328-fa97-43d8-9576-3691d391a7ca" priority="normal">
+        <target>
+            <property>
+                <type name="BP_EmissionskontingentLaermType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="pegelTyp" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <parameter value="1000" name="value"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C88d36a85-da04-4ce3-a575-a7d730ef5211" priority="normal">
         <source>
             <class>
