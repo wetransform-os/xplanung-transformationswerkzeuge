@@ -509,6 +509,9 @@
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if (bebauungsArt != '8000') {&#13;
 	return bebauungsArt&#13;
+}&#13;
+else {&#13;
+	_log.warn ("Der Wert 8000 ist nicht mehr in den zulässigen Codes für BP_BaugebietsTeilFlaeche.bebauungsArt enthalten und wird daher nicht migriert")&#13;
 }
 </core:text>
         </complexParameter>
@@ -959,6 +962,9 @@ return verfahren
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if (bebauungsArt != '8000') {&#13;
 	return bebauungsArt&#13;
+}&#13;
+else {&#13;
+	_log.warn ("Der Wert 8000 ist nicht mehr in den zulässigen Codes für BP_BesondereNutzungszweckFlaeche.bebauungsArt enthalten und wird daher nicht migriert")&#13;
 }
 </core:text>
         </complexParameter>
@@ -1389,6 +1395,9 @@ if (bebauungsArt != '8000') {&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if (bebauungsArt != '8000') {&#13;
 	return bebauungsArt&#13;
+}&#13;
+else {&#13;
+	_log.warn ("Der Wert 8000 ist nicht mehr in den zulässigen Codes für BP_GemeinbedarfsFlaeche.bebauungsArt enthalten und wird daher nicht migriert")&#13;
 }
 </core:text>
         </complexParameter>
@@ -3448,6 +3457,9 @@ if (bebauungsArt != '8000') {&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if (bebauungsArt != '8000') {&#13;
 	return bebauungsArt&#13;
+}&#13;
+else {&#13;
+	_log.warn ("Der Wert 8000 ist nicht mehr in den zulässigen Codes für BP_UeberbaubareGrundstuecksFlaeche.bebauungsArt enthalten und wird daher nicht migriert")&#13;
 }
 </core:text>
         </complexParameter>
@@ -4066,6 +4078,9 @@ if (typ) {&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if (bebauungsArt != '8000') {&#13;
 	return bebauungsArt&#13;
+}&#13;
+else {&#13;
+	_log.warn ("Der Wert 8000 ist nicht mehr in den zulässigen Codes für BP_WohngebaeudeFlaeche.bebauungsArt enthalten und wird daher nicht migriert")&#13;
 }
 </core:text>
         </complexParameter>
@@ -8472,7 +8487,10 @@ if (artDerFestlegung == '1700') {&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if(sonstigerTyp != '9999'){&#13;
 	sonstigerTyp&#13;
-}
+}&#13;
+else {&#13;
+	_log.warn ("Der Wert 9999 ist nicht mehr in den zulässigen Codes für RP_ZentralerOrt.sonstigerTyp enthalten und wird daher nicht migriert")&#13;
+} 
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
