@@ -10948,6 +10948,351 @@ else {&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cc126ba87-ca12-47ae-a33c-be97824958c1" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AbgrenzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_Abgrenzung ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C94124adb-eff9-40f4-a92a-8fcbcb502348" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AllgGruenflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_AllgGruenflaeche ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C628c3983-aeaf-4319-91db-05c9723b425f" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_AnpflanzungBindungErhaltung ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cee0fa312-2fd4-4ab6-87f2-231c944c296f" priority="normal">
+        <source>
+            <class>
+                <type name="LP_AusgleichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_Ausgleich ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Ce3641b2c-5a3e-4c50-a4a1-8352b696957b" priority="normal">
+        <source>
+            <class>
+                <type name="LP_BiotopverbundflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_Biotopverbundflaeche ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cd18222c4-2254-4f9e-ab23-b56ca5551c37" priority="normal">
+        <source>
+            <class>
+                <type name="LP_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_Bodenschutzrecht ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C8dc83820-79d8-4f6a-88b2-7fd928ec5d4f" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ErholungFreizeitType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_ErholungFreizeit ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Ca0182426-5628-4156-9a6a-ccfd4c148d3a" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_Forstrecht ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C07224c9d-9baf-4ae4-9e54-1a55324f7b4b" priority="normal">
+        <source>
+            <class>
+                <type name="LP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_GenerischesObjekt ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Caf88717a-b42c-44db-a6a0-94c165ed4e78" priority="normal">
+        <source>
+            <class>
+                <type name="LP_LandschaftsbildType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_Landschaftsbild ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cdc012f61-0aa7-495b-9a08-737d1a7504e4" priority="normal">
+        <source>
+            <class>
+                <type name="LP_NutzungsAusschlussType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_NutzungAusschluss ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cc3f27afc-f90c-4cff-b836-c3bb54de8477" priority="normal">
+        <source>
+            <class>
+                <type name="LP_NutzungserfordernisRegelungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_NutzungserfordernisRegelung ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cf5accfdf-00b2-4785-810b-5214afe524a5" priority="normal">
+        <source>
+            <class>
+                <type name="LP_PlanerischeVertiefungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_PlanerischeVertiefung ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cdb05de35-eb9d-49bf-94c7-dfdca581b659" priority="normal">
+        <source>
+            <class>
+                <type name="LP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_SchutzPflegeEntwicklung ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C8ff3e3f9-3813-4c49-9348-914352c17e3e" priority="normal">
+        <source>
+            <class>
+                <type name="LP_SchutzobjektInternatRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_SchutzobjektInternatRecht ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C9b7b1e6b-36fe-4e57-9841-39d59b14be61" priority="normal">
+        <source>
+            <class>
+                <type name="LP_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_SonstigesRecht ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Ca04080e8-c77f-4a93-9600-2e1216756ae4" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtGemeingebrEinschraenkungNaturschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_WasserrechtGemeingebrEinschraenkungNaturschutz ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cab72500c-19c7-4d1d-b21c-60ad414cfa87" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_WasserrechtSchutzgebiet ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C6a046c79-2741-4c4a-8f61-b7f158865e5d" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtSonstigeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_WasserrechtSonstige ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C00e0c7a5-cbb7-41ba-8062-8fef47a3483d" priority="normal">
+        <source>
+            <class>
+                <type name="LP_WasserrechtWirtschaftAbflussHochwSchutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_WasserrechtWirtschaftAbflussHochwSchutzg ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="Cfa05ae30-50b8-45bc-ae02-1904a5f95f35" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ZuBegruenendeGrundstueckflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_ZuBegruenendeGrundstueckflaeche ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C4ae4bc25-7060-4409-8449-6ce047a5e43d" priority="normal">
+        <source>
+            <class>
+                <type name="LP_ZwischennutzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ LP_Zwischennutzung ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.retype" id="C8e2eea78-4f0a-4ecf-bd86-e953607c91de" priority="normal">
+        <source>
+            <class>
+                <type name="RP_LegendenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn("Der Feature Typ RP_Legendenobjekt ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.inline" id="C645b07e7-04ce-4927-8198-0239317bdb0b" priority="normal">
         <source>
             <property>
