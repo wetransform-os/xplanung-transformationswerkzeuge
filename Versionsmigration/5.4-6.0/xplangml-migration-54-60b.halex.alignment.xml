@@ -11347,15 +11347,6 @@ else {&#13;
             <property>
                 <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="refLegende" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="choice" ns="http://www.xplanung.de/xplangml/5/4/XP_ExterneReferenz"/>
-                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="referenzName" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <source name="var">
-            <property>
-                <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="refLegende" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
         <target name="result">
@@ -11370,29 +11361,19 @@ else {&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (refLegende.p.XP_ExterneReferenz.first()){&#13;
-&#13;
-if(refLegende_choice_XP_ExterneReferenz_referenzName){&#13;
-	return refLegende_choice_XP_ExterneReferenz_referenzName&#13;
-}&#13;
-else {&#13;
-	return 'Unbekannt'&#13;
-}&#13;
+if (refLegende){&#13;
+	if(refLegende.p.XP_ExterneReferenz.referenzName.value()){&#13;
+		return refLegende.p.XP_ExterneReferenz.referenzName.value()&#13;
+	}&#13;
+	else {&#13;
+		return 'Unbekannt'&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C0aa84167-0873-4ee0-9cbf-45d3376a5fa4" priority="normal">
-        <source name="var">
-            <property>
-                <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="refLegende" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="choice" ns="http://www.xplanung.de/xplangml/5/4/XP_ExterneReferenz"/>
-                <child name="XP_ExterneReferenz" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="referenzURL" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
         <source name="var">
             <property>
                 <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -11411,14 +11392,15 @@ else {&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (refLegende.p.XP_ExterneReferenz.first()){&#13;
-&#13;
-if(refLegende_choice_XP_ExterneReferenz_referenzURL){&#13;
-	return refLegende_choice_XP_ExterneReferenz_referenzURL&#13;
-}&#13;
-else {&#13;
-	return 'Unbekannt'&#13;
-}&#13;
+if (refLegende){&#13;
+	if(refLegende.p.XP_ExterneReferenz.referenzURL.value()){&#13;
+		return refLegende.p.XP_ExterneReferenz.referenzURL.value()&#13;
+	}&#13;
+	else if (refLegende.p.XP_ExterneReferenz.referenzName.value())&#13;
+		return refLegende.p.XP_ExterneReferenz.referenzName.value()&#13;
+	else{&#13;
+		return 'Unbekannt'&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
