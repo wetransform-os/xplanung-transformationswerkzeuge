@@ -10303,6 +10303,27 @@ else {&#13;
         </target>
         <parameter value="false" name="value"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cab51c2f2-4458-4692-a613-1b38f63de249" priority="normal">
+        <source name="var">
+            <property>
+                <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="detailArtDerFestlegung" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="SO_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+_log.warn ("Das Attribut detailArtDerFestlegung in SO_Strassenverkehrsrecht ist in 6.0 nicht enthalten und wird daher nicht migriert")&#13;
+
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C8a40006f-8b57-4b31-8ebb-685be32344a3" priority="normal">
         <source name="var">
             <property>
@@ -10864,6 +10885,42 @@ if (zweckbestimmung == '1300') {&#13;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">referenzName</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C1f9c4807-49c2-4292-94f8-a82b354a1ba4" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="informationssystemURL" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="referenzName" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn ("Das Attribut informationssystemURL in XP_ExterneReferenz ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C4e4d63fa-d84f-4354-86c8-2b35cd73a0f9" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="referenzMimeType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="referenzName" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">_log.warn ("Das Attribut referenzMimeType in XP_ExterneReferenz ist in 6.0 nicht enthalten und wird daher nicht migriert")</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C76d6b9c4-5ff1-40e5-ae6a-54dcdcb0e81d" priority="normal">
         <source name="var">
