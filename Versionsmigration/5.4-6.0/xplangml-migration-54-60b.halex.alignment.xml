@@ -12164,21 +12164,35 @@ if (refLegende){&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C136c3e16-8af3-4c3d-9ce6-89c660b0af55" priority="normal">
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C136c3e16-8af3-4c3d-9ce6-89c660b0af55" priority="normal">
         <source name="var">
             <property>
                 <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="id" ns="http://www.opengis.net/gml/3.2"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="refText" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="texte" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="#{id}" name="pattern"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if(refText.p.first()){&#13;
+	_target {&#13;
+	href( id )&#13;
+}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cbb250a76-f578-4fad-8714-747b252a32b1" priority="normal">
         <source>
@@ -12432,7 +12446,7 @@ if (refLegende){&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if(_source.links.BP_Bereich.BP_Plan.first()){&#13;
+if(_source.links.BP_Bereich.BP_Plan.first() &amp;&amp; _source.p.refText.first()){&#13;
 	_target{&#13;
 		rechtscharakter( '9998' )&#13;
 		&#13;
