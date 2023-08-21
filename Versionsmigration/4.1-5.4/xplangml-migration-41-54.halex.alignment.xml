@@ -5386,11 +5386,11 @@ else return besondereZweckbestimmung
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
-else return besondereZweckbestimmung
+if (weitereBesondZweckbestimmung1 in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${weitereBesondZweckbestimmung1} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
+else return weitereBesondZweckbestimmung1
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
@@ -5410,11 +5410,11 @@ else return besondereZweckbestimmung
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
-else return besondereZweckbestimmung
+if (weitereBesondZweckbestimmung2 in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${weitereBesondZweckbestimmung2} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
+else return weitereBesondZweckbestimmung2
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
@@ -5434,11 +5434,11 @@ else return besondereZweckbestimmung
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
-else return besondereZweckbestimmung
+if (weitereBesondZweckbestimmung3 in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${weitereBesondZweckbestimmung3} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
+else return weitereBesondZweckbestimmung3
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
