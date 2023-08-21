@@ -10228,12 +10228,12 @@ c.text['SO'].values()[0].each { tex -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-if (dientZurDarstellungVon.p.first()) {&#xD;
-	dientZurDarstellungVon.p.each { dar -&gt;&#xD;
-		c.dars[dar.p.href.value().toString().replaceAll('#','')] &lt;&lt; id.p.value()&#xD;
-	}&#xD;
+def c = _.context.collector()&#13;
+&#13;
+if (dientZurDarstellungVon) {&#13;
+	dientZurDarstellungVon.p.each { dar -&gt;&#13;
+		c.dars[dar.p.href.value().toString().replaceAll('#','')] &lt;&lt; id.p.value()&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
