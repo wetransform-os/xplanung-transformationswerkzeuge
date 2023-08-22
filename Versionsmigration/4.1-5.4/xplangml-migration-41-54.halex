@@ -25,6 +25,20 @@
         <setting name="source">https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/5.4/XPlanung-Operationen.xsd</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
     </resource>
+    <export-config name="default">
+        <configuration action-id="eu.esdihumboldt.hale.io.instance.write.transformed" provider-id="eu.esdihumboldt.hale.io.gml.xplan.writer">
+            <setting name="charset">UTF-8</setting>
+            <setting name="meta.description"></setting>
+            <setting name="geometry.unifyWindingOrder">counterClockwise</setting>
+            <setting name="gml.geometry.simplify">true</setting>
+            <setting name="crs"/>
+            <setting name="xml.add.codespace">true</setting>
+            <setting name="crs.epsg.prefix">EPSG:</setting>
+            <setting name="contentType">eu.esdihumboldt.hale.io.xplangml</setting>
+            <setting name="xml.notNil.omitNilReason">true</setting>
+            <setting name="xml.pretty">true</setting>
+        </configuration>
+    </export-config>
     <file name="alignment.xml" location="xplangml-migration-41-54.halex.alignment.xml"/>
     <file name="styles.sld" location="xplangml-migration-41-54.halex.styles.sld"/>
     <property name="defaultGeometry:{http://www.opengis.net/gml/3.2}AbstractCoverageType/1">{http://www.opengis.net/gml/3.2}boundedBy</property>
