@@ -4619,15 +4619,15 @@
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#xD;
-	_target {&#xD;
-		href( gehoertZuBP_Bereich.p.first().p.href.value() )&#xD;
-	}&#xD;
-&#xD;
-&#xD;
-	if (gehoertZuBP_Bereich.p.list().size() &gt; 1) {&#xD;
-		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuBP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#xD;
-	}&#xD;
+if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#13;
+	_target {&#13;
+		href( gehoertZuBP_Bereich.p.first().p.href.value() )&#13;
+	}&#13;
+&#13;
+&#13;
+	if (gehoertZuBP_Bereich.p.list().size() &gt; 1) {&#13;
+		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuBP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -5153,14 +5153,14 @@ if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-c.text['BP'].values()[0].each { tex -&gt;&#xD;
-	tex.each { te -&gt;&#xD;
-		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#xD;
-			_target {}&#xD;
-		}&#xD;
-	}&#xD;
+def c = _.context.collector()&#13;
+&#13;
+c.text['BP'].values()[0].each { tex -&gt;&#13;
+	tex.each { te -&gt;&#13;
+		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#13;
+			_target {}&#13;
+		}&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -5362,10 +5362,10 @@ c.text['BP'].values()[0].each { tex -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
 else return besondereZweckbestimmung
 </core:text>
         </complexParameter>
@@ -6879,15 +6879,15 @@ else return weitereBesondZweckbestimmung3
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (gehoertZuFP_Bereich &amp;&amp; gehoertZuFP_Bereich.p.first()) {&#xD;
-	_target {&#xD;
-		href( gehoertZuFP_Bereich.p.first().p.href.value() )&#xD;
-	}&#xD;
-&#xD;
-&#xD;
-	if (gehoertZuFP_Bereich.p.list().size() &gt; 1) {&#xD;
-		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuFP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#xD;
-	}&#xD;
+if (gehoertZuFP_Bereich &amp;&amp; gehoertZuFP_Bereich.p.first()) {&#13;
+	_target {&#13;
+		href( gehoertZuFP_Bereich.p.first().p.href.value() )&#13;
+	}&#13;
+&#13;
+&#13;
+	if (gehoertZuFP_Bereich.p.list().size() &gt; 1) {&#13;
+		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuFP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -7250,14 +7250,14 @@ if (gehoertZuFP_Bereich &amp;&amp; gehoertZuFP_Bereich.p.first()) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-c.text['FP'].values()[0].each { tex -&gt;&#xD;
-	tex.each { te -&gt;&#xD;
-		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#xD;
-			_target {}&#xD;
-		}&#xD;
-	}&#xD;
+def c = _.context.collector()&#13;
+&#13;
+c.text['FP'].values()[0].each { tex -&gt;&#13;
+	tex.each { te -&gt;&#13;
+		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#13;
+			_target {}&#13;
+		}&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -7439,10 +7439,10 @@ c.text['FP'].values()[0].each { tex -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
 else return besondereZweckbestimmung
 </core:text>
         </complexParameter>
@@ -7463,10 +7463,10 @@ else return besondereZweckbestimmung
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
 else return besondereZweckbestimmung
 </core:text>
         </complexParameter>
@@ -7487,10 +7487,10 @@ else return besondereZweckbestimmung
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
 else return besondereZweckbestimmung
 </core:text>
         </complexParameter>
@@ -7511,10 +7511,10 @@ else return besondereZweckbestimmung
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#xD;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#xD;
-}&#xD;
-&#xD;
+if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+}&#13;
+&#13;
 else return besondereZweckbestimmung
 </core:text>
         </complexParameter>
@@ -8063,15 +8063,15 @@ else return besondereZweckbestimmung
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (gehoertZuLP_Bereich &amp;&amp; gehoertZuLP_Bereich.p.first()) {&#xD;
-	_target {&#xD;
-		href( gehoertZuLP_Bereich.p.first().p.href.value() )&#xD;
-	}&#xD;
-&#xD;
-&#xD;
-	if (gehoertZuLP_Bereich.p.list().size() &gt; 1) {&#xD;
-		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuLP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#xD;
-	}&#xD;
+if (gehoertZuLP_Bereich &amp;&amp; gehoertZuLP_Bereich.p.first()) {&#13;
+	_target {&#13;
+		href( gehoertZuLP_Bereich.p.first().p.href.value() )&#13;
+	}&#13;
+&#13;
+&#13;
+	if (gehoertZuLP_Bereich.p.list().size() &gt; 1) {&#13;
+		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuLP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -8232,14 +8232,14 @@ if (gehoertZuLP_Bereich &amp;&amp; gehoertZuLP_Bereich.p.first()) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-c.text['LP'].values()[0].each { tex -&gt;&#xD;
-	tex.each { te -&gt;&#xD;
-		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#xD;
-			_target {}&#xD;
-		}&#xD;
-	}&#xD;
+def c = _.context.collector()&#13;
+&#13;
+c.text['LP'].values()[0].each { tex -&gt;&#13;
+	tex.each { te -&gt;&#13;
+		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#13;
+			_target {}&#13;
+		}&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -8893,15 +8893,15 @@ c.text['LP'].values()[0].each { tex -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (gehoertZuRP_Bereich &amp;&amp; gehoertZuRP_Bereich.p.first()) {&#xD;
-	_target {&#xD;
-		href( gehoertZuRP_Bereich.p.first().p.href.value() )&#xD;
-	}&#xD;
-&#xD;
-&#xD;
-	if (gehoertZuRP_Bereich.p.list().size() &gt; 1) {&#xD;
-		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuRP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#xD;
-	}&#xD;
+if (gehoertZuRP_Bereich &amp;&amp; gehoertZuRP_Bereich.p.first()) {&#13;
+	_target {&#13;
+		href( gehoertZuRP_Bereich.p.first().p.href.value() )&#13;
+	}&#13;
+&#13;
+&#13;
+	if (gehoertZuRP_Bereich.p.list().size() &gt; 1) {&#13;
+		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuRP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -9344,14 +9344,14 @@ if (gehoertZuRP_Bereich &amp;&amp; gehoertZuRP_Bereich.p.first()) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-c.text['RP'].values()[0].each { tex -&gt;&#xD;
-	tex.each { te -&gt;&#xD;
-		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#xD;
-			_target {}&#xD;
-		}&#xD;
-	}&#xD;
+def c = _.context.collector()&#13;
+&#13;
+c.text['RP'].values()[0].each { tex -&gt;&#13;
+	tex.each { te -&gt;&#13;
+		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#13;
+			_target {}&#13;
+		}&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -9800,15 +9800,15 @@ c.text['RP'].values()[0].each { tex -&gt;&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (gehoertZuSO_Bereich &amp;&amp; gehoertZuSO_Bereich.p.first()) {&#xD;
-	_target {&#xD;
-		href( gehoertZuSO_Bereich.p.first().p.href.value() )&#xD;
-	}&#xD;
-&#xD;
-&#xD;
-	if (gehoertZuSO_Bereich.p.list().size() &gt; 1) {&#xD;
-		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuSO_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#xD;
-	}&#xD;
+if (gehoertZuSO_Bereich &amp;&amp; gehoertZuSO_Bereich.p.first()) {&#13;
+	_target {&#13;
+		href( gehoertZuSO_Bereich.p.first().p.href.value() )&#13;
+	}&#13;
+&#13;
+&#13;
+	if (gehoertZuSO_Bereich.p.list().size() &gt; 1) {&#13;
+		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuSO_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -9998,10 +9998,10 @@ if (gehoertZuSO_Bereich &amp;&amp; gehoertZuSO_Bereich.p.first()) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (typ.equals ('1900')) {&#xD;
-	_log.warn ("4.1 LP_SchutzgebietBundesrecht wird in 5.4 SO_SchutzgebietNaturschutzrecht überführt. Für typ = 1900 gibt es hier keine Entsprechung, die Information wird nicht überführt.")&#xD;
-}&#xD;
-&#xD;
+if (typ.equals ('1900')) {&#13;
+	_log.warn ("4.1 LP_SchutzgebietBundesrecht wird in 5.4 SO_SchutzgebietNaturschutzrecht überführt. Für typ = 1900 gibt es hier keine Entsprechung, die Information wird nicht überführt.")&#13;
+}&#13;
+&#13;
 else return typ
 </core:text>
         </complexParameter>
@@ -10149,16 +10149,16 @@ else return typ
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-&#xD;
-def c = _.context.collector()&#xD;
-&#xD;
-c.text['SO'].values()[0].each { tex -&gt;&#xD;
-	tex.each { te -&gt;&#xD;
-		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#xD;
-			_target {}&#xD;
-		}&#xD;
-	}&#xD;
-}&#xD;
+&#13;
+def c = _.context.collector()&#13;
+&#13;
+c.text['SO'].values()[0].each { tex -&gt;&#13;
+	tex.each { te -&gt;&#13;
+		if (te.toString().replaceAll('#','').equals(_source.p.id.value())){&#13;
+			_target {}&#13;
+		}&#13;
+	}&#13;
+}&#13;
 
 </core:text>
         </complexParameter>
@@ -10260,10 +10260,10 @@ if (dientZurDarstellungVon) {&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (!index &amp;&amp; art) {&#xD;
-	art.p.each { value -&gt;&#xD;
-		_target (0)&#xD;
-	}&#xD;
+if (!index &amp;&amp; art) {&#13;
+	art.p.each { value -&gt;&#13;
+		_target (0)&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -10908,17 +10908,17 @@ if (!index &amp;&amp; art) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-if (refTextInhalt &amp;&amp; _sourceTypes) {&#xD;
-&#xD;
-	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#xD;
-		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#xD;
-	}&#xD;
-	&#xD;
-	refTextInhalt.p.each { tex -&gt;	&#xD;
-		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#xD;
-	}&#xD;
+def c = _.context.collector()&#13;
+&#13;
+if (refTextInhalt &amp;&amp; _sourceTypes) {&#13;
+&#13;
+	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#13;
+	}&#13;
+	&#13;
+	refTextInhalt.p.each { tex -&gt;	&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -10945,13 +10945,13 @@ if (refTextInhalt &amp;&amp; _sourceTypes) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (!wirdDargestelltDurch) {&#xD;
-	def c = _.context.collector()&#xD;
-	c.dars[id.p.value()].each { dar -&gt;&#xD;
-		_target {&#xD;
-			href( "#${dar}" )&#xD;
-		}&#xD;
-	}&#xD;
+if (!wirdDargestelltDurch) {&#13;
+	def c = _.context.collector()&#13;
+	c.dars[id.p.value()].each { dar -&gt;&#13;
+		_target {&#13;
+			href( "#${dar}" )&#13;
+		}&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -11523,17 +11523,17 @@ if (!wirdDargestelltDurch) {&#xD;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-def c = _.context.collector()&#xD;
-&#xD;
-if (texte &amp;&amp; _sourceTypes) {&#xD;
-&#xD;
-	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#xD;
-		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#xD;
-	}&#xD;
-	&#xD;
-	texte.p.each { tex -&gt;	&#xD;
-		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#xD;
-	}&#xD;
+def c = _.context.collector()&#13;
+&#13;
+if (texte &amp;&amp; _sourceTypes) {&#13;
+&#13;
+	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#13;
+	}&#13;
+	&#13;
+	texte.p.each { tex -&gt;	&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
