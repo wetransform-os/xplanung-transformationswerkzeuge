@@ -12432,7 +12432,7 @@ if (refLegende){&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if(_source.links.BP_Bereich.BP_Plan.first()){&#13;
+if(_source.links.BP_Bereich.BP_Plan.first() &amp;&amp; _source.p.refText.first()){&#13;
 	_target{&#13;
 		rechtscharakter( '9998' )&#13;
 		&#13;
@@ -12523,7 +12523,7 @@ if(_source.links.BP_Bereich.BP_Plan.first()){&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if(_source.links.FP_Bereich.FP_Plan.first()){ 	&#13;
+if(_source.links.FP_Bereich.FP_Plan.first() &amp;&amp; _source.p.refText.first()){ 	&#13;
 	_target{ &#13;
 		rechtscharakter( '9998' )&#13;
 		&#13;
@@ -12615,7 +12615,7 @@ if(_source.links.FP_Bereich.FP_Plan.first()){ 	&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 &#13;
-if(_source.links.LP_Bereich.LP_Plan.first()){&#13;
+if(_source.links.LP_Bereich.LP_Plan.first() &amp;&amp; _source.p.refText.first()){&#13;
 	_target{&#13;
 		rechtscharakter( '9998' )&#13;
 		&#13;
@@ -12708,7 +12708,7 @@ if(_source.links.LP_Bereich.LP_Plan.first()){&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if(_source.links.RP_Bereich.RP_Plan.first()){&#13;
+if(_source.links.RP_Bereich.RP_Plan.first() &amp;&amp; _source.p.refText.first()){&#13;
 	_target{ &#13;
 		rechtscharakter( '9998' )&#13;
 		&#13;
@@ -12800,7 +12800,7 @@ if(_source.links.RP_Bereich.RP_Plan.first()){&#13;
         </complexParameter>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if(_source.links.SO_Bereich.SO_Plan.first()){ 	&#13;
+if(_source.links.SO_Bereich.SO_Plan.first() &amp;&amp; _source.p.refText.first()){ 	&#13;
 	_target{ &#13;
 		rechtscharakter( '9998' )&#13;
 		&#13;
