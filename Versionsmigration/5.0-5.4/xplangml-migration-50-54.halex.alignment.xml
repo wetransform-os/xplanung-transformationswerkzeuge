@@ -11,6 +11,7 @@
                 <type name="BP_AbgrabungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -25,6 +26,7 @@
                 <type name="BP_AbstandsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -39,6 +41,7 @@
                 <type name="BP_AbstandsMassType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-102&#xD;
@@ -63,6 +66,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -77,6 +81,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AufschuettungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -91,6 +96,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -105,6 +111,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -119,6 +126,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BauGrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -133,6 +141,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BauLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -147,6 +156,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-99&#xD;
@@ -172,6 +182,7 @@ https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
                 <type name="BP_BereichOhneEinAusfahrtLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -186,6 +197,7 @@ https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
                 <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -200,6 +212,7 @@ https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-61&#xD;
                 <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-46&#xD;
@@ -241,6 +254,7 @@ Beschluss:&#xD;
                 <type name="BP_EinfahrtPunktType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -255,6 +269,7 @@ Beschluss:&#xD;
                 <type name="BP_EinfahrtsbereichLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -269,6 +284,7 @@ Beschluss:&#xD;
                 <type name="BP_EingriffsBereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -283,6 +299,7 @@ Beschluss:&#xD;
                 <type name="BP_ErhaltungsBereichFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-114&#xD;
@@ -301,6 +318,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_FestsetzungNachLandesrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -315,6 +333,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_FirstRichtungsLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -329,6 +348,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -343,6 +363,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -357,6 +378,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_FoerderungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -371,6 +393,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_FreiFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -385,6 +408,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_GebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -399,6 +423,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-46&#xD;
@@ -419,6 +444,7 @@ Beschluss: Die Klasse BP_ErhaltungsBereichFlaeche und die Enumeration BP_Erhaltu
                 <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-146&#xD;
@@ -436,6 +462,7 @@ Erweiterung der Enumeration BP_ZweckbestimmungGemeinschaftsanlagen um 4100 (Fahr
                 <type name="BP_GemeinschaftsanlagenZuordnungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -450,6 +477,7 @@ Erweiterung der Enumeration BP_ZweckbestimmungGemeinschaftsanlagen um 4100 (Fahr
                 <type name="BP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -464,6 +492,7 @@ Erweiterung der Enumeration BP_ZweckbestimmungGemeinschaftsanlagen um 4100 (Fahr
                 <type name="BP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -478,6 +507,7 @@ Erweiterung der Enumeration BP_ZweckbestimmungGemeinschaftsanlagen um 4100 (Fahr
                 <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-78&#xD;
@@ -496,6 +526,7 @@ Erweiterung der Enumeration BP_ZweckbestimmungGemeinschaftsanlagen um 4100 (Fahr
                 <type name="BP_GruenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -510,6 +541,7 @@ Erweiterung der Enumeration BP_ZweckbestimmungGemeinschaftsanlagen um 4100 (Fahr
                 <type name="BP_HoehenMassType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -524,6 +556,7 @@ Erweiterung der Enumeration BP_ZweckbestimmungGemeinschaftsanlagen um 4100 (Fahr
                 <type name="BP_ImmissionsschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-49&#xD;
@@ -545,6 +578,7 @@ Erweiterung von BP_Immissionsschutz um die Attribute typ (BP_ImmissionsschutzTyp
                 <type name="BP_KennzeichnungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
@@ -566,6 +600,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_KleintierhaltungFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -595,6 +630,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -609,6 +645,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_NebenanlagenAusschlussFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -623,6 +660,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_NebenanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -637,6 +675,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_NutzungsartenGrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -651,6 +690,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -665,6 +705,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_PersGruppenBestimmteFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -679,6 +720,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht&#xD;
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-91&#xD;
@@ -695,6 +737,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
                 <type name="BP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -709,6 +752,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
                 <type name="BP_RegelungVergnuegungsstaettenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -723,6 +767,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
                 <type name="BP_RekultivierungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-165&#xD;
@@ -739,6 +784,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
                 <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -753,6 +799,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
                 <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -767,6 +814,7 @@ Neuer Eintrag VorhabenUndErschliessungsplan (3100) in Enumerationsliste BP_PlanA
                 <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-143&#xD;
@@ -788,6 +836,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_SpielSportanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -802,6 +851,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_StrassenVerkehrsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -816,6 +866,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_StrassenbegrenzungsLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -830,6 +881,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_StrassenkoerperType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -844,6 +896,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_TechnischeMassnahmenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -858,6 +911,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -872,6 +926,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -886,6 +941,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -900,6 +956,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -914,6 +971,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -928,6 +986,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -942,6 +1001,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_VeraenderungssperreType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -956,6 +1016,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_VerkehrsflaecheBesondererZweckbestimmungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-119&#xD;
@@ -975,6 +1036,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
@@ -999,6 +1061,7 @@ Erweiterung der Klasse BP_SpezielleBauweise&#xD;
                 <type name="BP_WasserwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-80&#xD;
@@ -1015,6 +1078,7 @@ Neue Definition: "Flächen für die Wasserwirtschaft (§9 Abs. 1 Nr. 16a BauGB),
                 <type name="BP_WegerechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-142&#xD;
@@ -1037,6 +1101,7 @@ Erweiterung der Klasse BP_Wegerecht zur Spezifikation "schmaler" Geh-, Fahr- und
                 <type name="FP_AbgrabungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1051,6 +1116,7 @@ Erweiterung der Klasse BP_Wegerecht zur Spezifikation "schmaler" Geh-, Fahr- und
                 <type name="FP_AbgrabungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-115&#xD;
@@ -1073,6 +1139,7 @@ Beschluss:&#xD;
                 <type name="FP_AnpassungKlimawandelType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1087,6 +1154,7 @@ Beschluss:&#xD;
                 <type name="FP_AufschuettungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1101,6 +1169,7 @@ Beschluss:&#xD;
                 <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1115,6 +1184,7 @@ Beschluss:&#xD;
                 <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1129,6 +1199,7 @@ Beschluss:&#xD;
                 <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-112&#xD;
@@ -1152,6 +1223,7 @@ Beschluss:&#xD;
                 <type name="FP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1166,6 +1238,7 @@ Beschluss:&#xD;
                 <type name="FP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1180,6 +1253,7 @@ Beschluss:&#xD;
                 <type name="FP_GemeinbedarfType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1194,6 +1268,7 @@ Beschluss:&#xD;
                 <type name="FP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1208,6 +1283,7 @@ Beschluss:&#xD;
                 <type name="FP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1222,6 +1298,7 @@ Beschluss:&#xD;
                 <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1236,6 +1313,7 @@ Beschluss:&#xD;
                 <type name="FP_GruenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1250,6 +1328,7 @@ Beschluss:&#xD;
                 <type name="FP_KeineZentrAbwasserBeseitigungFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1264,6 +1343,7 @@ Beschluss:&#xD;
                 <type name="FP_KennzeichnungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
@@ -1283,6 +1363,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
                 <type name="FP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-166&#xD;
@@ -1302,6 +1383,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1316,6 +1398,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_NutzungsbeschraenkungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1330,6 +1413,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1344,6 +1428,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1358,6 +1443,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_PrivilegiertesVorhabenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1372,6 +1458,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1386,6 +1473,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1400,6 +1488,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_SpielSportanlageType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1414,6 +1503,7 @@ FP_LandwirtschaftsFlaeche als Geometrieobjekt&#xD;
                 <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-71&#xD;
@@ -1432,6 +1522,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1446,6 +1537,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_TextlicheDarstellungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1460,6 +1552,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1474,6 +1567,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1488,6 +1582,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1502,6 +1597,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_VorbehalteFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1516,6 +1612,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
@@ -1538,6 +1635,7 @@ Umbenennung 14009 Busbahnhof in BusbahnhofZOB (Busbahnhof und ZOB)</documentatio
                 <type name="FP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-81&#xD;
@@ -1555,6 +1653,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="FP_ZentralerVersorgungsbereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1569,6 +1668,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_AbgrenzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1583,6 +1683,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_AllgGruenflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1597,6 +1698,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1611,6 +1713,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_AusgleichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1625,6 +1728,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1639,6 +1743,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_BiotopverbundflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1653,6 +1758,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1667,6 +1773,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_ErholungFreizeitType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1681,6 +1788,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1695,6 +1803,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1709,6 +1818,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1723,6 +1833,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1737,6 +1848,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_LandschaftsbildType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1751,6 +1863,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1765,6 +1878,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_NutzungsAusschlussType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1779,6 +1893,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_NutzungserfordernisRegelungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1793,6 +1908,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1807,6 +1923,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <complexParameter name="skipRootProperty">
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/0">texte</core:name>
@@ -1824,6 +1941,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_PlanerischeVertiefungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1838,6 +1956,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1852,6 +1971,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1866,6 +1986,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_SchutzobjektInternatRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1880,6 +2001,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_SchutzobjektLandesrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1894,6 +2016,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1908,6 +2031,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1922,6 +2046,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1936,6 +2061,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_WasserrechtGemeingebrEinschraenkungNaturschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1950,6 +2076,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_WasserrechtSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1964,6 +2091,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_WasserrechtSonstigeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1978,6 +2106,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_WasserrechtWirtschaftAbflussHochwSchutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1992,6 +2121,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_ZuBegruenendeGrundstueckflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2006,6 +2136,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="LP_ZwischennutzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2020,6 +2151,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_AchseType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2034,6 +2166,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2048,6 +2181,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_BodenschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2062,6 +2196,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_EinzelhandelType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2076,6 +2211,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_EnergieversorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2090,6 +2226,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_EntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2104,6 +2241,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_ErholungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2118,6 +2256,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_ErneuerbareEnergieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2132,6 +2271,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_ForstwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2146,6 +2286,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_FreiraumType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2160,6 +2301,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_FunktionszuweisungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2174,6 +2316,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2188,6 +2331,7 @@ Neue Definition für FP_Wasserwirtschaft: "Die für die Wasserwirtschaft vorgese
                 <type name="RP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-93&#xD;
@@ -2205,6 +2349,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2219,6 +2364,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_GrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2233,6 +2379,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_GruenzugGruenzaesurType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2247,6 +2394,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_HochwasserschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2261,6 +2409,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_IndustrieGewerbeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2275,6 +2424,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_KlimaschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2289,6 +2439,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_KommunikationType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2303,6 +2454,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_KulturlandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2317,6 +2469,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_LaermschutzBauschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2331,6 +2484,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2345,6 +2499,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_LegendenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2359,6 +2514,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_LuftverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2373,6 +2529,7 @@ In den BP-, FP- und SO-Bereichen haben die Punktobjekte und Geometrieobjekte das
                 <type name="RP_NaturLandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-77&#xD;
@@ -2399,6 +2556,7 @@ Beschreibung: Länderübergreifender Teil eines Biotop(verbund)s&#xD;
                 <type name="RP_NaturschutzrechtlichesSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2428,6 +2586,7 @@ Beschreibung: Länderübergreifender Teil eines Biotop(verbund)s&#xD;
                 <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-51&#xD;
@@ -2451,6 +2610,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_PlanungsraumType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2465,6 +2625,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_RadwegWanderwegType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2479,6 +2640,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_RaumkategorieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2493,6 +2655,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_RohstoffType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2507,6 +2670,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SchienenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2521,6 +2685,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SiedlungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2535,6 +2700,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SonstVerkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2549,6 +2715,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SonstigeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2563,6 +2730,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SonstigerFreiraumschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2577,6 +2745,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SonstigerSiedlungsbereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2591,6 +2760,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SozialeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2605,6 +2775,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SperrgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2619,6 +2790,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_SportanlageType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2633,6 +2805,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2647,6 +2820,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2661,6 +2835,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_VerkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2675,6 +2850,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_WasserschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2689,6 +2865,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_WasserverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2703,6 +2880,7 @@ Der Datentyp von amtlicherSchluessel in RP_Plan wird auf CharacterString geände
                 <type name="RP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-103&#xD;
@@ -2720,6 +2898,7 @@ Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_Wa
                 <type name="RP_WohnenSiedlungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2734,6 +2913,7 @@ Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_Wa
                 <type name="RP_ZentralerOrtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2748,6 +2928,7 @@ Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_Wa
                 <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2762,6 +2943,7 @@ Neue Einträge Zuwaesserungskanal (8000) und Entwaesserungskanal (8100) in RP_Wa
                 <type name="SO_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-53&#xD;
@@ -2781,6 +2963,7 @@ Präzisierung des Attributs nummer (s.o.) in SO_Bodenschutzrecht</documentation>
                 <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-63&#xD;
@@ -2801,6 +2984,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2815,6 +2999,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-40&#xD;
@@ -2837,6 +3022,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_GebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2851,6 +3037,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2865,6 +3052,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_GrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2879,6 +3067,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2893,6 +3082,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2907,6 +3097,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2921,6 +3112,7 @@ Erweiterung der Enumeration SO_KlassifizNachDenkmalschutzrecht&#xD;
                 <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-57&#xD;
@@ -2959,6 +3151,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2973,6 +3166,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_SchienenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2987,6 +3181,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3001,6 +3196,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_SchutzgebietSonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3015,6 +3211,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_SchutzgebietWasserrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3029,6 +3226,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3043,6 +3241,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3057,6 +3256,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3071,6 +3271,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-79&#xD;
@@ -3098,6 +3299,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3112,6 +3314,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="XP_BegruendungAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3126,6 +3329,7 @@ versionSonstRechtsgrundlageText&#xD;
                 <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-113&#xD;
@@ -3148,6 +3352,7 @@ Beschluss:&#xD;
                 <type name="XP_DatumAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3162,6 +3367,7 @@ Beschluss:&#xD;
                 <type name="XP_DoubleAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3176,6 +3382,7 @@ Beschluss:&#xD;
                 <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-105&#xD;
@@ -3194,6 +3401,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_FPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3208,6 +3416,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_GemeindeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3222,6 +3431,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_GenerAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3236,6 +3446,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_HoehenangabeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-135&#xD;
@@ -3253,6 +3464,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_IntegerAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3267,6 +3479,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_LPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3281,6 +3494,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_LTOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3295,6 +3509,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_NutzungsschabloneType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3309,6 +3524,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3323,6 +3539,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_PPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3337,6 +3554,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_PTOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3351,6 +3569,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3365,6 +3584,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_PlangeberType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3379,6 +3599,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_PraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3393,6 +3614,7 @@ Erweiterung der Enumeration XP_ExterneReferenzTyp um den Eintrag MetadatenPlan&#
                 <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-113&#xD;
@@ -3416,6 +3638,7 @@ Beschluss:&#xD;
                 <type name="XP_SPEMassnahmenDatenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3430,6 +3653,7 @@ Beschluss:&#xD;
                 <type name="XP_SpezExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3444,6 +3668,7 @@ Beschluss:&#xD;
                 <type name="XP_StringAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3458,6 +3683,7 @@ Beschluss:&#xD;
                 <type name="XP_TPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3472,6 +3698,7 @@ Beschluss:&#xD;
                 <type name="XP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3486,6 +3713,7 @@ Beschluss:&#xD;
                 <type name="XP_URLAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3500,6 +3728,7 @@ Beschluss:&#xD;
                 <type name="XP_VerbundenerPlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3514,6 +3743,7 @@ Beschluss:&#xD;
                 <type name="XP_VerfahrensMerkmalType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3528,6 +3758,7 @@ Beschluss:&#xD;
                 <type name="XP_WirksamkeitBedingungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3542,6 +3773,7 @@ Beschluss:&#xD;
                 <type name="XPlanAuszugType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
