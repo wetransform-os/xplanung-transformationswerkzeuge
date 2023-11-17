@@ -4830,7 +4830,7 @@ if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_BP" name="pattern"/>
+        <parameter value="{texte.href}_BP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C1d17465f-c420-4f02-b0a1-61c7795ba209" priority="normal">
         <source>
@@ -7044,7 +7044,7 @@ if (gehoertZuFP_Bereich &amp;&amp; gehoertZuFP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_FP" name="pattern"/>
+        <parameter value="{refTextInhalt.href}_FP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C85b614c0-e843-4876-89c4-e87bb252c8cc" priority="normal">
         <source>
@@ -7079,7 +7079,7 @@ if (gehoertZuFP_Bereich &amp;&amp; gehoertZuFP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_FP" name="pattern"/>
+        <parameter value="{texte.href}_FP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C173ecaa7-6c15-4aab-aa0e-e30b007cca67" priority="normal">
         <source>
@@ -8238,7 +8238,7 @@ if (gehoertZuLP_Bereich &amp;&amp; gehoertZuLP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_LP" name="pattern"/>
+        <parameter value="{refTextInhalt.href}_LP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cfa4d76ac-1738-4660-9d92-5927f01139c0" priority="normal">
         <source>
@@ -8273,7 +8273,7 @@ if (gehoertZuLP_Bereich &amp;&amp; gehoertZuLP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_LP" name="pattern"/>
+        <parameter value="{texte.href}_LP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cae2b95d2-63d7-4fef-ad57-4c7ff5ba28e2" priority="normal">
         <source>
@@ -9117,7 +9117,7 @@ if (gehoertZuRP_Bereich &amp;&amp; gehoertZuRP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_RP" name="pattern"/>
+        <parameter value="{refTextInhalt.href}_RP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C5ce851e6-a683-451c-a91f-11626788ea49" priority="normal">
         <source>
@@ -9152,7 +9152,7 @@ if (gehoertZuRP_Bereich &amp;&amp; gehoertZuRP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_RP" name="pattern"/>
+        <parameter value="{texte.href}_RP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C443462c2-0e07-4e30-b51c-b2317918e522" priority="normal">
         <source>
@@ -10048,7 +10048,7 @@ if (gehoertZuSO_Bereich &amp;&amp; gehoertZuSO_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_SO" name="pattern"/>
+        <parameter value="{refTextInhalt.href}_SO" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C83ffcdd5-f80c-4b81-920f-dc0b25d06c06" priority="normal">
         <source>
@@ -10083,7 +10083,7 @@ if (gehoertZuSO_Bereich &amp;&amp; gehoertZuSO_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_SO" name="pattern"/>
+        <parameter value="{texte.href}_SO" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C31fb6283-c813-4433-b686-84807a9ea04c" priority="normal">
         <source>
