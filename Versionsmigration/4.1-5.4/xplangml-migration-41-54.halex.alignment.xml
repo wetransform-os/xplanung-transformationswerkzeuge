@@ -4709,7 +4709,7 @@ if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#13;
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
-        <parameter value="{href}_BP" name="pattern"/>
+        <parameter value="{refTextInhalt.href}_BP" name="pattern"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C4cf5329f-10ea-4bb7-9e52-ee586a792b48" priority="normal">
         <source>
