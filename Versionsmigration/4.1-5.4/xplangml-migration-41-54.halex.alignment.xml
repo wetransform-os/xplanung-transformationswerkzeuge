@@ -2672,6 +2672,40 @@
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="Cfea7dbac-348d-474b-9434-42403b906277" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="{refTextInhalt.href}_BP" name="pattern"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.formattedstring" id="C12681a10-367c-4b9d-95a6-85201f7740c5" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <parameter value="{refTextInhalt.href}_BP" name="pattern"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf4469dd1-4f8e-4eda-b411-8be8b61aca61" priority="normal">
         <source>
             <property>
@@ -11855,4 +11889,7 @@ if (texte &amp;&amp; _sourceTypes) {&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <modifier cell="C2ce26292-66bf-40a5-982b-d1f12ec9ba13">
+        <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
+    </modifier>
 </alignment>
