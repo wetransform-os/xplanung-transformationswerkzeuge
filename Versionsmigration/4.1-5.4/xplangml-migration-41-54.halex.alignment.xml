@@ -2153,7 +2153,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="dachform" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dachform" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
@@ -2425,7 +2427,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="hatGenerAttribut" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="hatGenerAttribut" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2457,7 +2461,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="hoehenangabe" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2618,7 +2624,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="refBegruendungInhalt" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="refBegruendungInhalt" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2650,7 +2658,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="refGebaeudequerschnitt" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="refGebaeudequerschnitt" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2683,7 +2693,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
                 <child name="href" ns="http://www.w3.org/1999/xlink"/>
             </property>
         </target>
@@ -2716,7 +2728,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="sondernutzung" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="sondernutzung" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
@@ -2860,7 +2874,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="wirdAusgeglichenDurchABE" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdAusgeglichenDurchABE" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2892,7 +2908,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="wirdAusgeglichenDurchFlaeche" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdAusgeglichenDurchFlaeche" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2924,7 +2942,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="wirdAusgeglichenDurchMassnahme" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdAusgeglichenDurchMassnahme" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2956,7 +2976,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="wirdAusgeglichenDurchSPEFlaeche" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdAusgeglichenDurchSPEFlaeche" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
@@ -2988,7 +3010,9 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="wirdAusgeglichenDurchSPEMassnahme" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdAusgeglichenDurchSPEMassnahme" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
