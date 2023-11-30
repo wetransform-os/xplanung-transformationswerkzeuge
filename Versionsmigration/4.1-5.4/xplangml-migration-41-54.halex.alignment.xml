@@ -3242,6 +3242,96 @@
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C6aa2f8d2-3ba8-42d3-933e-c1bcb4dd0661" priority="lowest">
+        <source>
+            <property>
+                <type name="BP_BaugebietType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="gehoertNachrichtlichZuBereich" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cce0eae19-d8af-4989-9948-5be3bb29b19f" priority="low">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="gehoertZuBP_Bereich" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#13;
+	_target {&#13;
+		href( gehoertZuBP_Bereich.p.first().p.href.value() )&#13;
+	}&#13;
+&#13;
+&#13;
+	if (gehoertZuBP_Bereich.p.list().size() &gt; 1) {&#13;
+		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuBP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.hale.align.rename" id="C16d03c2c-d1bd-490e-9083-8c4906c7f53c" priority="lower">
+        <source>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="gehoertNachrichtlichZuBereich" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <target>
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <parameter value="true" name="ignoreNamespaces"/>
+        <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cb76f147d-7f4b-401f-b43c-fd78bea44ab9" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="gehoertZuBP_Bereich" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#13;
+	_target {&#13;
+		href( gehoertZuBP_Bereich.p.first().p.href.value() )&#13;
+	}&#13;
+&#13;
+&#13;
+	if (gehoertZuBP_Bereich.p.list().size() &gt; 1) {&#13;
+		_log.warn ("In 4.1 {$_sourceTypes[0].definition.displayName} gibt es mehrere gehoertZuBP_Bereich-Instanzen. Nur einer der Werte wird in 5.4 überführt, da das Attribut dort Kardinalität max 1 hat")&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C4abf0d4d-0d71-4283-abe4-b14f44431836" priority="low">
         <source>
             <property>
@@ -3406,6 +3496,39 @@
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="Cd96448c6-b1a3-444a-9bd2-8247b39432f1" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+&#13;
+def c = _.context.collector()&#13;
+&#13;
+if (refTextInhalt &amp;&amp; _sourceTypes) {&#13;
+&#13;
+	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#13;
+	}&#13;
+	&#13;
+	refTextInhalt.p.each { tex -&gt;	&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#13;
+	}&#13;
+}&#13;
+
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C8bad4dbb-5db6-47a0-98b3-1d2e9f1a713c" priority="normal">
         <source>
             <property>
@@ -3421,6 +3544,39 @@
         </target>
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C54994506-3134-4aa0-b349-f25da566ce7c" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="refTextInhalt" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+&#13;
+def c = _.context.collector()&#13;
+&#13;
+if (refTextInhalt &amp;&amp; _sourceTypes) {&#13;
+&#13;
+	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#13;
+	}&#13;
+	&#13;
+	refTextInhalt.p.each { tex -&gt;	&#13;
+		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#13;
+	}&#13;
+}&#13;
+
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C7b5c0cbc-5e96-4d65-ad44-f3c8c665a346" priority="low">
         <source>
@@ -3955,6 +4111,41 @@
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C3fc0cf97-d8e9-431c-b74a-1772bf53f37e" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="wirdDargestelltDurch" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdDargestelltDurch" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (!wirdDargestelltDurch) {&#13;
+	def c = _.context.collector()&#13;
+	c.dars[id.p.value()].each { dar -&gt;&#13;
+		_target {&#13;
+			href( "#${dar}" )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C8bce4574-f84e-42e9-ac8e-fd6b1b6a8cc6" priority="normal">
         <source>
             <property>
@@ -3965,11 +4156,46 @@
         <target>
             <property>
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="wirdDargestelltDurch" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdDargestelltDurch" ns="http://www.xplanung.de/xplangml/5/4">
+                    <context>0</context>
+                </child>
             </property>
         </target>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.greedy" id="C8b964dc8-1760-4df0-a454-e6571093e136" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="wirdDargestelltDurch" ns="http://www.xplanung.de/xplangml/4/1"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/4/1"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="wirdDargestelltDurch" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (!wirdDargestelltDurch) {&#13;
+	def c = _.context.collector()&#13;
+	c.dars[id.p.value()].each { dar -&gt;&#13;
+		_target {&#13;
+			href( "#${dar}" )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf6c6af65-6868-404b-8961-282819074f3b" priority="normal">
         <source>
@@ -5648,7 +5874,7 @@ if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#13;
         </complexParameter>
         <parameter value="true" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.assign" id="C19af4163-7e4c-4dc5-9926-3a5b4b44e425" priority="low">
+    <cell relation="eu.esdihumboldt.hale.align.assign" id="C19af4163-7e4c-4dc5-9926-3a5b4b44e425" priority="lower">
         <target>
             <property>
                 <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -12834,10 +13060,16 @@ if (texte &amp;&amp; _sourceTypes) {&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
+    <modifier cell="C00579d1d-5e57-4584-a3cc-f51346c5e3e6">
+        <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
+    </modifier>
     <modifier cell="C043ccc6d-38c8-46a8-8e8d-7903423d3089">
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
     <modifier cell="C1a32a4aa-8135-41f8-b626-00c987d5908a">
+        <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
+    </modifier>
+    <modifier cell="C1bb94338-75aa-49d8-a801-0fdc406ea2d1">
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
     <modifier cell="C1bfd764d-816c-4f62-8306-b4b792ef801d">
@@ -12858,6 +13090,9 @@ if (texte &amp;&amp; _sourceTypes) {&#13;
     <modifier cell="C383f8f03-dd68-40cd-9ec5-b2f83c2f311b">
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
+    <modifier cell="C43f11d6e-6b1e-4687-b539-437b079bf868">
+        <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
+    </modifier>
     <modifier cell="C635b3994-4e62-4119-bd3c-d0b52dd80a07">
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
@@ -12865,6 +13100,9 @@ if (texte &amp;&amp; _sourceTypes) {&#13;
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
     <modifier cell="C75dccacb-7191-4185-a103-875b67e51687">
+        <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
+    </modifier>
+    <modifier cell="C7955b44f-a122-485b-b51a-44f7b6175ac9">
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
     <modifier cell="C7b93b6ec-ab8e-43e6-b897-375b1f7345f8">
@@ -12892,6 +13130,9 @@ if (texte &amp;&amp; _sourceTypes) {&#13;
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
     <modifier cell="Caadc3bf1-1366-43a2-8074-705e0b465497">
+        <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
+    </modifier>
+    <modifier cell="Cb1359bd7-d6a2-4781-8f9d-069e3990bacd">
         <disable-for parent="C0f262e2d-1438-40f3-ae4c-adacc74db1a9"/>
     </modifier>
     <modifier cell="Cf1f3e517-d312-4bdd-ae94-8c3c56b5e5fb">
