@@ -4134,7 +4134,7 @@ if (refTextInhalt &amp;&amp; _sourceTypes) {&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (!wirdDargestelltDurch) {&#13;
+if (!wirdDargestelltDurch &amp;&amp; id) {&#13;
 	def c = _.context.collector()&#13;
 	c.dars[id.p.value()].each { dar -&gt;&#13;
 		_target {&#13;
