@@ -11198,6 +11198,80 @@ _snippets.helperFunctions{&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C3b0af2ae-2ff4-4065-a3df-b14ee0c03dda" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="art" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="index" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="dientZurDarstellungVon" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="art" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+def art_new&#13;
+def logWarning = true&#13;
+withTransformationContext{		&#13;
+	// if 'art' contains a value which is migrated to a complexe attribute in XPlan 6.0&#13;
+	// this need to be considered in the syntax of 'art'&#13;
+	if (art in ['zweckbestimmung', 'detaillierteZweckbestimmung', 'sondernutzung', 'detaillierteSondernutzung']) {&#13;
+		def c = _.context.collector(it)&#13;
+		def linkedFeatureTypeId = dientZurDarstellungVon.p.href.value().toString().substring(1)&#13;
+		def attributeName = c.complexeAttribute.sourceAttributeName[linkedFeatureTypeId].value()&#13;
+		def sourceType = c.complexeAttribute.sourceType[linkedFeatureTypeId].value()&#13;
+		&#13;
+		lookupValue = "${sourceType}/${attributeName}"&#13;
+		art_new = _snippets.helperFunctions.getLookupTableValue(lookupValue, '6ae40aac-2ce1-4cf0-8b0b-7467c63d7c3e')&#13;
+		logWarning = false&#13;
+	}&#13;
+	else {&#13;
+		art_new = art&#13;
+	}&#13;
+&#13;
+	// if 'index' is present in source data, the value needs to be added to 'art' in XPath-syntax&#13;
+	// (XPath-index is 1-based, attribut 'index' is 0-based)&#13;
+	if (index &gt;= 0) {&#13;
+		if (art_new.contains('/')) {&#13;
+			// if 'art' contains a XPath-syntax with '/', add value of 'index' in front of the first '/'&#13;
+			pos = art_new.indexOf('/')&#13;
+			art_new = "${art_new.substring(0, pos)}[${index+1}]${art_new.substring(pos, art_new.length())}"&#13;
+			if (logWarning) {&#13;
+				_log.warn("Bitte prüfen: ${_sourceTypes[0].typeDefinition.getDisplayName()} ('${id}') -  Attribut 'index' (${index}) in XPlan 6.0 in 'art' (${art}) berücksichtigt. Neuer Wert für 'art': ${art_new}")&#13;
+			}&#13;
+		}&#13;
+		else {&#13;
+			// add 'index' at the end&#13;
+			art_new = "${art_new}[${index+1}]"&#13;
+		}&#13;
+	}&#13;
+}&#13;
+art_new
+</core:text>
+        </complexParameter>
+        <parameter value="true" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Cff23a890-ee70-4c97-b487-3c24c5c96d67" priority="normal">
         <source>
             <class>
@@ -11695,7 +11769,7 @@ else {&#13;
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="C06cf2256-482b-47ad-9c8f-8c2e0fb7e05a" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C06cf2256-482b-47ad-9c8f-8c2e0fb7e05a" priority="lower">
         <source>
             <class>
                 <type name="XP_FPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -11708,9 +11782,12 @@ else {&#13;
         </target>
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">art</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cb3fc5511-99d9-46c9-8ec4-fec99f80d90f" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cb3fc5511-99d9-46c9-8ec4-fec99f80d90f" priority="lower">
         <source>
             <class>
                 <type name="XP_LPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -11723,6 +11800,9 @@ else {&#13;
         </target>
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">art</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C61eec3df-485a-4417-870b-eff24ff88b41" priority="normal">
@@ -12134,7 +12214,7 @@ else {&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="C30539065-c44a-40d6-bb12-e45669af6317" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="C30539065-c44a-40d6-bb12-e45669af6317" priority="lower">
         <source>
             <class>
                 <type name="XP_PPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -12147,6 +12227,9 @@ else {&#13;
         </target>
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">art</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C078ebec8-e50e-4e2a-81be-9b6269b4200e" priority="normal">
@@ -13027,7 +13110,7 @@ if (refText) {&#13;
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdaa4e438-3f6f-40bb-86cf-0f9718a4c55b" priority="normal">
+    <cell relation="eu.esdihumboldt.hale.align.retype" id="Cdaa4e438-3f6f-40bb-86cf-0f9718a4c55b" priority="lower">
         <source>
             <class>
                 <type name="XP_PraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
@@ -13040,6 +13123,9 @@ if (refText) {&#13;
         </target>
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
+        <complexParameter name="skipRootProperty">
+            <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">art</core:name>
+        </complexParameter>
         <parameter value="true" name="structuralRename"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C2c9fb688-6ac6-45f1-9eb8-521d7e0c3095" priority="normal">
