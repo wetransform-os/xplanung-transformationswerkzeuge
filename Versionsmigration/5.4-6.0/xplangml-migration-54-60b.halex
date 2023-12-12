@@ -24,6 +24,28 @@
         <setting name="source">https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/6.0/XPlanung-Operationen.xsd</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
     </resource>
+    <resource action-id="eu.esdihumboldt.hale.io.groovy.snippets.load" provider-id="eu.esdihumboldt.hale.io.groovy.snippets">
+        <setting name="identifier">helperFunctions</setting>
+        <setting name="charset">UTF-8</setting>
+        <setting name="resourceId">b56b9543-5330-4f89-886f-5eb73795504b</setting>
+        <setting name="source">helperFunctions.groovy</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.groovy</setting>
+        <setting name="autoReload">true</setting>
+    </resource>
+    <resource action-id="eu.esdihumboldt.hale.lookup.import" provider-id="eu.esdihumboldt.hale.io.csv.reader.lookup">
+        <setting name="charset">ISO-8859-1</setting>
+        <setting name="ignoreEmptyStrings">true</setting>
+        <setting name="resourceId">6ae40aac-2ce1-4cf0-8b0b-7467c63d7c3e</setting>
+        <setting name="quote">"</setting>
+        <setting name="keyColumn">0</setting>
+        <setting name="name">Lookup_XPath</setting>
+        <setting name="valueColumn">1</setting>
+        <setting name="skip">true</setting>
+        <setting name="source">Lookup_XPath.csv</setting>
+        <setting name="contentType">eu.esdihumboldt.hale.io.csv</setting>
+        <setting name="separator">,</setting>
+        <setting name="escape">\</setting>
+    </resource>
     <export-config name="default">
         <configuration action-id="eu.esdihumboldt.hale.io.instance.write.transformed" provider-id="eu.esdihumboldt.hale.io.gml.xplan.writer">
             <setting name="charset">UTF-8</setting>
