@@ -2,7 +2,7 @@ import eu.esdihumboldt.hale.common.lookup.*;
 import eu.esdihumboldt.hale.ui.HaleUI;
 import eu.esdihumboldt.hale.common.core.io.*;
 
-def getLookupTableValue(value, tableId){
+def getLookupTableValue(value, tableId) {
 	// retrieve Lookup table
 	LookupService ls = HaleUI.getServiceProvider().getService(LookupService.class)
 	LookupTableInfo lithTable = ls.getTable(tableId)
@@ -13,31 +13,31 @@ def getLookupTableValue(value, tableId){
 	return result
 }
 
-def collectAttributeZweckbestimmung(){
+def collectAttributeZweckbestimmung() {
 	if (_source.p.zweckbestimmung.value()) {
 		collectAttributeAndFeatureTypeNameById('zweckbestimmung', _source.p.id.value())
 	}
 }
 
-def collectAttributeDetailZweckbestimmung(){
+def collectAttributeDetailZweckbestimmung() {
 	if (_source.p.detaillierteZweckbestimmung.value()) {
 		collectAttributeAndFeatureTypeNameById('detaillierteZweckbestimmung', _source.p.id.value())
 	}
 }
 
-def collectAttributeSondernutzung(){
+def collectAttributeSondernutzung() {
 	if (_source.p.sonderNutzung.value() || _source.p.sondernutzung.value()) {
 		collectAttributeAndFeatureTypeNameById('sondernutzung', _source.p.id.value())
 	}
 }
 
-def collectAttributeDetailSondernutzung(){
+def collectAttributeDetailSondernutzung() {
 	if (_source.p.detaillierteSondernutzung.value()) {
 		collectAttributeAndFeatureTypeNameById('detaillierteSondernutzung', _source.p.id.value())
 	}
 }
 
-def collectAttributeAndFeatureTypeNameById(attributeName, id){
+def collectAttributeAndFeatureTypeNameById(attributeName, id) {
 	withTransformationContext{
 		def c = _.context.collector(it)
 		
