@@ -3710,17 +3710,16 @@ if (gehoertZuBP_Bereich &amp;&amp; gehoertZuBP_Bereich.p.first()) {&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-&#13;
 def c = _.context.collector()&#13;
 &#13;
 if (refTextInhalt &amp;&amp; _sourceTypes) {&#13;
 &#13;
-	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#13;
-		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#13;
+	if (!c.text['BP'].values()) {&#13;
+		c.text['BP'] &lt;&lt; ([] as Set)&#13;
 	}&#13;
 	&#13;
 	refTextInhalt.p.each { tex -&gt;	&#13;
-		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#13;
+		c.text['BP'].values()[0] &lt;&lt; tex.p.href.value()&#13;
 	}&#13;
 }&#13;
 
@@ -3762,17 +3761,16 @@ if (refTextInhalt &amp;&amp; _sourceTypes) {&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-&#13;
 def c = _.context.collector()&#13;
 &#13;
 if (refTextInhalt &amp;&amp; _sourceTypes) {&#13;
 &#13;
-	if (!c.text[_sourceTypes[0].definition.displayName[0..1]].values()) {&#13;
-		c.text[_sourceTypes[0].definition.displayName[0..1]] &lt;&lt; ([] as Set)&#13;
+	if (!c.text['BP'].values()) {&#13;
+		c.text['BP'] &lt;&lt; ([] as Set)&#13;
 	}&#13;
 	&#13;
 	refTextInhalt.p.each { tex -&gt;	&#13;
-		c.text[_sourceTypes[0].definition.displayName[0..1]].values()[0] &lt;&lt; tex.p.href.value()&#13;
+		c.text['BP'].values()[0] &lt;&lt; tex.p.href.value()&#13;
 	}&#13;
 }&#13;
 
