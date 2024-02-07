@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<hale-project version="4.2.0.SNAPSHOT">
+<hale-project version="5.3.0.release">
     <name>Migration XPlanGML 4.1 zu 5.4</name>
     <author>Johanna Ott</author>
     <description>* In 5.4 haben alle Objekte das verpflichtende Attribut rechtscharakter. Wenn in den 4.1-Daten bisher keine entsprechenden Informationen vorliegen, wird der Wert 9998/Unbekannt zugewiesen.</description>
     <created>2022-08-15T09:00:24.251+02:00</created>
-    <modified>2022-08-26T14:41:55.928+02:00</modified>
+    <modified>2024-10-18T08:37:20.739+02:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
