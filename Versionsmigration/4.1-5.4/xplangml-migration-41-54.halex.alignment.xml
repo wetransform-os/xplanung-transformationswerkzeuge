@@ -6621,11 +6621,19 @@ c.text['BP'].values()[0].each { tex -&gt;&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+def result = []&#13;
+&#13;
+besondereZweckbestimmung.each { bzb -&gt;&#13;
+	if (bzb in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+		_log.warn ("Der Wert ${bzb} ist nicht mehr in den zulässigen Codes für BP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+	}&#13;
+	else {&#13;
+		result &lt;&lt; bzb&#13;
+	}&#13;
 }&#13;
 &#13;
-else return besondereZweckbestimmung
+result&#13;
+
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
@@ -8729,11 +8737,18 @@ c.text['FP'].values()[0].each { tex -&gt;&#13;
         </target>
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
-if (besondereZweckbestimmung in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
-	_log.warn ("Der Wert ${besondereZweckbestimmung} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+def result = []&#13;
+&#13;
+besondereZweckbestimmung.each { bzb -&gt;&#13;
+	if (bzb in ["28000", "28001", "28002", "28003", "28004"]) {&#13;
+		_log.warn ("Der Wert ${bzb} ist nicht mehr in den zulässigen Codes für FP_VerEntsorgung.zweckbestimmung erhalten und wird daher nicht migriert")&#13;
+	}&#13;
+	else {&#13;
+		result &lt;&lt; bzb&#13;
+	}&#13;
 }&#13;
 &#13;
-else return besondereZweckbestimmung
+result
 </core:text>
         </complexParameter>
         <parameter value="false" name="variablesAsInstances"/>
