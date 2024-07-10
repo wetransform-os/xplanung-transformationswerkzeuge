@@ -1,10 +1,9 @@
 import eu.esdihumboldt.hale.common.lookup.*;
-import eu.esdihumboldt.hale.ui.HaleUI;
-import eu.esdihumboldt.hale.common.core.io.*;
+import eu.esdihumboldt.hale.common.core.*;
 
 def getLookupTableValue(value, tableId) {
 	// retrieve Lookup table
-	LookupService ls = HaleUI.getServiceProvider().getService(LookupService.class)
+	LookupService ls = HalePlatform.getService(LookupService.class)
 	LookupTableInfo lithTable = ls.getTable(tableId)
 	def table = lithTable.getTable()
 
