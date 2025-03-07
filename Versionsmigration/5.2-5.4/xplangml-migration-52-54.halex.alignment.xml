@@ -180,10 +180,10 @@
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-274&#xD;
-Abgleich der Kardinalität von detaillierteSondernutzung mit der Kardinaltität von sondernutzung&#xD;
-&#xD;
-Beschluss: &#xD;
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-274&#13;
+Abgleich der Kardinalität von detaillierteSondernutzung mit der Kardinaltität von sondernutzung&#13;
+&#13;
+Beschluss: &#13;
 Änderung der Kardinalität der Attribute sondernutzung und detaillierteSondernutzung in [0..*] in BP_BaugebietsTeilflaeche und FP_Bebauungsflaeche</documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C76652f32-a11c-4376-a636-50b92eaf45c4" priority="normal">
@@ -940,15 +940,15 @@ Beschluss: &#xD;
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-34&#xD;
-Ergänzen von Attributen bei BP_Sichtflaeche&#xD;
-&#xD;
-Beschluss:&#xD;
-- Neues Attribut "art" über neue Enumeration BP_SichtflaecheArt: 1000 Haltesichtweite | 2000 Anfahrsichtfeld | 3000 Annhäherungssichtfeld | 4000 Sichtfeld an Überquerungsstellen&#xD;
-- Neues Attribut "knotenpunkt" für die Kombination der sich treffenden Straßentypen über neue Enumeration BP_SichtflaecheKnotenpunkt: 1000 Anliegerstraße/Anliegerweg | 2000 Anliegerstraße/Anliegerstraße | 3000 Sammelstraße/Anliegerstraße | 4000 Hauptsammelstraße | 5000 angebaute Hauptverkehrsstraße | 6000 anbaufreie Hauptverkehrsstraße&#xD;
-- Neues Attribut "geschwindigkeit" in km/h für die angesetzte Geschwindigkeit der übergeordneten Straße als integer&#xD;
-- Neues Attribut "schenkellaenge" in Meter für die resultierende Schenkellänge als integer&#xD;
-&#xD;
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-34&#13;
+Ergänzen von Attributen bei BP_Sichtflaeche&#13;
+&#13;
+Beschluss:&#13;
+- Neues Attribut "art" über neue Enumeration BP_SichtflaecheArt: 1000 Haltesichtweite | 2000 Anfahrsichtfeld | 3000 Annhäherungssichtfeld | 4000 Sichtfeld an Überquerungsstellen&#13;
+- Neues Attribut "knotenpunkt" für die Kombination der sich treffenden Straßentypen über neue Enumeration BP_SichtflaecheKnotenpunkt: 1000 Anliegerstraße/Anliegerweg | 2000 Anliegerstraße/Anliegerstraße | 3000 Sammelstraße/Anliegerstraße | 4000 Hauptsammelstraße | 5000 angebaute Hauptverkehrsstraße | 6000 anbaufreie Hauptverkehrsstraße&#13;
+- Neues Attribut "geschwindigkeit" in km/h für die angesetzte Geschwindigkeit der übergeordneten Straße als integer&#13;
+- Neues Attribut "schenkellaenge" in Meter für die resultierende Schenkellänge als integer&#13;
+&#13;
 </documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C6d484281-1972-47e9-ad56-3ae901e22071" priority="normal">
@@ -1553,10 +1553,10 @@ Beschluss:&#xD;
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-268&#xD;
-Neue Klasse für die „von der Genehmigung ausgenommenen Fläche“&#xD;
-&#xD;
-Beschluss&#xD;
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-268&#13;
+Neue Klasse für die „von der Genehmigung ausgenommenen Fläche“&#13;
+&#13;
+Beschluss&#13;
 Neues Attribut vonGenehmigungAusgenommen: boolean [0..1] in FP_Objekt (Definition: Angabe, ob Teile des Flächennutzungsplans nach §6 Abs. 3 BauGB von der Genehmigung ausgenommen sind.)</documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C85b614c0-e843-4876-89c4-e87bb252c8cc" priority="normal">
@@ -3574,11 +3574,11 @@ Neues Attribut vonGenehmigungAusgenommen: boolean [0..1] in FP_Objekt (Definitio
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-35&#xD;
-Definition der Attribute drehwinkel in XP_PPO und XP_PTO korrigieren&#xD;
-&#xD;
-Beschluss&#xD;
-- Die Definition von drehwinkel in XP_PPO und XP_PTO wird geändert: Winkelangabe in Grad.&#xD;
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-35&#13;
+Definition der Attribute drehwinkel in XP_PPO und XP_PTO korrigieren&#13;
+&#13;
+Beschluss&#13;
+- Die Definition von drehwinkel in XP_PPO und XP_PTO wird geändert: Winkelangabe in Grad.&#13;
 - Keine Änderung der Bezugsrichtung der Winkelangaben in BP_Punktobjekt und XP_PPO / XP_PTO.</documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C0cbc3de2-8960-44d0-8e8f-c8da7aa500ae" priority="normal">
@@ -3655,12 +3655,12 @@ Beschluss&#xD;
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-20&#xD;
-Präzisierung der Dokumentation von XP_ExterneReferenz&#xD;
-&#xD;
-- Die Verweise auf ""Datenbankeintrag"" bzw. ""Datenbank-Schlüssel"" werden aus der Dokumentation entfernt.&#xD;
-- Neue Definition von referenzName: "Name bzw. Titel des Dokuments"&#xD;
-- Die Attribute georefMimeType und informationssystemURL werden als "zukünftig wegfallend" deklariert.&#xD;
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-20&#13;
+Präzisierung der Dokumentation von XP_ExterneReferenz&#13;
+&#13;
+- Die Verweise auf ""Datenbankeintrag"" bzw. ""Datenbank-Schlüssel"" werden aus der Dokumentation entfernt.&#13;
+- Neue Definition von referenzName: "Name bzw. Titel des Dokuments"&#13;
+- Die Attribute georefMimeType und informationssystemURL werden als "zukünftig wegfallend" deklariert.&#13;
 - Die Liste der MimeTypes (CodeList XP_MimeTypes) wird überarbeitet.</documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="Ccb78f6e7-cfce-4686-bf54-fda299eeccf0" priority="high">
@@ -3827,11 +3827,11 @@ Präzisierung der Dokumentation von XP_ExterneReferenz&#xD;
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-35&#xD;
-Definition der Attribute drehwinkel in XP_PPO und XP_PTO korrigieren&#xD;
-&#xD;
-Beschluss&#xD;
-Die Definition von drehwinkel in XP_PPO und XP_PTO wird geändert: Winkelangabe in Grad.&#xD;
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-35&#13;
+Definition der Attribute drehwinkel in XP_PPO und XP_PTO korrigieren&#13;
+&#13;
+Beschluss&#13;
+Die Definition von drehwinkel in XP_PPO und XP_PTO wird geändert: Winkelangabe in Grad.&#13;
 Keine Änderung der Bezugsrichtung der Winkelangaben in BP_Punktobjekt und XP_PPO / XP_PTO.</documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C83d3691a-8125-4b15-a411-1ac35e29ae4f" priority="normal">

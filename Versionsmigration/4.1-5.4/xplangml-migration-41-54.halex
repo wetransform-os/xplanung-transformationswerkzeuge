@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<hale-project version="5.3.0.release">
+<hale-project version="5.4.0.release">
     <name>Migration XPlanGML 4.1 zu 5.4</name>
     <author>Johanna Ott</author>
     <description>* In 5.4 haben alle Objekte das verpflichtende Attribut rechtscharakter. Wenn in den 4.1-Daten bisher keine entsprechenden Informationen vorliegen, wird der Wert 9998/Unbekannt zugewiesen.</description>
-    <created>2022-08-15T09:00:24.251+02:00</created>
-    <modified>2024-10-18T08:37:20.739+02:00</modified>
+    <created>2022-08-15T07:00:24.251Z</created>
+    <modified>2025-04-23T12:28:09.227Z</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.project.hale25.xml</setting>
-        <setting name="target">file:/C:/Users/Johanna%20Ott/Box%20Sync/staff/Projects/2022-04%20DataPort%20XLeitstelle%20XPlanung%20transformation%20tools/Transformations/Migration%20Alignments/xplangml-migration-41-54.halex</setting>
+        <setting name="target">xplangml-migration-41-54.halex</setting>
     </save-config>
     <resource action-id="eu.esdihumboldt.hale.io.schema.read.source" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
         <setting name="charset">UTF-8</setting>
@@ -31,7 +31,7 @@
             <setting name="meta.description"></setting>
             <setting name="geometry.unifyWindingOrder">counterClockwise</setting>
             <setting name="gml.geometry.simplify">true</setting>
-            <setting name="crs"/>
+            <setting name="crs"></setting>
             <setting name="xml.add.codespace">true</setting>
             <setting name="crs.epsg.prefix">EPSG:</setting>
             <setting name="contentType">eu.esdihumboldt.hale.io.xplangml</setting>

@@ -44,15 +44,15 @@
         <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
-        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-102&#xD;
-Das Attribut wert in BP_AbstandsMass wird optional&#xD;
-Es wird ein zusätzliches, optionales Enumerations-Attribut typ zur attributiven Unterscheidung von Abstands- und Winkelmaßen eingeführt&#xD;
-Die Dokumentation der Attribute startWinkel und endWinkel wird präzisiert: Die Werte beziehen sich auf den Rechtswert (also die Ostrichtung) in einem rechtwinkligen Koordinatensystem.&#xD;
-In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
-- Für Abstandsmaße wird die Verwendung einer einfachen Linie (gml:LineString mit 2 Punkten) empfohlen&#xD;
-- Für Winkelmaße wird die Verwendung eines einfachen Kreisbogens (gml:Curve mit genau einem gml:Arc) empfohlen&#xD;
-- Aus Gründen der Aufwärts-Kompatibilität können die Geometrie-Restriktionen erst ab Version 6.0 als verpflichtend erklärt werden.&#xD;
-&#xD;
+        <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-102&#13;
+Das Attribut wert in BP_AbstandsMass wird optional&#13;
+Es wird ein zusätzliches, optionales Enumerations-Attribut typ zur attributiven Unterscheidung von Abstands- und Winkelmaßen eingeführt&#13;
+Die Dokumentation der Attribute startWinkel und endWinkel wird präzisiert: Die Werte beziehen sich auf den Rechtswert (also die Ostrichtung) in einem rechtwinkligen Koordinatensystem.&#13;
+In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#13;
+- Für Abstandsmaße wird die Verwendung einer einfachen Linie (gml:LineString mit 2 Punkten) empfohlen&#13;
+- Für Winkelmaße wird die Verwendung eines einfachen Kreisbogens (gml:Curve mit genau einem gml:Arc) empfohlen&#13;
+- Aus Gründen der Aufwärts-Kompatibilität können die Geometrie-Restriktionen erst ab Version 6.0 als verpflichtend erklärt werden.&#13;
+&#13;
 </documentation>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C23c79ef4-c70a-4f82-abc4-9b383b7e4bdb" priority="normal">
