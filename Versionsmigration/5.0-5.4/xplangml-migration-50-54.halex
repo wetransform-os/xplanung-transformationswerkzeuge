@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<hale-project version="4.2.0.SNAPSHOT">
+<hale-project version="5.4.0.release">
     <name>XPlanung 5.0 nach 5.4</name>
     <author>Claudia Schulte</author>
-    <created>2022-09-19T12:26:53.679+02:00</created>
-    <modified>2022-11-17T15:26:30.165+01:00</modified>
+    <created>2022-09-19T10:26:53.679Z</created>
+    <modified>2025-04-23T11:43:46.471Z</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.project.hale25.xml</setting>
-        <setting name="target">file:/C:/cs/SERVICE/SVC-1230/5.0%20nach%205.4/xplangml-migration-50-54.halex</setting>
+        <setting name="target">xplangml-migration-50-54.halex</setting>
     </save-config>
     <resource action-id="eu.esdihumboldt.hale.io.schema.read.source" provider-id="eu.esdihumboldt.hale.io.xsd.reader">
         <setting name="charset">UTF-8</setting>
@@ -30,7 +30,7 @@
             <setting name="meta.description"></setting>
             <setting name="geometry.unifyWindingOrder">counterClockwise</setting>
             <setting name="gml.geometry.simplify">true</setting>
-            <setting name="crs"/>
+            <setting name="crs"></setting>
             <setting name="xml.add.codespace">true</setting>
             <setting name="crs.epsg.prefix">EPSG:</setting>
             <setting name="contentType">eu.esdihumboldt.hale.io.xplangml</setting>
