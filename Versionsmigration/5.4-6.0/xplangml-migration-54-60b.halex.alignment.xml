@@ -12911,7 +12911,9 @@ if (refLegende){&#13;
         <target>
             <property>
                 <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="texte" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="texte" ns="http://www.xplanung.de/xplangml/6/0">
+                    <context>1</context>
+                </child>
             </property>
         </target>
         <parameter value="false" name="copyGeometries"/>
@@ -12940,8 +12942,8 @@ if (refLegende){&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 if (refText) {&#13;
-	target {&#13;
-		href ("#{$id}")&#13;
+	_target {&#13;
+		href ( "#${id}" )&#13;
 	}&#13;
 }
 </core:text>
