@@ -25,21 +25,6 @@
         <setting name="source">https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/4.1-Kernmodell/XPlanung-Operationen.xsd</setting>
         <setting name="contentType">eu.esdihumboldt.hale.io.xsd</setting>
     </resource>
-    <resource action-id="eu.esdihumboldt.hale.io.instance.read.source" provider-id="eu.esdihumboldt.hale.io.gml.reader">
-        <setting name="charset">UTF-8</setting>
-        <setting name="resourceId">65249181-f257-4a25-968f-b088c598fe90</setting>
-        <setting name="source">file:/C:/Users/Johanna%20Ott/git/xplanung-transformationswerkzeuge/Versionsmigration/3.0-4.1/Testdaten_3_0/Landschaftsplan/Landschaftsplan/Landschaftsplan%20der%20Stadt%20Uebigau-Wahrenbrueck_346/xplan.gml</setting>
-        <setting name="interpolation.maxError">0.1</setting>
-        <setting name="interpolation.algorithm">segment</setting>
-        <setting name="ignoreNamespaces">false</setting>
-        <setting name="paginateRequest">true</setting>
-        <setting name="featuresPerWfsRequest">1000</setting>
-        <setting name="ignoreRoot">true</setting>
-        <setting name="ignoreNumberMatched">false</setting>
-        <setting name="interpolation.grid.moveAllToGrid">false</setting>
-        <setting name="strict">false</setting>
-        <setting name="contentType">eu.esdihumboldt.hale.io.gml</setting>
-    </resource>
     <export-config name="default">
         <configuration action-id="eu.esdihumboldt.hale.io.instance.write.transformed" provider-id="eu.esdihumboldt.hale.io.gml.xplan.writer">
             <setting name="charset">UTF-8</setting>

@@ -11,6 +11,7 @@
                 <type name="BP_AbgrabungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -25,6 +26,7 @@
                 <type name="BP_AbstandsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -39,6 +41,7 @@
                 <type name="BP_AbstandsMassType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation>https://xleitstelle.de/jira/XPlanung/tickets/XPLAN-102&#xD;
@@ -63,6 +66,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AbweichungVonBaugrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -77,6 +81,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AbweichungVonUeberbaubererGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -91,6 +96,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -105,6 +111,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AufschuettungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -119,6 +126,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -133,6 +141,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_AusgleichsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -147,6 +156,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BauGrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -161,6 +171,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BauLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -175,6 +186,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BaugebietsTeilFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -190,6 +202,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BereichOhneEinAusfahrtLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -204,6 +217,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -218,6 +232,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BesondererNutzungszweckFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -233,6 +248,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_BodenschaetzeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -247,6 +263,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_DachgestaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -261,6 +278,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_EinfahrtPunktType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -275,6 +293,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_EinfahrtsbereichLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -289,6 +308,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_EingriffsBereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -303,6 +323,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_EmissionskontingentLaermGebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -317,6 +338,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_EmissionskontingentLaermType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -331,6 +353,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_ErhaltungsBereichFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -345,6 +368,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_FestsetzungNachLandesrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -359,6 +383,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_FirstRichtungsLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -373,6 +398,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_FlaecheOhneFestsetzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -387,6 +413,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -401,6 +428,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -415,6 +443,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_FoerderungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -429,6 +458,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_FreiFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -443,6 +473,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GebaeudeFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -457,6 +488,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GemeinbedarfsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -472,6 +504,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GemeinschaftsanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -486,6 +519,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GemeinschaftsanlagenZuordnungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -500,6 +534,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -514,6 +549,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -528,6 +564,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GewaesserFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -543,6 +580,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_GruenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -557,6 +595,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_HoehenMassType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -571,6 +610,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_ImmissionsschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -586,6 +626,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_KennzeichnungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -601,6 +642,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_KleintierhaltungFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -630,6 +672,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -644,6 +687,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -658,6 +702,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_NebenanlagenAusschlussFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -672,6 +717,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_NebenanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -686,6 +732,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_NichtUeberbaubareGrundstuecksflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -700,6 +747,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_NutzungsartenGrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -714,6 +762,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -728,6 +777,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_PersGruppenBestimmteFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -742,6 +792,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -757,6 +808,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -771,6 +823,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_RegelungVergnuegungsstaettenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -785,6 +838,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_RekultivierungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -799,6 +853,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_RichtungssektorGrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -813,6 +868,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_RichtungssektorType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -827,6 +883,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_SchutzPflegeEntwicklungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -841,6 +898,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_SchutzPflegeEntwicklungsMassnahmeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -855,6 +913,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_SichtflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -869,6 +928,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_SpezielleBauweiseType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -883,6 +943,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_SpielSportanlagenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -897,6 +958,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_StrassenVerkehrsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -911,6 +973,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_StrassenbegrenzungsLinieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -925,6 +988,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_StrassenkoerperType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -939,6 +1003,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_TechnischeMassnahmenFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -953,6 +1018,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -967,6 +1033,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -981,6 +1048,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_UeberbaubareGrundstuecksFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -995,6 +1063,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1009,6 +1078,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1023,6 +1093,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1037,6 +1108,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_VeraenderungssperreType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1051,6 +1123,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_VerkehrsflaecheBesondererZweckbestimmungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1065,6 +1138,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -1080,6 +1154,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_WasserwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -1095,6 +1170,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_WegerechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1109,6 +1185,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_ZentralerVersorgungsbereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1123,6 +1200,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_ZusatzkontingentLaermFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1137,6 +1215,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="BP_ZusatzkontingentLaermType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1151,6 +1230,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_AbgrabungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1165,6 +1245,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_AnpassungKlimawandelType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1179,6 +1260,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_AufschuettungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1193,6 +1275,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_AusgleichsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1207,6 +1290,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_BebauungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1221,6 +1305,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1235,6 +1320,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_BodenschaetzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1249,6 +1335,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_DarstellungNachLandesrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1263,6 +1350,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_FlaecheOhneDarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1277,6 +1365,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1291,6 +1380,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_FlaechenschlussobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1305,6 +1395,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_GemeinbedarfType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1319,6 +1410,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1333,6 +1425,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1347,6 +1440,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1361,6 +1455,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_GruenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1375,6 +1470,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_KeineZentrAbwasserBeseitigungFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1389,6 +1485,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_KennzeichnungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -1404,6 +1501,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1418,6 +1516,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_LandwirtschaftsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1432,6 +1531,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1446,6 +1546,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_NutzungsbeschraenkungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1460,6 +1561,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1474,6 +1576,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1488,6 +1591,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_PrivilegiertesVorhabenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1502,6 +1606,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1516,6 +1621,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1530,6 +1636,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_SpielSportanlageType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1544,6 +1651,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -1559,6 +1667,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1573,6 +1682,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_TextlicheDarstellungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1587,6 +1697,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_UeberlagerungsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1601,6 +1712,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_UnverbindlicheVormerkungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1615,6 +1727,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_VerEntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1629,6 +1742,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_VorbehalteFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1643,6 +1757,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_WaldFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -1658,6 +1773,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -1673,6 +1789,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="FP_ZentralerVersorgungsbereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1687,6 +1804,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_AbgrenzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1701,6 +1819,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_AllgGruenflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1715,6 +1834,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_AnpflanzungBindungErhaltungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1729,6 +1849,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_AusgleichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1743,6 +1864,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1757,6 +1879,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_BiotopverbundflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1771,6 +1894,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1785,6 +1909,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_ErholungFreizeitType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1799,6 +1924,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1813,6 +1939,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1827,6 +1954,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1841,6 +1969,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1855,6 +1984,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_LandschaftsbildType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1869,6 +1999,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1883,6 +2014,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_NutzungsAusschlussType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1897,6 +2029,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_NutzungserfordernisRegelungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1911,6 +2044,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1925,6 +2059,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1939,6 +2074,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_PlanerischeVertiefungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1953,6 +2089,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1967,6 +2104,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_SchutzPflegeEntwicklungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1981,6 +2119,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_SchutzobjektInternatRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -1995,6 +2134,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_SchutzobjektLandesrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2009,6 +2149,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2023,6 +2164,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2037,6 +2179,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_TextlicheFestsetzungsFlaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2051,6 +2194,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_WasserrechtGemeingebrEinschraenkungNaturschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2065,6 +2209,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_WasserrechtSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2079,6 +2224,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_WasserrechtSonstigeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2093,6 +2239,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_WasserrechtWirtschaftAbflussHochwSchutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2107,6 +2254,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_ZuBegruenendeGrundstueckflaecheType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2121,6 +2269,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="LP_ZwischennutzungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2135,6 +2284,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_AchseType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2149,6 +2299,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2163,6 +2314,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_BodenschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2177,6 +2329,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_EinzelhandelType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2191,6 +2344,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_EnergieversorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2205,6 +2359,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_EntsorgungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2219,6 +2374,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_ErholungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2233,6 +2389,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_ErneuerbareEnergieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2247,6 +2404,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_ForstwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2261,6 +2419,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_FreiraumType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2275,6 +2434,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_FunktionszuweisungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2289,6 +2449,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_GenerischesObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2303,6 +2464,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -2318,6 +2480,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2332,6 +2495,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_GrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2346,6 +2510,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_GruenzugGruenzaesurType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2360,6 +2525,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_HochwasserschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2374,6 +2540,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_IndustrieGewerbeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2388,6 +2555,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_KlimaschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2402,6 +2570,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_KommunikationType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2416,6 +2585,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_KulturlandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2430,6 +2600,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_LaermschutzBauschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2444,6 +2615,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_LandwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2458,6 +2630,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_LegendenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2472,6 +2645,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_LuftverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2486,6 +2660,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_NaturLandschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -2501,6 +2676,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_NaturschutzrechtlichesSchutzgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2530,6 +2706,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -2545,6 +2722,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_PlanungsraumType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2559,6 +2737,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_RadwegWanderwegType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2573,6 +2752,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_RaumkategorieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2587,6 +2767,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_RohstoffType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2601,6 +2782,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SchienenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2615,6 +2797,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SiedlungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2629,6 +2812,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SonstVerkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2643,6 +2827,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SonstigeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2657,6 +2842,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SonstigerFreiraumschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2671,6 +2857,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SonstigerSiedlungsbereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2685,6 +2872,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SozialeInfrastrukturType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2699,6 +2887,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SperrgebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2713,6 +2902,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_SportanlageType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2727,6 +2917,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_StrassenverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2741,6 +2932,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2755,6 +2947,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_VerkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2769,6 +2962,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_WasserschutzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2783,6 +2977,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_WasserverkehrType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2797,6 +2992,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_WasserwirtschaftType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -2812,6 +3008,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_WohnenSiedlungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2826,6 +3023,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="RP_ZentralerOrtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2840,6 +3038,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_BauverbotszoneType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2854,6 +3053,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2868,6 +3068,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_BodenschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -2883,6 +3084,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_DenkmalschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -2898,6 +3100,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_FlaechenobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2912,6 +3115,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_ForstrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -2927,6 +3131,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_GebietType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2941,6 +3146,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_GelaendemorphologieType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2955,6 +3161,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_GeometrieobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2969,6 +3176,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_GewaesserType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2983,6 +3191,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_GrenzeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -2997,6 +3206,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_LinienobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3011,6 +3221,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_LuftverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3025,6 +3236,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3039,6 +3251,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -3054,6 +3267,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_PunktobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3068,6 +3282,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_SchienenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3082,6 +3297,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_SchutzgebietNaturschutzrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3096,6 +3312,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_SchutzgebietSonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3110,6 +3327,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_SchutzgebietWasserrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3124,6 +3342,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_SonstigesRechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3138,6 +3357,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_StrassenverkehrsrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3152,6 +3372,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3166,6 +3387,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="SO_WasserrechtType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -3181,6 +3403,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_AbstraktesPraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3195,6 +3418,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_BegruendungAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3209,6 +3433,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3223,6 +3448,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_DatumAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3237,6 +3463,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_DoubleAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3251,6 +3478,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_ExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
         <documentation></documentation>
@@ -3266,6 +3494,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_FPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3280,6 +3509,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_GemeindeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3294,6 +3524,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_GenerAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3308,6 +3539,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_HoehenangabeType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3322,6 +3554,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_IntegerAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3336,6 +3569,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_LPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3350,6 +3584,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_LTOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3364,6 +3599,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_NutzungsschabloneType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3378,6 +3614,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3392,6 +3629,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_PPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3406,6 +3644,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_PTOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3420,6 +3659,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3434,6 +3674,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_PlangeberType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3448,6 +3689,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_PraesentationsobjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3462,6 +3704,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_RasterdarstellungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3476,6 +3719,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_SPEMassnahmenDatenType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3490,6 +3734,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_SpezExterneReferenzType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3504,6 +3749,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_StringAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3518,6 +3764,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_TPOType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3532,6 +3779,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_TextAbschnittType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3546,6 +3794,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_URLAttributType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3560,6 +3809,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_VerbundenerPlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3574,6 +3824,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_VerfahrensMerkmalType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3588,6 +3839,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XP_WirksamkeitBedingungType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
@@ -3602,6 +3854,7 @@ In der Dokumentation von BP_AbstandsMass wird folgendes ergänzt:&#xD;
                 <type name="XPlanAuszugType" ns="http://www.xplanung.de/xplangml/5/4"/>
             </class>
         </target>
+        <parameter value="false" name="copyGeometries"/>
         <parameter value="true" name="ignoreNamespaces"/>
         <parameter value="true" name="structuralRename"/>
     </cell>
