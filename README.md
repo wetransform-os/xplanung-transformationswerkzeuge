@@ -4,4 +4,4 @@ Dieses Projekt steht unter der [EUPL-1.2](https://joinup.ec.europa.eu/collection
 
 ![Lizenz: EUPL](https://img.shields.io/badge/License-EUPL-blue.svg)
 
-Alignments zur Migration zwischen verschiedenen XPlan-Versionen.
+Alignments zur Migration zwischen verschiedenen XPlanGML-Versionen.
