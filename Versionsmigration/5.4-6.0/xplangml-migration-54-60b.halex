@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<hale-project version="5.4.0.release">
+<hale-project version="5.6.0.SNAPSHOT">
     <name>Migration XPlanGML 5.4 zu 6.0</name>
     <author>Thorsten Reitz (im Auftrag der XLeitstelle/von Dataport)</author>
-    <created>2022-07-13T08:19:12.076Z</created>
-    <modified>2025-04-09T15:33:17.487Z</modified>
+    <created>2022-07-13T10:19:12.076+02:00</created>
+    <modified>2026-11-03T15:33:03.562+01:00</modified>
     <save-config action-id="project.save" provider-id="eu.esdihumboldt.hale.io.project.hale25.xml.writer">
         <setting name="charset">UTF-8</setting>
         <setting name="projectFiles.separate">false</setting>
