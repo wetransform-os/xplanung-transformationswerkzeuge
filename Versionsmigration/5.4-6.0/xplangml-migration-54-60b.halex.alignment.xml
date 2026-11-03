@@ -843,14 +843,22 @@ else {&#13;
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 //this groovy script collects the values of the attribute &#13;
 //BP_Plan.verfahren for each BP_Bereich.id&#13;
+//and is collecting info on which XP_Plan is located in which Bundesland&#13;
 &#13;
 withTransformationContext {&#13;
 	def c = _.context.collector(it)&#13;
 	&#13;
 	def bereichId = _source.p.id.value()&#13;
 	def verfahren = _source.links.BP_Plan.p.verfahren.value()&#13;
-	&#13;
+&#13;
 	c.bereichId_verfahren[bereichId] &lt;&lt; verfahren&#13;
+&#13;
+	if (_source.links.BP_Plan.p.gemeinde.XP_Gemeinde.ags.value()?.take(2)=='08') {&#13;
+		c.bawueBereiche &lt;&lt; bereichId.toString()&#13;
+		_source.p.planinhalt.href.values().each { href -&gt;&#13;
+			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+		}&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -2947,221 +2955,395 @@ _snippets.helperFunctions{&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C54b322d7-0f38-4e7a-802b-f322176edb3b" priority="lowest">
-        <source>
-            <property>
-                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionBauGBDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cdb1c0e2a-b8cd-4145-97c7-7b259cc83dac" priority="normal">
-        <source>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionBauGBDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C0f7c6ffa-9536-4d0b-a8fe-dffca0667f0d" priority="lowest">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C676e9179-2450-4786-aea9-5487b7d0793a" priority="lowest">
+        <source name="var">
             <property>
                 <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauGBText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionBauGBDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_log.error("Der BP_Bereich mit id ${id} hat kein versionBauGBDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; !versionBauGBText) {&#13;
+		_log.error("Der BP_Bereich mit id ${id} hat kein versionBauGBText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_target {&#13;
+			name( versionBauGBText )&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauGBDatum || versionBauGBText) {&#13;
+	_target {&#13;
+		if (versionBauGBText) {&#13;
+			name( versionBauGBText )&#13;
+		}&#13;
+		if (versionBauGBDatum) {&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C890298eb-19f6-4cfe-8ecb-97ed1d0d57e7" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cdb1c0e2a-b8cd-4145-97c7-7b259cc83dac" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionBauGBDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauGBText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_log.error("Der BP_Plan mit id ${id} hat kein versionBauGBDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; !versionBauGBText) {&#13;
+		_log.error("Der BP_Plan mit id ${id} hat kein versionBauGBText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_target {&#13;
+			name( versionBauGBText )&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauGBDatum || versionBauGBText) {&#13;
+	_target {&#13;
+		if (versionBauGBText) {&#13;
+			name( versionBauGBText )&#13;
+		}&#13;
+		if (versionBauGBDatum) {&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C8568e972-3724-4a97-9914-5b15dc1a28ab" priority="lowest">
-        <source>
-            <property>
-                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionBauNVODatum" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cf207db8f-49d9-42ae-b767-923b30d30e4e" priority="normal">
-        <source>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionBauNVODatum" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C206ccf85-6d71-4b26-9fda-2e064931fe1c" priority="lowest">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cbe6b2f56-6d86-47e6-a158-581948d145de" priority="lowest">
+        <source name="var">
             <property>
                 <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauNVOText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionBauNVODatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_log.error("Der BP_Bereich mit id ${id} hat kein versionBauNVODatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVOText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; !versionBauNVOText) {&#13;
+		_log.error("Der BP_Bereich mit id ${id} hat kein versionBauNVOText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVODatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_target {&#13;
+			name( versionBauNVOText )&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauNVODatum || versionBauNVOText) {&#13;
+	_target {&#13;
+		if (versionBauNVOText) {&#13;
+			name( versionBauNVOText )&#13;
+		}&#13;
+		if (versionBauNVODatum) {&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C9fca1e89-5a4f-4363-91e3-41235cb2e01b" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C967554f8-467a-4ad7-8352-bdf9a354837a" priority="normal">
+        <source name="var">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauNVOText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionBauNVODatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_log.error("Der BP_Plan mit id ${id} hat kein versionBauNVODatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVOText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; !versionBauNVOText) {&#13;
+		_log.error("Der BP_Plan mit id ${id} hat kein versionBauNVOText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVODatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_target {&#13;
+			name( versionBauNVOText )&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauNVODatum || versionBauNVOText) {&#13;
+	_target {&#13;
+		if (versionBauNVOText) {&#13;
+			name( versionBauNVOText )&#13;
+		}&#13;
+		if (versionBauNVODatum) {&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C31132d51-b709-4a12-a67d-76b4d151ac15" priority="lowest">
-        <source>
-            <property>
-                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionSonstRechtsgrundlageDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C23c8fda0-e17f-4bce-a70a-e6c392a83088" priority="normal">
-        <source>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionSonstRechtsgrundlageDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C94e72245-0176-4ae0-ba43-64c812c6493c" priority="lowest">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C7bb8cd3b-b02a-46fa-bf11-f97302bb0874" priority="lowest">
+        <source name="var">
             <property>
                 <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionSonstRechtsgrundlageText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionSonstRechtsgrundlageDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der BP_Bereich mit id ${id} hat kein versionSonstRechtsgrundlageDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; !versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der BP_Bereich mit id ${id} hat kein versionSonstRechtsgrundlageText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_target {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionSonstRechtsgrundlageDatum || versionSonstRechtsgrundlageText) {&#13;
+	_target {&#13;
+		if (versionSonstRechtsgrundlageText) {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+		}&#13;
+		if (versionSonstRechtsgrundlageDatum) {&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ce4a38a03-dd3e-46f6-af54-4866d675b0d3" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C168289df-5a0c-438a-b976-e4ac1cb18365" priority="normal">
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionSonstRechtsgrundlageDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionSonstRechtsgrundlageText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <target name="result">
             <property>
                 <type name="BP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der BP_Plan mit id ${id} hat kein versionSonstRechtsgrundlageDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; !versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der BP_Plan mit id ${id} hat kein versionSonstRechtsgrundlageText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_target {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionSonstRechtsgrundlageDatum || versionSonstRechtsgrundlageText) {&#13;
+	_target {&#13;
+		if (versionSonstRechtsgrundlageText) {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+		}&#13;
+		if (versionSonstRechtsgrundlageDatum) {&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C0bd7eebb-5e0e-4e49-9ea3-99d1c09a6073" priority="normal">
         <source>
@@ -4896,6 +5078,60 @@ _snippets.helperFunctions{&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.join" id="C85b2ad1c-fc18-466c-86a6-72b99e32d21e" priority="highest">
+        <source name="types">
+            <class>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <source name="types">
+            <class>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="join">
+            <jp:join-parameter xmlns:jp="http://www.esdi-humboldt.eu/hale/join">
+                <class>
+                    <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <class>
+                    <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <jp:condition>
+                    <property>
+                        <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="href" ns="http://www.w3.org/1999/xlink"/>
+                    </property>
+                    <property>
+                        <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+                    </property>
+                </jp:condition>
+            </jp:join-parameter>
+        </complexParameter>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//this groovy script is collecting info on which XP_Plan is located in which Bundesland&#13;
+&#13;
+withTransformationContext {&#13;
+	def c = _.context.collector(it)&#13;
+&#13;
+	if (_source.links.FP_Plan.p.gemeinde.XP_Gemeinde.ags.value()?.take(2)=='08') {&#13;
+		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
+		_source.p.planinhalt.href.values().each { href -&gt;&#13;
+			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+    </cell>
     <cell relation="eu.esdihumboldt.hale.align.join" id="Ccf421b8e-d7de-452b-b9a1-1b49acc2ff36" priority="normal">
         <source name="types">
             <class>
@@ -6005,221 +6241,395 @@ _snippets.helperFunctions{&#13;
         <parameter value="false" name="ignoreNamespaces"/>
         <parameter value="false" name="structuralRename"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C4bccaed1-708f-4b61-95d9-5194fafb2975" priority="lowest">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C3bb547c7-024a-4e5a-a96f-b04b77312ee2" priority="lowest">
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
             <property>
                 <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauGBDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionBauGBText" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_log.error("Der FP_Bereich mit id ${id} hat kein versionBauGBDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; !versionBauGBText) {&#13;
+		_log.error("Der FP_Bereich mit id ${id} hat kein versionBauGBText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_target {&#13;
+			name( versionBauGBText )&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauGBDatum || versionBauGBText) {&#13;
+	_target {&#13;
+		if (versionBauGBText) {&#13;
+			name( versionBauGBText )&#13;
+		}&#13;
+		if (versionBauGBDatum) {&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc1552cbf-80b4-45f3-b096-f60e9cab6745" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C18156d4e-cb0d-4a1a-8213-3e8ad1c04e69" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauGBDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
-            <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cc7470c40-96fd-4f69-8063-2fa8c1b79a1b" priority="lowest">
-        <source>
-            <property>
-                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionBauGBText" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C9de76fa0-9a9c-42e7-83a0-fd7ae74325a0" priority="normal">
-        <source>
+        <source name="var">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauGBText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <target name="result">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauGB" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_log.error("Der FP_Plan mit id ${id} hat kein versionBauGBDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; !versionBauGBText) {&#13;
+		_log.error("Der FP_Plan mit id ${id} hat kein versionBauGBText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauGBDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauGBDatum &amp;&amp; versionBauGBText) {&#13;
+		_target {&#13;
+			name( versionBauGBText )&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauGBDatum || versionBauGBText) {&#13;
+	_target {&#13;
+		if (versionBauGBText) {&#13;
+			name( versionBauGBText )&#13;
+		}&#13;
+		if (versionBauGBDatum) {&#13;
+			datum( versionBauGBDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Cec6d8e59-8f0a-43aa-8210-97903cef091e" priority="lowest">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="Cf74c94e4-98fb-40d9-a52a-dc3a96158daa" priority="lowest">
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
             <property>
                 <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauNVODatum" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionBauNVOText" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_log.error("Der FP_Bereich mit id ${id} hat kein versionBauNVODatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVOText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; !versionBauNVOText) {&#13;
+		_log.error("Der FP_Bereich mit id ${id} hat kein versionBauNVOText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVODatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_target {&#13;
+			name( versionBauNVOText )&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauNVODatum || versionBauNVOText) {&#13;
+	_target {&#13;
+		if (versionBauNVOText) {&#13;
+			name( versionBauNVOText )&#13;
+		}&#13;
+		if (versionBauNVODatum) {&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ccf2e07d4-4b41-452a-bfff-6e65877587d9" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C679c115b-28eb-4ccd-944c-530d15e3b5d7" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauNVODatum" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
-            <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C1193d4a9-b522-4a3f-bf75-9c91ed0f61cf" priority="lowest">
-        <source>
-            <property>
-                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionBauNVOText" ns="http://www.xplanung.de/xplangml/5/4"/>
-            </property>
-        </source>
-        <target>
-            <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C7158a5a6-569a-42a1-a8be-104b7c1f17db" priority="normal">
-        <source>
+        <source name="var">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionBauNVOText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <target name="result">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionBauNVO" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_log.error("Der FP_Plan mit id ${id} hat kein versionBauNVODatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVOText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; !versionBauNVOText) {&#13;
+		_log.error("Der FP_Plan mit id ${id} hat kein versionBauNVOText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionBauNVODatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionBauNVODatum &amp;&amp; versionBauNVOText) {&#13;
+		_target {&#13;
+			name( versionBauNVOText )&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionBauNVODatum || versionBauNVOText) {&#13;
+	_target {&#13;
+		if (versionBauNVOText) {&#13;
+			name( versionBauNVOText )&#13;
+		}&#13;
+		if (versionBauNVODatum) {&#13;
+			datum( versionBauNVODatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C6658832e-4c1a-4638-8e10-a7a2d36719d0" priority="lowest">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C144ccfaf-a745-46ec-ac8a-ddc6c10c4d46" priority="lowest">
+        <source name="var">
             <property>
                 <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionSonstRechtsgrundlageDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
-            <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
-            </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C209b9255-ff33-4f42-9bf2-f7497f2622c2" priority="normal">
-        <source>
+        <source name="var">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
-                <child name="versionSonstRechtsgrundlageDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
             <property>
-                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="datum" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
             </property>
-        </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
-    </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C08d1c37d-6fe0-4b88-be32-33163626e2d4" priority="lowest">
-        <source>
+        </source>
+        <source name="var">
             <property>
                 <type name="FP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionSonstRechtsgrundlageText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <target name="result">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der FP_Bereich mit id ${id} hat kein versionSonstRechtsgrundlageDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; !versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der FP_Bereich mit id ${id} hat kein versionSonstRechtsgrundlageText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_target {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionSonstRechtsgrundlageDatum || versionSonstRechtsgrundlageText) {&#13;
+	_target {&#13;
+		if (versionSonstRechtsgrundlageText) {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+		}&#13;
+		if (versionSonstRechtsgrundlageDatum) {&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="Ca1839bb3-ac9e-42c9-b986-31d1dec5e6f6" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C950dbc86-4e69-4619-9325-203e1e899e5d" priority="normal">
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="XP_Gemeinde" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="ags" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="versionSonstRechtsgrundlageDatum" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </property>
+        </source>
+        <source name="var">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="versionSonstRechtsgrundlageText" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <target name="result">
             <property>
                 <type name="FP_PlanType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="versionSonstRechtsgrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="XP_GesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
-                <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gemeinde_XP_Gemeinde_ags?.take(2)=='08') {&#13;
+	if (!versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der FP_Plan mit id ${id} hat kein versionSonstRechtsgrundlageDatum. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageText werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; !versionSonstRechtsgrundlageText) {&#13;
+		_log.error("Der FP_Plan mit id ${id} hat kein versionSonstRechtsgrundlageText. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_Gesetzliche Grundlage jedoch datum und name. Die Informationen aus versionSonstRechtsgrundlageDatum werden daher nicht in das Zielschema überführt.")&#13;
+	}&#13;
+	else if (versionSonstRechtsgrundlageDatum &amp;&amp; versionSonstRechtsgrundlageText) {&#13;
+		_target {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}&#13;
+&#13;
+else if (versionSonstRechtsgrundlageDatum || versionSonstRechtsgrundlageText) {&#13;
+	_target {&#13;
+		if (versionSonstRechtsgrundlageText) {&#13;
+			name( versionSonstRechtsgrundlageText )&#13;
+		}&#13;
+		if (versionSonstRechtsgrundlageDatum) {&#13;
+			datum( versionSonstRechtsgrundlageDatum )&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.rename" id="C95d4061d-c430-48cc-913b-6964cea5a0fe" priority="normal">
         <source>
@@ -6660,6 +7070,60 @@ _snippets.helperFunctions{&#13;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.join" id="C0cc1e915-bd30-4d8b-80ae-f3f5c1fb880e" priority="highest">
+        <source name="types">
+            <class>
+                <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <source name="types">
+            <class>
+                <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="join">
+            <jp:join-parameter xmlns:jp="http://www.esdi-humboldt.eu/hale/join">
+                <class>
+                    <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <class>
+                    <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <jp:condition>
+                    <property>
+                        <type name="LP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="href" ns="http://www.w3.org/1999/xlink"/>
+                    </property>
+                    <property>
+                        <type name="LP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+                    </property>
+                </jp:condition>
+            </jp:join-parameter>
+        </complexParameter>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//this groovy script is collecting info on which XP_Plan is located in which Bundesland&#13;
+&#13;
+withTransformationContext {&#13;
+	def c = _.context.collector(it)&#13;
+&#13;
+	if (_source.links.LP_Plan.p.bundesland.value()=='1200') {&#13;
+		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
+		_source.p.planinhalt.href.values().each { href -&gt;&#13;
+			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.join" id="Cd606b06a-a6e2-4dae-bfac-c54887c81e5b" priority="normal">
         <source name="types">
@@ -7363,6 +7827,60 @@ if (artDerFestlegung == '1700') {&#13;
             <core:name xmlns:core="http://www.esdi-humboldt.eu/hale/core" namespace="http://www.xplanung.de/xplangml/5/4">externeReferenz</core:name>
         </complexParameter>
         <parameter value="true" name="structuralRename"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.join" id="C9b32581d-7458-4cca-8d36-14468755bee6" priority="highest">
+        <source name="types">
+            <class>
+                <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <source name="types">
+            <class>
+                <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="join">
+            <jp:join-parameter xmlns:jp="http://www.esdi-humboldt.eu/hale/join">
+                <class>
+                    <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <class>
+                    <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <jp:condition>
+                    <property>
+                        <type name="RP_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="href" ns="http://www.w3.org/1999/xlink"/>
+                    </property>
+                    <property>
+                        <type name="RP_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+                    </property>
+                </jp:condition>
+            </jp:join-parameter>
+        </complexParameter>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//this groovy script is collecting info on which XP_Plan is located in which Bundesland&#13;
+&#13;
+withTransformationContext {&#13;
+	def c = _.context.collector(it)&#13;
+&#13;
+	if (_source.links.RP_Plan.p.bundesland.values().contains('1200')) {&#13;
+		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
+		_source.p.planinhalt.href.values().each { href -&gt;&#13;
+			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.join" id="C2f85910e-04c1-4f92-bba1-fd34fd89ab76" priority="normal">
         <source name="types">
@@ -9179,6 +9697,60 @@ else {&#13;
             </lookup-table>
         </complexParameter>
         <parameter value="null" name="notClassifiedAction"/>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy.join" id="Cc08b6b19-6850-4403-b57b-96f3e579179e" priority="highest">
+        <source name="types">
+            <class>
+                <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <source name="types">
+            <class>
+                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+            </class>
+        </source>
+        <target>
+            <class>
+                <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/6/0"/>
+            </class>
+        </target>
+        <complexParameter name="join">
+            <jp:join-parameter xmlns:jp="http://www.esdi-humboldt.eu/hale/join">
+                <class>
+                    <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <class>
+                    <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                </class>
+                <jp:condition>
+                    <property>
+                        <type name="SO_BereichType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="gehoertZuPlan" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="href" ns="http://www.w3.org/1999/xlink"/>
+                    </property>
+                    <property>
+                        <type name="SO_PlanType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                        <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+                    </property>
+                </jp:condition>
+            </jp:join-parameter>
+        </complexParameter>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//this groovy script is collecting info on which XP_Plan is located in which Bundesland&#13;
+&#13;
+withTransformationContext {&#13;
+	def c = _.context.collector(it)&#13;
+&#13;
+	if (_source.links.SO_Plan.p.gemeinde.XP_Gemeinde.ags.value()?.take(2)=='08') {&#13;
+		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
+		_source.p.planinhalt.href.values().each { href -&gt;&#13;
+			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+		}&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.join" id="C91a376c7-23f3-4c60-8180-ef27f649ead8" priority="normal">
         <source name="types">
@@ -12196,14 +12768,27 @@ else {&#13;
             </property>
         </target>
     </cell>
-    <cell relation="eu.esdihumboldt.hale.align.rename" id="C69a8a281-be5f-454f-9c65-34966196e545" priority="normal">
-        <source>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C69a8a281-be5f-454f-9c65-34966196e545" priority="normal">
+        <source name="var">
             <property>
                 <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
                 <child name="gesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/5/4"/>
             </property>
         </source>
-        <target>
+        <source name="var">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <target name="result">
             <property>
                 <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
                 <child name="gesetzlicheGrundlage" ns="http://www.xplanung.de/xplangml/6/0"/>
@@ -12211,8 +12796,25 @@ else {&#13;
                 <child name="name" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
-        <parameter value="false" name="ignoreNamespaces"/>
-        <parameter value="false" name="structuralRename"/>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+if (gesetzlicheGrundlage) {&#13;
+	withTransformationContext {&#13;
+		def c = _.context.collector(it)&#13;
+		def bawueBereiche = c.bawueBereiche.values()*.toString()&#13;
+		def bawueInhalte = c.bawuePlaninhalte.values()*.toString()&#13;
+		def ref = "#${id}".toString()&#13;
+	&#13;
+		if (bawueInhalte.contains(ref) || bawueBereiche.contains(gehoertZuBereich_href?.toString()?.replaceAll('#',''))) {&#13;
+			_log.error("Das Objekt mit der id ${id} enthält einen Wert für gesetzlicheGrundlage. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_GesetzlicheGrundlage jedoch datum und name. Die Information aus gesetzlicheGrundlage wird daher nicht in das Zielschema überführt.")&#13;
+			return null&#13;
+		}&#13;
+		return gesetzlicheGrundlage&#13;
+	}&#13;
+}
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.hale.align.retype" id="C30539065-c44a-40d6-bb12-e45669af6317" priority="lower">
         <source>
