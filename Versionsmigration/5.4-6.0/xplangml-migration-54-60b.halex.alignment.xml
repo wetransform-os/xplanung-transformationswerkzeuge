@@ -859,6 +859,10 @@ withTransformationContext {&#13;
 			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
 		}&#13;
 	}&#13;
+	&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt[(href as String).replaceAll('#', '')] = bereichId&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -5128,6 +5132,10 @@ withTransformationContext {&#13;
 			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
 		}&#13;
 	}&#13;
+&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt[(href as String).replaceAll('#', '')] = _source.p.id.value()&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -7121,6 +7129,10 @@ withTransformationContext {&#13;
 			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
 		}&#13;
 	}&#13;
+	&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt[(href as String).replaceAll('#', '')] = _source.p.id.value()&#13;
+	}&#13;
 }
 </core:text>
         </complexParameter>
@@ -7877,6 +7889,10 @@ withTransformationContext {&#13;
 		_source.p.planinhalt.href.values().each { href -&gt;&#13;
 			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
 		}&#13;
+	}&#13;
+	&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt[(href as String).replaceAll('#', '')] = _source.p.id.value()&#13;
 	}&#13;
 }
 </core:text>
@@ -9747,6 +9763,10 @@ withTransformationContext {&#13;
 		_source.p.planinhalt.href.values().each { href -&gt;&#13;
 			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
 		}&#13;
+	}&#13;
+&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt[(href as String).replaceAll('#', '')] = _source.p.id.value()&#13;
 	}&#13;
 }
 </core:text>
@@ -12767,6 +12787,51 @@ else {&#13;
                 <child name="XP_SpezExterneReferenz" ns="http://www.xplanung.de/xplangml/6/0"/>
             </property>
         </target>
+    </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C0d86991a-35f7-4acb-879a-79727c2e3113" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//XP_Bereich-XP_Objekt pairs are collected in higher prioritised Groovy Join function on BP_Bereich, FP_Bereich, ...&#13;
+//c.planinhalt[(href as String).replaceAll('#', '')] = bereichId&#13;
+&#13;
+def bereichRef = null&#13;
+&#13;
+if (!gehoertZuBereich_href) {&#13;
+    def objId = (id as String)?.replaceAll('#', '')&#13;
+&#13;
+    withTransformationContext {&#13;
+        def c = _.context.collector(it)&#13;
+        def bereichId = c.planinhalt[objId].value()&#13;
+        if (bereichId) {&#13;
+            bereichRef = "#${bereichId}".toString()&#13;
+        }&#13;
+    }&#13;
+}&#13;
+&#13;
+return bereichRef
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
     </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C69a8a281-be5f-454f-9c65-34966196e545" priority="normal">
         <source name="var">
