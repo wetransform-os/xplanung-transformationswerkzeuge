@@ -1,47 +1,50 @@
 import eu.esdihumboldt.hale.common.lookup.*;
-import eu.esdihumboldt.hale.common.core.*;
+import eu.esdihumboldt.hale.common.core.io.*;
 
-def getLookupTableValue(value, tableId) {
-	// retrieve Lookup table
-	LookupService ls = HalePlatform.getService(LookupService.class)
-	LookupTableInfo lithTable = ls.getTable(tableId)
-	def table = lithTable.getTable()
-
-	// get value from Lookup table
-	def result = table.lookup(Value.of(value)).toString()
+def getLookupTableValue(value, tableId, serviceProvider) {
+	if (value == null || !tableId || serviceProvider == null) {
+		return null
+	}
+	def lookupService = serviceProvider.getService(LookupService.class)
+	def tableInfo = lookupService?.getTable(tableId)
+	def result = tableInfo?.getTable()?.lookup(value.toString() as Value) as String
+	if (result == null || result.equalsIgnoreCase('null')) {
+		return null
+	}
 	return result
 }
 
-def collectAttributeZweckbestimmung() {
+def collectAttributeZweckbestimmung(featureTypeName) {
 	if (_source.p.zweckbestimmung.value()) {
-		collectAttributeAndFeatureTypeNameById('zweckbestimmung', _source.p.id.value())
+		collectAttributeAndFeatureTypeNameById('zweckbestimmung', _source.p.id.value(), featureTypeName)
 	}
 }
 
-def collectAttributeDetailZweckbestimmung() {
+def collectAttributeDetailZweckbestimmung(featureTypeName) {
 	if (_source.p.detaillierteZweckbestimmung.value()) {
-		collectAttributeAndFeatureTypeNameById('detaillierteZweckbestimmung', _source.p.id.value())
+		collectAttributeAndFeatureTypeNameById('detaillierteZweckbestimmung', _source.p.id.value(), featureTypeName)
 	}
 }
 
-def collectAttributeSondernutzung() {
+def collectAttributeSondernutzung(featureTypeName) {
 	if (_source.p.sonderNutzung.value() || _source.p.sondernutzung.value()) {
-		collectAttributeAndFeatureTypeNameById('sondernutzung', _source.p.id.value())
+		collectAttributeAndFeatureTypeNameById('sondernutzung', _source.p.id.value(), featureTypeName)
 	}
 }
 
-def collectAttributeDetailSondernutzung() {
+def collectAttributeDetailSondernutzung(featureTypeName) {
 	if (_source.p.detaillierteSondernutzung.value()) {
-		collectAttributeAndFeatureTypeNameById('detaillierteSondernutzung', _source.p.id.value())
+		collectAttributeAndFeatureTypeNameById('detaillierteSondernutzung', _source.p.id.value(), featureTypeName)
 	}
 }
 
-def collectAttributeAndFeatureTypeNameById(attributeName, id) {
+def collectAttributeAndFeatureTypeNameById(attributeName, id, featureTypeName) {
+	if (!id || !featureTypeName) {
+		return
+	}
 	withTransformationContext{
 		def c = _.context.collector(it)
-		
-		def sourceType = _sourceTypes[0].typeDefinition.getDisplayName()
 		c.complexeAttribute.sourceAttributeName[id] << attributeName
-		c.complexeAttribute.sourceType[id] << sourceType
+		c.complexeAttribute.sourceType[id] << featureTypeName
 	}
 }

@@ -477,8 +477,8 @@
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeSondernutzung()&#13;
-	collectAttributeDetailSondernutzung()&#13;
+	collectAttributeSondernutzung('BP_BaugebietsTeilFlaeche')&#13;
+	collectAttributeDetailSondernutzung('BP_BaugebietsTeilFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -856,8 +856,12 @@ withTransformationContext {&#13;
 	if (_source.links.BP_Plan.p.gemeinde.XP_Gemeinde.ags.value()?.take(2)=='08') {&#13;
 		c.bawueBereiche &lt;&lt; bereichId.toString()&#13;
 		_source.p.planinhalt.href.values().each { href -&gt;&#13;
-			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+			c.bawuePlaninhalte &lt;&lt; "${href}".toString()&#13;
 		}&#13;
+	}&#13;
+	&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt["${href}".toString().replaceAll('#', '')] = bereichId&#13;
 	}&#13;
 }
 </core:text>
@@ -1416,8 +1420,8 @@ else {&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_GemeinbedarfsFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_GemeinbedarfsFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -1706,8 +1710,8 @@ else {&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_GemeinschaftsanlagenFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_GemeinschaftsanlagenFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -1841,8 +1845,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_GruenFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_GruenFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -2035,8 +2039,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_Landwirtschaft')&#13;
+	collectAttributeDetailZweckbestimmung('BP_Landwirtschaft')&#13;
 }
 </core:text>
         </complexParameter>
@@ -2082,8 +2086,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_LandwirtschaftsFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_LandwirtschaftsFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -2230,8 +2234,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_NebenanlagenFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_NebenanlagenFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -3635,8 +3639,8 @@ else if (versionSonstRechtsgrundlageDatum || versionSonstRechtsgrundlageText) {&
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_SpielSportanlagenFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_SpielSportanlagenFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -4069,8 +4073,8 @@ else {&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_VerEntsorgung')&#13;
+	collectAttributeDetailZweckbestimmung('BP_VerEntsorgung')&#13;
 }
 </core:text>
         </complexParameter>
@@ -4332,8 +4336,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_WaldFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_WaldFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -4985,8 +4989,8 @@ else {&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeSondernutzung()&#13;
-	collectAttributeDetailSondernutzung()&#13;
+	collectAttributeSondernutzung('FP_BebauungsFlaeche')&#13;
+	collectAttributeDetailSondernutzung('FP_BebauungsFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -5125,8 +5129,12 @@ withTransformationContext {&#13;
 	if (_source.links.FP_Plan.p.gemeinde.XP_Gemeinde.ags.value()?.take(2)=='08') {&#13;
 		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
 		_source.p.planinhalt.href.values().each { href -&gt;&#13;
-			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+			c.bawuePlaninhalte &lt;&lt; "${href}".toString()&#13;
 		}&#13;
+	}&#13;
+&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt["${href}".toString().replaceAll('#', '')] = _source.p.id.value()&#13;
 	}&#13;
 }
 </core:text>
@@ -5265,8 +5273,8 @@ withTransformationContext {&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_Gemeinbedarf')&#13;
+	collectAttributeDetailZweckbestimmung('FP_Gemeinbedarf')&#13;
 }&#13;
 
 </core:text>
@@ -5415,8 +5423,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_Gruen')&#13;
+	collectAttributeDetailZweckbestimmung('FP_Gruen')&#13;
 }
 </core:text>
         </complexParameter>
@@ -5560,8 +5568,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_Landwirtschaft')&#13;
+	collectAttributeDetailZweckbestimmung('FP_Landwirtschaft')&#13;
 }
 </core:text>
         </complexParameter>
@@ -5610,8 +5618,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_LandwirtschaftsFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('FP_LandwirtschaftsFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -6709,8 +6717,8 @@ else if (versionSonstRechtsgrundlageDatum || versionSonstRechtsgrundlageText) {&
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_SpielSportanlage')&#13;
+	collectAttributeDetailZweckbestimmung('FP_SpielSportanlage')&#13;
 }
 </core:text>
         </complexParameter>
@@ -6843,8 +6851,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_VerEntsorgung')&#13;
+	collectAttributeDetailZweckbestimmung('FP_VerEntsorgung')&#13;
 }
 </core:text>
         </complexParameter>
@@ -6975,8 +6983,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_WaldFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('FP_WaldFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -7118,8 +7126,12 @@ withTransformationContext {&#13;
 	if (_source.links.LP_Plan.p.bundesland.value()=='1200') {&#13;
 		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
 		_source.p.planinhalt.href.values().each { href -&gt;&#13;
-			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+			c.bawuePlaninhalte &lt;&lt; "${href}".toString()&#13;
 		}&#13;
+	}&#13;
+	&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt["${href}".toString().replaceAll('#', '')] = _source.p.id.value()&#13;
 	}&#13;
 }
 </core:text>
@@ -7875,8 +7887,12 @@ withTransformationContext {&#13;
 	if (_source.links.RP_Plan.p.bundesland.values().contains('1200')) {&#13;
 		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
 		_source.p.planinhalt.href.values().each { href -&gt;&#13;
-			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+			c.bawuePlaninhalte &lt;&lt; "${href}".toString()&#13;
 		}&#13;
+	}&#13;
+	&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt["${href}".toString().replaceAll('#', '')] = _source.p.id.value()&#13;
 	}&#13;
 }
 </core:text>
@@ -9745,8 +9761,12 @@ withTransformationContext {&#13;
 	if (_source.links.SO_Plan.p.gemeinde.XP_Gemeinde.ags.value()?.take(2)=='08') {&#13;
 		c.bawueBereiche &lt;&lt; _source.p.id.value().toString()&#13;
 		_source.p.planinhalt.href.values().each { href -&gt;&#13;
-			c.bawuePlaninhalte &lt;&lt; href.toString()&#13;
+			c.bawuePlaninhalte &lt;&lt; "${href}".toString()&#13;
 		}&#13;
+	}&#13;
+&#13;
+	_source.p.planinhalt.href.values().each { href -&gt;&#13;
+	    c.planinhalt["${href}".toString().replaceAll('#', '')] = _source.p.id.value()&#13;
 	}&#13;
 }
 </core:text>
@@ -10050,8 +10070,8 @@ withTransformationContext {&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_GewaesserFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_GewaesserFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -10100,8 +10120,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_Gewaesser')&#13;
+	collectAttributeDetailZweckbestimmung('FP_Gewaesser')&#13;
 }
 </core:text>
         </complexParameter>
@@ -11145,8 +11165,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_VerkehrsflaecheBesondererZweckbestimmung')&#13;
+	collectAttributeDetailZweckbestimmung('BP_VerkehrsflaecheBesondererZweckbestimmung')&#13;
 }
 </core:text>
         </complexParameter>
@@ -11195,8 +11215,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_Strassenverkehr')&#13;
+	collectAttributeDetailZweckbestimmung('FP_Strassenverkehr')&#13;
 }
 </core:text>
         </complexParameter>
@@ -11620,8 +11640,8 @@ if (zweckbestimmung == '1300') {&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('BP_WasserwirtschaftsFlaeche')&#13;
+	collectAttributeDetailZweckbestimmung('BP_WasserwirtschaftsFlaeche')&#13;
 }
 </core:text>
         </complexParameter>
@@ -11670,8 +11690,8 @@ _snippets.helperFunctions{&#13;
         <complexParameter name="script">
             <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
 _snippets.helperFunctions{&#13;
-	collectAttributeZweckbestimmung()&#13;
-	collectAttributeDetailZweckbestimmung()&#13;
+	collectAttributeZweckbestimmung('FP_Wasserwirtschaft')&#13;
+	collectAttributeDetailZweckbestimmung('FP_Wasserwirtschaft')&#13;
 }
 </core:text>
         </complexParameter>
@@ -11808,14 +11828,18 @@ def logWarning = true&#13;
 withTransformationContext{		&#13;
 	// if 'art' contains a value which is migrated to a complexe attribute in XPlan 6.0&#13;
 	// this need to be considered in the syntax of 'art'&#13;
-	if (art in ['zweckbestimmung', 'detaillierteZweckbestimmung', 'sondernutzung', 'detaillierteSondernutzung']) {&#13;
+	if (['zweckbestimmung', 'detaillierteZweckbestimmung', 'sondernutzung', 'detaillierteSondernutzung'].contains(art)) {&#13;
 		def c = _.context.collector(it)&#13;
-		def linkedFeatureTypeId = dientZurDarstellungVon.p.href.value().toString().substring(1)&#13;
+		def linkedFeatureTypeId = "${dientZurDarstellungVon.p.href.value()}".toString().substring(1)&#13;
 		def attributeName = c.complexeAttribute.sourceAttributeName[linkedFeatureTypeId].value()&#13;
 		def sourceType = c.complexeAttribute.sourceType[linkedFeatureTypeId].value()&#13;
 		&#13;
 		lookupValue = "${sourceType}/${attributeName}"&#13;
-		art_new = _snippets.helperFunctions.getLookupTableValue(lookupValue, '6ae40aac-2ce1-4cf0-8b0b-7467c63d7c3e')&#13;
+		art_new = _snippets.helperFunctions.getLookupTableValue(lookupValue.toString(), '6ae40aac-2ce1-4cf0-8b0b-7467c63d7c3e', _serviceProvider)&#13;
+		if (!art_new) {&#13;
+			_log.error("Kein Eintrag in Lookup_XPath fuer '${lookupValue}' gefunden, 'art' wird unveraendert uebernommen")&#13;
+			art_new = art&#13;
+		}&#13;
 		logWarning = false&#13;
 	}&#13;
 	else {&#13;
@@ -12768,6 +12792,51 @@ else {&#13;
             </property>
         </target>
     </cell>
+    <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C0d86991a-35f7-4acb-879a-79727c2e3113" priority="normal">
+        <source name="var">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="id" ns="http://www.opengis.net/gml/3.2"/>
+            </property>
+        </source>
+        <source name="var">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/5/4"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </source>
+        <target name="result">
+            <property>
+                <type name="XP_ObjektType" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="gehoertZuBereich" ns="http://www.xplanung.de/xplangml/6/0"/>
+                <child name="href" ns="http://www.w3.org/1999/xlink"/>
+            </property>
+        </target>
+        <complexParameter name="script">
+            <core:text xmlns:core="http://www.esdi-humboldt.eu/hale/core" xml:space="preserve">
+//XP_Bereich-XP_Objekt pairs are collected in higher prioritised Groovy Join function on BP_Bereich, FP_Bereich, ...&#13;
+//c.planinhalt[(href as String).replaceAll('#', '')] = bereichId&#13;
+&#13;
+def bereichRef = null&#13;
+&#13;
+if (!gehoertZuBereich_href) {&#13;
+    def objId = (id as String)?.replaceAll('#', '')&#13;
+&#13;
+    withTransformationContext {&#13;
+        def c = _.context.collector(it)&#13;
+        def bereichId = c.planinhalt[objId].value()&#13;
+        if (bereichId) {&#13;
+            bereichRef = "#${bereichId}".toString()&#13;
+        }&#13;
+    }&#13;
+}&#13;
+&#13;
+return bereichRef
+</core:text>
+        </complexParameter>
+        <parameter value="false" name="variablesAsInstances"/>
+    </cell>
     <cell relation="eu.esdihumboldt.cst.functions.groovy" id="C69a8a281-be5f-454f-9c65-34966196e545" priority="normal">
         <source name="var">
             <property>
@@ -12805,7 +12874,7 @@ if (gesetzlicheGrundlage) {&#13;
 		def bawueInhalte = c.bawuePlaninhalte.values()*.toString()&#13;
 		def ref = "#${id}".toString()&#13;
 	&#13;
-		if (bawueInhalte.contains(ref) || bawueBereiche.contains(gehoertZuBereich_href?.toString()?.replaceAll('#',''))) {&#13;
+		if (bawueInhalte.contains(ref) || bawueBereiche.contains(gehoertZuBereich_href != null ? "${gehoertZuBereich_href}".toString().replaceAll('#','') : null)) {&#13;
 			_log.error("Das Objekt mit der id ${id} enthält einen Wert für gesetzlicheGrundlage. Das Baden-Württemberg-Profil von XPlanGML 6.0 fordert für jede XP_GesetzlicheGrundlage jedoch datum und name. Die Information aus gesetzlicheGrundlage wird daher nicht in das Zielschema überführt.")&#13;
 			return null&#13;
 		}&#13;
